@@ -1,0 +1,7 @@
+pane	work	1	:work	0	:-	1	:/Users/ychen	1	vim	:vim
+pane	work	2	:server	1	:*	1	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp/assets/src	1	zsh	:
+pane	work	2	:server	1	:*	2	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp	0	java	:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -classpath /usr/local/Cellar/maven/3.3.3/libexec/boot/plexus-classworlds-2.5.2.jar -Dclassworlds.conf=/usr/local/Cellar/maven/3.3.3/libexec/bin/m2.conf -Dmaven.home=/usr/local/Cellar/maven/3.3.3/libexec -Dmaven.multiModuleProjectDirectory=/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp org.codehaus.plexus.classworlds.launcher.Launcher jetty:run
+pane	work	2	:server	1	:*	3	:/Users/ychen/Docs/cars/carsBackend/CarsSearch/CarsSearch-webapp	0	java	:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -classpath /usr/local/Cellar/maven/3.3.3/libexec/boot/plexus-classworlds-2.5.2.jar -Dclassworlds.conf=/usr/local/Cellar/maven/3.3.3/libexec/bin/m2.conf -Dmaven.home=/usr/local/Cellar/maven/3.3.3/libexec -Dmaven.multiModuleProjectDirectory=/Users/ychen/Docs/cars/carsBackend/CarsSearch/CarsSearch-webapp org.codehaus.plexus.classworlds.launcher.Launcher jetty:run
+window	work	1	0	:-	d621,260x79,0,0,4
+window	work	2	1	:*	c159,260x79,0,0{110x79,0,0,1,84x79,111,0,2,64x79,196,0,3}
+state	work	
