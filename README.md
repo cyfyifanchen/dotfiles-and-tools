@@ -1,1 +1,3 @@
 # dotfiles
+
+zsh + tmux + vim 
