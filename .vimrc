@@ -18,16 +18,18 @@ Plugin 'scrooloose/syntastic'
 Plugin 'eslint/eslint'
 Plugin 'shutnik/jshint2.vim'
 Plugin 'tpope/vim-surround'
-Plugin 'yggdroot/indentline'
+"Plugin 'yggdroot/indentline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'SirVer/ultisnips'
 Plugin 'ervandew/supertab'
-"Plugin 'gregsexton/MatchTag'
+Plugin 'gregsexton/MatchTag'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'othree/javascript-libraries-syntax.vim'
 call vundle#end()
-filetype plugin indent on
+filetype plugin on
 " }}}
 
 " general settings {{{
@@ -83,14 +85,18 @@ set lbr
 set tw=500
 " auto indent
 set ai
-" smart indent
+"smart indent
 set si
 " wrap lines
+"set noautoindent
 set wrap
 " file ignore
 set wildignore+=*.a,*.0
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.mov,*.pdf,*.psd,*.ai
 set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
+" paste
+"set paste
+"set nopaste
 " autocomplete words with spell check
 "set complete+=kspell
 
@@ -113,6 +119,7 @@ nnoremap <leader>et :vsp ~/.tmux.conf<CR>
 nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>pi :PluginInstall<CR>
+nnoremap <leader><leader> <c-^>
 " 3x rate faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
@@ -144,6 +151,29 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 " }}}
 
 " startify {{{
@@ -170,16 +200,16 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 " }}}
 
 " syntastic {{{
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint','jshint2']
-let g:syntastic_html_tidy_exec = 'tidy5'
+"let g:syntastic_html_tidy_exec = 'tidy5'
 
 let jshint2_read = 1
 let jshint2_save = 1
@@ -197,6 +227,49 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+" }}}
+
+" abbreviations {{{
+iabbrev teh the
+iabbrev seperate separate
+iabbrev fuction function
+iabbrev fucntion function
+iabbrev fnction function
+iabbrev functon function
+iabbrev funtion function
+iabbrev funciont function
+iabbrev consloe console
+" }}}
+
+" togglewrap {{{
+"function ToggleWrap()
+"  if &wrap
+"    echo "Wrap OFF"
+"    setlocal nowrap
+"    set virtualedit=all
+"    silent! nunmap <buffer> <Up>
+"    silent! nunmap <buffer> <Down>
+"    silent! nunmap <buffer> <Home>
+"    silent! nunmap <buffer> <End>
+"    silent! iunmap <buffer> <Up>
+"    silent! iunmap <buffer> <Down>
+"    silent! iunmap <buffer> <Home>
+"    silent! iunmap <buffer> <End>
+"  else
+"    echo "Wrap ON"
+"    setlocal wrap linebreak nolist
+"    set virtualedit=
+"    setlocal display+=lastline
+"    noremap  <buffer> <silent> <Up>   gk
+"    noremap  <buffer> <silent> <Down> gj
+"    noremap  <buffer> <silent> <Home> g<Home>
+"    noremap  <buffer> <silent> <End>  g<End>
+"    inoremap <buffer> <silent> <Up>   <C-o>gk
+"    inoremap <buffer> <silent> <Down> <C-o>gj
+"    inoremap <buffer> <silent> <Home> <C-o>g<Home>
+"    inoremap <buffer> <silent> <End>  <C-o>g<End>
+"  endif
+"endfunction
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
