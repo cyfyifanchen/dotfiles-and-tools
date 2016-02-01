@@ -28,6 +28,8 @@ Plugin 'ervandew/supertab'
 Plugin 'gregsexton/MatchTag'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 call vundle#end()
 filetype plugin on
 " }}}
@@ -183,6 +185,17 @@ let g:startify_bookmarks = [
             \ { 'z': '~/.zshrc' },
             \ ]
 
+let g:startify_custom_header = [
+      \ '                                ',
+      \ '            __                  ',
+      \ '    __  __ /\_\    ___ ___      ',
+      \ '   /\ \/\ \\/\ \ /'' __` __`\   ',
+      \ '   \ \ \_/ |\ \ \/\ \/\ \/\ \   ',
+      \ '    \ \___/  \ \_\ \_\ \_\ \_\  ',
+      \ '     \/__/    \/_/\/_/\/_/\/_/  ',
+      \ '',
+      \ '',
+      \ ]
 " }}}
 
 " ctrlP {{{
@@ -272,5 +285,8 @@ iabbrev consloe console
 "endfunction
 " }}}
 
+" nerdcommenter {{{
+"[count]<leader>cc |NERDComComment|
+" }}}
 " vim:foldmethod=marker:foldlevel=0
 
