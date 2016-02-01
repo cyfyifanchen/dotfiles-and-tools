@@ -1,4 +1,4 @@
-" plugins {{{
+" Plugins {{{
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle.vim
@@ -34,7 +34,7 @@ call vundle#end()
 filetype plugin on
 " }}}
 
-" general settings {{{
+" General Settings {{{
 set ruler
 set number
 set hid
@@ -104,7 +104,7 @@ set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
 
 " }}}
 
-" custome leader and keys {{{
+" Custome Leader and Keys {{{
 let mapleader = " "
 let g:mapleader = " "
 nmap <leader>nt :NERDTree<cr>
@@ -122,12 +122,11 @@ nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>pi :PluginInstall<CR>
 nnoremap <leader><leader> <c-^>
-" 3x rate faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 " }}}
 
-" colors, scheme, coding and fonts {{{
+" Colors, Scheme, Coding and Fonts {{{
 syntax enable
 colorscheme Tomorrow-Night
 try
@@ -178,7 +177,7 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 " }}}
 
-" startify {{{
+" Startify {{{
 let g:startify_bookmarks = [
             \ { 'v': '~/.vimrc' },
             \ { 't': '~/.tmux.conf' },
@@ -187,7 +186,7 @@ let g:startify_bookmarks = [
 
 " }}}
 
-" ctrlP {{{
+" CtrlP {{{
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.(git|hg|node_modules|svn)|\_site)$',
   \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
@@ -197,11 +196,11 @@ let g:ctrlp_working_path_mode = 2
 
 " }}}
 
-" emmet {{{
+" Emmet {{{
 let g:user_emmet_expandabbr_key = '<c-y>'
 " }}}
 
-" syntastic {{{
+" Syntastic {{{
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
@@ -218,7 +217,7 @@ let jshint2_save = 1
 "autocmd BufWritePost *.js silent :JSHint
 " }}}
 
-" snippets {{{
+" Snippets {{{
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsEditSplit="vertical"
 
@@ -231,7 +230,7 @@ let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " }}}
 
-" abbreviations {{{
+" Abbreviations {{{
 iabbrev teh the
 iabbrev seperate separate
 iabbrev fuction function
@@ -243,7 +242,7 @@ iabbrev funciont function
 iabbrev consloe console
 " }}}
 
-" togglewrap {{{
+" Togglewrap {{{
 function ToggleWrap()
   if &wrap
     echo "Wrap OFF"
@@ -274,7 +273,9 @@ function ToggleWrap()
 endfunction
 " }}}
 
-" nerdcommenter {{{
+" Nerdcommenter {{{
 " }}}
+ 
+
 " vim:foldmethod=marker:foldlevel=0
 
