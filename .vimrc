@@ -6,7 +6,9 @@ call vundle#begin()
 Plugin 'vundlevim/vundle.vim'
 Plugin 'mhinz/vim-startify'
 Plugin 'tpope/vim-fugitive'
-Plugin 'bling/vim-airline'
+"Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'gioele/vim-autoswap'
@@ -28,10 +30,14 @@ Plugin 'ervandew/supertab'
 Plugin 'gregsexton/MatchTag'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'pangloss/vim-javascript'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'mxw/vim-jsx'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'othree/html5.vim'
 call vundle#end()
-filetype plugin on
+filetype plugin indent on
 " }}}
 
 " General Settings {{{
@@ -42,6 +48,10 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
+set autoindent 
+set smartindent
+set wrap
+set clipboard=unnamed
 " don't redraw while executing macros (good performance config)
 set lazyredraw
 " for regular expressions turn magic on
@@ -49,7 +59,7 @@ set magic
 " show matching brackets when text indicator is over them
 set showmatch
 " how many tenths of a second to blink when matching brackets
-set mat=2
+set mat=1
 " show command in bottom bar
 set showcmd
 " no annoying sound on errors
@@ -61,8 +71,6 @@ set tm=500
 set foldcolumn=0
 " cmd bar height
 set cmdheight=1
-" clipboard 
-set clipboard=unnamed
 " dir and history
 set directory=~/.vim/tmp//
 set backupdir=~/.vim/tmp//
@@ -85,18 +93,12 @@ set tabstop=2
 " linebreak on 500 characters
 set lbr
 set tw=500
-" auto indent
-set ai
-"smart indent
-set si
-" wrap lines
-"set noautoindent
-set wrap
 " file ignore
 set wildignore+=*.a,*.0
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.mov,*.pdf,*.psd,*.ai
 set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
-" paste
+set timeoutlen=300
+"paste
 "set paste
 "set nopaste
 " autocomplete words with spell check
@@ -121,7 +123,7 @@ nnoremap <leader>et :vsp ~/.tmux.conf<CR>
 nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>pi :PluginInstall<CR>
-nnoremap <leader><leader> <c-^>
+nnoremap <leader><leader> <c-w>w
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 " }}}
@@ -154,27 +156,27 @@ if !exists('g:airline_symbols')
 endif
 
 " unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
-
-" airline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
+"let g:airline_left_sep = '»'
+"let g:airline_left_sep = '▶'
+"let g:airline_right_sep = '«'
+"let g:airline_right_sep = '◀'
+"let g:airline_symbols.linenr = '␊'
+"let g:airline_symbols.linenr = '␤'
+"let g:airline_symbols.linenr = '¶'
+"let g:airline_symbols.branch = '⎇'
+"let g:airline_symbols.paste = 'ρ'
+"let g:airline_symbols.paste = 'Þ'
+"let g:airline_symbols.paste = '∥'
+"let g:airline_symbols.whitespace = 'Ξ'
+"
+"" airline symbols
+"let g:airline_left_sep = ''
+"let g:airline_left_alt_sep = ''
+"let g:airline_right_sep = ''
+"let g:airline_right_alt_sep = ''
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.readonly = ''
+"let g:airline_symbols.linenr = ''
 " }}}
 
 " Startify {{{
@@ -243,39 +245,70 @@ iabbrev consloe console
 " }}}
 
 " Togglewrap {{{
-function ToggleWrap()
-  if &wrap
-    echo "Wrap OFF"
-    setlocal nowrap
-    set virtualedit=all
-    silent! nunmap <buffer> <Up>
-    silent! nunmap <buffer> <Down>
-    silent! nunmap <buffer> <Home>
-    silent! nunmap <buffer> <End>
-    silent! iunmap <buffer> <Up>
-    silent! iunmap <buffer> <Down>
-    silent! iunmap <buffer> <Home>
-    silent! iunmap <buffer> <End>
-  else
-    echo "Wrap ON"
-    setlocal wrap linebreak nolist
-    set virtualedit=
-    setlocal display+=lastline
-    noremap  <buffer> <silent> <Up>   gk
-    noremap  <buffer> <silent> <Down> gj
-    noremap  <buffer> <silent> <Home> g<Home>
-    noremap  <buffer> <silent> <End>  g<End>
-    inoremap <buffer> <silent> <Up>   <C-o>gk
-    inoremap <buffer> <silent> <Down> <C-o>gj
-    inoremap <buffer> <silent> <Home> <C-o>g<Home>
-    inoremap <buffer> <silent> <End>  <C-o>g<End>
-  endif
-endfunction
+"function ToggleWrap()
+"  if &wrap
+"    echo "Wrap OFF"
+"    setlocal nowrap
+"    set virtualedit=all
+"    silent! nunmap <buffer> <Up>
+"    silent! nunmap <buffer> <Down>
+"    silent! nunmap <buffer> <Home>
+"    silent! nunmap <buffer> <End>
+"    silent! iunmap <buffer> <Up>
+"    silent! iunmap <buffer> <Down>
+"    silent! iunmap <buffer> <Home>
+"    silent! iunmap <buffer> <End>
+"  else
+"    echo "Wrap ON"
+"    setlocal wrap linebreak nolist
+"    set virtualedit=
+"    setlocal display+=lastline
+"    noremap  <buffer> <silent> <Up>   gk
+"    noremap  <buffer> <silent> <Down> gj
+"    noremap  <buffer> <silent> <Home> g<Home>
+"    noremap  <buffer> <silent> <End>  g<End>
+"    inoremap <buffer> <silent> <Up>   <C-o>gk
+"    inoremap <buffer> <silent> <Down> <C-o>gj
+"    inoremap <buffer> <silent> <Home> <C-o>g<Home>
+"    inoremap <buffer> <silent> <End>  <C-o>g<End>
+"  endif
+"endfunction
 " }}}
 
-" Nerdcommenter {{{
+" React {{{
+let g:jsx_ext_required = 0
 " }}}
  
+" Autocmd {{{
+" disbale format comments options
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" }}}
+
+" Rainbow Parenthese {{{
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces 
+"}}}
 
 " vim:foldmethod=marker:foldlevel=0
 
