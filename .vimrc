@@ -101,9 +101,8 @@ set timeoutlen=300
 "paste
 "set paste
 "set nopaste
-" autocomplete words with spell check
+"autocomplete words with spell check
 "set complete+=kspell
-
 " }}}
 
 " Custome Leader and Keys {{{
@@ -126,6 +125,10 @@ nnoremap <leader>pi :PluginInstall<CR>
 nnoremap <leader><leader> <c-w>w
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
+" conflicted <leader>h, overwrite GitGutter default
+nmap <Leader>av <Plug>GitGutterPreviewHunk
+nmap <Leader>au <Plug>GitGutterRevertHunk
+nmap <Leader>aa <Plug>GitGutterStageHunk
 " }}}
 
 " Colors, Scheme, Coding and Fonts {{{
@@ -203,20 +206,22 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 " }}}
 
 " Syntastic {{{
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+" custom language checker
 let g:syntastic_javascript_checkers = ['eslint','jshint2']
-"let g:syntastic_html_tidy_exec = 'tidy5'
-
+let g:syntastic_html_tidy_exec = 'tidy5'
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_quiet_messages = { "type": "style" }
 let jshint2_read = 1
 let jshint2_save = 1
-"autocmd BufWritePost *.js silent :JSHint
+autocmd BufWritePost *.js silent :jshint2
 " }}}
 
 " Snippets {{{
