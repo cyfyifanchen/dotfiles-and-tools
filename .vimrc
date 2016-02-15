@@ -6,7 +6,6 @@ call vundle#begin()
 Plugin 'vundlevim/vundle.vim'
 Plugin 'mhinz/vim-startify'
 Plugin 'tpope/vim-fugitive'
-"Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
@@ -15,12 +14,10 @@ Plugin 'gioele/vim-autoswap'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
-"Plugin 'vim-scripts/html-autoclosetag'
 Plugin 'scrooloose/syntastic'
 Plugin 'eslint/eslint'
 Plugin 'shutnik/jshint2.vim'
 Plugin 'tpope/vim-surround'
-"Plugin 'yggdroot/indentline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mustache/vim-mustache-handlebars'
@@ -31,9 +28,10 @@ Plugin 'gregsexton/MatchTag'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'mxw/vim-jsx'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'mxw/vim-jsx'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'othree/html5.vim'
 call vundle#end()
@@ -159,27 +157,27 @@ if !exists('g:airline_symbols')
 endif
 
 " unicode symbols
-"let g:airline_left_sep = '»'
-"let g:airline_left_sep = '▶'
-"let g:airline_right_sep = '«'
-"let g:airline_right_sep = '◀'
-"let g:airline_symbols.linenr = '␊'
-"let g:airline_symbols.linenr = '␤'
-"let g:airline_symbols.linenr = '¶'
-"let g:airline_symbols.branch = '⎇'
-"let g:airline_symbols.paste = 'ρ'
-"let g:airline_symbols.paste = 'Þ'
-"let g:airline_symbols.paste = '∥'
-"let g:airline_symbols.whitespace = 'Ξ'
-"
-"" airline symbols
-"let g:airline_left_sep = ''
-"let g:airline_left_alt_sep = ''
-"let g:airline_right_sep = ''
-"let g:airline_right_alt_sep = ''
-"let g:airline_symbols.branch = ''
-"let g:airline_symbols.readonly = ''
-"let g:airline_symbols.linenr = ''
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 " }}}
 
 " Startify {{{
@@ -189,6 +187,17 @@ let g:startify_bookmarks = [
             \ { 'z': '~/.zshrc' },
             \ ]
 
+let g:startify_custom_header = [		
+       \ '                                ',		
+       \ '            __                  ',		
+       \ '    __  __ /\_\    ___ ___      ',		
+       \ '   /\ \/\ \\/\ \ /'' __` __`\   ',		
+       \ '   \ \ \_/ |\ \ \/\ \/\ \/\ \   ',		
+       \ '    \ \___/  \ \_\ \_\ \_\ \_\  ',		
+       \ '     \/__/    \/_/\/_/\/_/\/_/  ',		
+       \ '',		
+       \ '',		
+       \ ]
 " }}}
 
 " CtrlP {{{
@@ -209,19 +218,17 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " custom language checker
-let g:syntastic_javascript_checkers = ['eslint','jshint2']
+"let g:syntastic_javascript_checkers = ['eslint','jshint2']
 let g:syntastic_html_tidy_exec = 'tidy5'
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_quiet_messages = { "type": "style" }
-let jshint2_read = 1
-let jshint2_save = 1
-autocmd BufWritePost *.js silent :jshint2
+"let g:syntastic_aggregate_errors = 1
+"let g:syntastic_quiet_messages = { "type": "style" }
+"let jshint2_read = 1
+"let jshint2_save = 1
 " }}}
 
 " Snippets {{{
@@ -247,40 +254,11 @@ iabbrev functon function
 iabbrev funtion function
 iabbrev funciont function
 iabbrev consloe console
+iabbrev tempalte template
+iabbrev fitler filter
 " }}}
 
-" Togglewrap {{{
-"function ToggleWrap()
-"  if &wrap
-"    echo "Wrap OFF"
-"    setlocal nowrap
-"    set virtualedit=all
-"    silent! nunmap <buffer> <Up>
-"    silent! nunmap <buffer> <Down>
-"    silent! nunmap <buffer> <Home>
-"    silent! nunmap <buffer> <End>
-"    silent! iunmap <buffer> <Up>
-"    silent! iunmap <buffer> <Down>
-"    silent! iunmap <buffer> <Home>
-"    silent! iunmap <buffer> <End>
-"  else
-"    echo "Wrap ON"
-"    setlocal wrap linebreak nolist
-"    set virtualedit=
-"    setlocal display+=lastline
-"    noremap  <buffer> <silent> <Up>   gk
-"    noremap  <buffer> <silent> <Down> gj
-"    noremap  <buffer> <silent> <Home> g<Home>
-"    noremap  <buffer> <silent> <End>  g<End>
-"    inoremap <buffer> <silent> <Up>   <C-o>gk
-"    inoremap <buffer> <silent> <Down> <C-o>gj
-"    inoremap <buffer> <silent> <Home> <C-o>g<Home>
-"    inoremap <buffer> <silent> <End>  <C-o>g<End>
-"  endif
-"endfunction
-" }}}
-
-" React {{{
+" React and JSX {{{
 let g:jsx_ext_required = 0
 " }}}
  
@@ -313,7 +291,10 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces 
+"let g:rbpt_max = 15
+"let g:bold_parenttheses = 1
 "}}}
+
 
 " vim:foldmethod=marker:foldlevel=0
 
