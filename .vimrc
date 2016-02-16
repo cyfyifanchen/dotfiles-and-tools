@@ -121,13 +121,17 @@ nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>pi :PluginInstall<CR>
 nnoremap <leader><leader> <c-w>w
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 " conflicted <leader>h, overwrite GitGutter default
 nmap <Leader>av <Plug>GitGutterPreviewHunk
 nmap <Leader>au <Plug>GitGutterRevertHunk
 nmap <Leader>aa <Plug>GitGutterStageHunk
-" }}}
+"}}}
 
 " Colors, Scheme, Coding and Fonts {{{
 syntax enable
@@ -222,13 +226,11 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-" custom language checker
-"let g:syntastic_javascript_checkers = ['eslint','jshint2']
 let g:syntastic_html_tidy_exec = 'tidy5'
-"let g:syntastic_aggregate_errors = 1
-"let g:syntastic_quiet_messages = { "type": "style" }
-"let jshint2_read = 1
-"let jshint2_save = 1
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_quiet_messages = { "type": "style" }
+let jshint2_read = 1
+let jshint2_save = 1
 " }}}
 
 " Snippets {{{
