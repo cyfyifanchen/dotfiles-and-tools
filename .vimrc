@@ -9,6 +9,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
+Plugin '29decibel/codeschool-vim-theme'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'gioele/vim-autoswap'
 Plugin 'jiangmiao/auto-pairs'
@@ -114,6 +115,9 @@ nmap <leader>h :bprevious<cr>
 nmap <leader>p :CtrlP ~/docs/<cr>
 nmap <Leader>g :Gstatus<cr>
 nmap <leader>bd :bd<cr>
+"map <leader>p "*p
+"map <leader>P "*P
+"map <leader>y "*y
 inoremap jj <ESC>
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>et :vsp ~/.tmux.conf<CR>
