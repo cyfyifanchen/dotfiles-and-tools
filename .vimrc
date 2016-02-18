@@ -195,6 +195,9 @@ let g:startify_bookmarks = [
             \ { 'z': '~/.zshrc' },
             \ ]
 
+let g:startify_custom_header =
+          \ map(split(system('tips | cowsay -f apt'), '\n'), '"   ". v:val') + ['']
+
 let g:startify_custom_header = [		
        \ '                                ',		
        \ '            __                  ',		
@@ -206,6 +209,11 @@ let g:startify_custom_header = [
        \ '',		
        \ '',		
        \ ]
+
+" disable nerdtree and ctlrp split
+autocmd User Startified setlocal buftype=
+let g:ctrlp_reuse_window = 'startify'
+
 " }}}
 
 " CtrlP {{{
@@ -215,7 +223,7 @@ let g:ctrlp_custom_ignore = {
 \}
 " search the nearest ancestor that contains .git, .hg, .svn
 let g:ctrlp_working_path_mode = 2
-
+ 
 " }}}
 
 " Emmet {{{
