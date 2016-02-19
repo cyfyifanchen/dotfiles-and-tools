@@ -196,23 +196,15 @@ let g:startify_bookmarks = [
             \ ]
 
 let g:startify_custom_header =
-          \ map(split(system('tips | cowsay -f apt'), '\n'), '"   ". v:val') + ['']
+          \ map(split(system('fortune | cowsay'), '\n'), '"   ". v:val') + ['']
 
-let g:startify_custom_header = [		
-       \ '                                ',		
-       \ '            __                  ',		
-       \ '    __  __ /\_\    ___ ___      ',		
-       \ '   /\ \/\ \\/\ \ /'' __` __`\   ',		
-       \ '   \ \ \_/ |\ \ \/\ \/\ \/\ \   ',		
-       \ '    \ \___/  \ \_\ \_\ \_\ \_\  ',		
-       \ '     \/__/    \/_/\/_/\/_/\/_/  ',		
-       \ '',		
-       \ '',		
-       \ ]
+hi StartifyHeader  ctermfg=114
 
 " disable nerdtree and ctlrp split
 autocmd User Startified setlocal buftype=
 let g:ctrlp_reuse_window = 'startify'
+
+"let g:startify_custom_header = s:filter_header(['a', 'bb', 'ccc'])
 " }}}
 
 " CtrlP {{{
