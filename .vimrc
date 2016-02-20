@@ -115,6 +115,8 @@ nmap <leader>h :bprevious<cr>
 nmap <leader>p :CtrlP ~/docs/<cr>
 nmap <Leader>g :Gstatus<cr>
 nmap <leader>bd :bd<cr>
+nmap <leader>o o<ESC><cr>
+nmap <leader>O O<ESC><cr>
 "map <leader>p "*p
 "map <leader>P "*P
 "map <leader>y "*y
