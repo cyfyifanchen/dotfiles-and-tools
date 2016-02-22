@@ -35,6 +35,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'othree/html5.vim'
+Plugin 'tpope/vim-repeat'
 Plugin 'svermeulen/vim-easyclip'
 call vundle#end()
 filetype plugin indent on
