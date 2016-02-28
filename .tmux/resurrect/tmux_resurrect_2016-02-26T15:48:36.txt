@@ -1,0 +1,15 @@
+pane	0	1	:zsh	1	:*	1	:/Users/ychen	1	zsh	:
+pane	school	1	:zsh	1	:*	1	:/Users/ychen/Docs/dotfiles	1	zsh	:
+pane	test	1	:zsh	1	:*	1	:/Users/ychen/Docs/dotfiles	0	zsh	:
+pane	test	1	:zsh	1	:*	2	:/Users/ychen/Docs/dotfiles	1	zsh	:
+pane	work	1	:edit	0	:-	1	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp	0	zsh	:
+pane	work	1	:edit	0	:-	2	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp/assets/src	1	zsh	:
+pane	work	2	:server	1	:*M	1	:/Users/ychen	0	zsh	:
+pane	work	2	:server	1	:*M	2	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp	1	zsh	:
+pane	work	2	:server	1	:*M	3	:/Users/ychen/Docs/cars/carsBackend/CarsSearch/CarsSearch-webapp	0	zsh	:
+window	0	1	1	:*	d21d,260x78,0,0,0
+window	school	1	1	:*	d21e,260x78,0,0,1
+window	test	1	1	:*	d559,260x78,0,0{167x78,0,0,2,92x78,168,0,3}
+window	work	1	0	:-	de4e,260x78,0,0{187x78,0,0,4,72x78,188,0,5}
+window	work	2	1	:*M	65c7,260x78,0,0{81x78,0,0,6,86x78,82,0,7,91x78,169,0,8}
+state	work	school
