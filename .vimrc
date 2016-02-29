@@ -119,9 +119,6 @@ nmap <Leader>g :Gstatus<cr>
 nmap <leader>bd :bd<cr>
 nmap <leader>o o<ESC><cr>
 nmap <leader>O O<ESC><cr>
-"map <leader>p "*p
-"map <leader>P "*P
-"map <leader>y "*y
 inoremap jj <ESC>
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>et :vsp ~/.tmux.conf<CR>
@@ -135,10 +132,17 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
+nnoremap <Left> <NOP>
+nnoremap <Right> <NOP>
+nnoremap <Up> <NOP>
+nnoremap <Down> <NOP>
 " conflicted <leader>h, overwrite GitGutter default
 nmap <Leader>av <Plug>GitGutterPreviewHunk
 nmap <Leader>au <Plug>GitGutterRevertHunk
 nmap <Leader>aa <Plug>GitGutterStageHunk
+"map <leader>p "*p
+"map <leader>P "*P
+"map <leader>y "*y
 "}}}
 
 " Colors, Scheme, Coding and Fonts {{{
