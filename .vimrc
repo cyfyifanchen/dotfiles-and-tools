@@ -1,45 +1,41 @@
-" Plugins {{{
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/vundle.vim
-call vundle#begin()
-Plugin 'vundlevim/vundle.vim'
-Plugin 'mhinz/vim-startify'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'flazz/vim-colorschemes'
-Plugin '29decibel/codeschool-vim-theme'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'gioele/vim-autoswap'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'scrooloose/nerdtree'
-Plugin 'mattn/emmet-vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'eslint/eslint'
-Plugin 'shutnik/jshint2.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'SirVer/ultisnips'
-Plugin 'ervandew/supertab'
-Plugin 'gregsexton/MatchTag'
-Plugin 'junegunn/vim-easy-align'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'mxw/vim-jsx'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'othree/html5.vim'
-Plugin 'tpope/vim-repeat'
-Plugin 'svermeulen/vim-easyclip'
-call vundle#end()
-filetype plugin indent on
-" }}}
+" Custome Leader and Keys {{{
+let mapleader = " "
+let g:mapleader = " "
+nmap <leader>nt :NERDTree<cr>
+nmap <leader>w :w!<cr>
+nmap <leader>q :q!<cr>
+nmap <leader>l :bnext<cr>
+nmap <leader>h :bprevious<cr>
+nmap <leader>p :CtrlP ~/docs/<cr>
+nmap <Leader>g :Gstatus<cr>
+nmap <leader>bd :bd<cr>
+nmap <leader>o o<ESC><cr>
+nmap <leader>O O<ESC><cr>
+inoremap jj <ESC>
+nnoremap <leader>ev :vsp $MYVIMRC<CR>
+nnoremap <leader>et :vsp ~/.tmux.conf<CR>
+nnoremap <leader>ez :vsp ~/.zshrc<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <leader>pi :PluginInstall<CR>
+nnoremap <leader><leader> <c-w>w
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+nnoremap <Left> <NOP>
+nnoremap <Right> <NOP>
+nnoremap <Up> <NOP>
+nnoremap <Down> <NOP>
+" conflicted <leader>h, overwrite GitGutter default
+nmap <Leader>av <Plug>GitGutterPreviewHunk
+nmap <Leader>au <Plug>GitGutterRevertHunk
+nmap <Leader>aa <Plug>GitGutterStageHunk
+"map <leader>p "*p
+"map <leader>P "*P
+"map <leader>y "*y
+"}}}
 
 " General Settings {{{
 set ruler
@@ -106,44 +102,48 @@ set timeoutlen=300
 "set complete+=kspell
 " }}}
 
-" Custome Leader and Keys {{{
-let mapleader = " "
-let g:mapleader = " "
-nmap <leader>nt :NERDTree<cr>
-nmap <leader>w :w!<cr>
-nmap <leader>q :q!<cr>
-nmap <leader>l :bnext<cr>
-nmap <leader>h :bprevious<cr>
-nmap <leader>p :CtrlP ~/docs/<cr>
-nmap <Leader>g :Gstatus<cr>
-nmap <leader>bd :bd<cr>
-nmap <leader>o o<ESC><cr>
-nmap <leader>O O<ESC><cr>
-inoremap jj <ESC>
-nnoremap <leader>ev :vsp $MYVIMRC<CR>
-nnoremap <leader>et :vsp ~/.tmux.conf<CR>
-nnoremap <leader>ez :vsp ~/.zshrc<CR>
-nnoremap <leader>sv :source $MYVIMRC<CR>
-nnoremap <leader>pi :PluginInstall<CR>
-nnoremap <leader><leader> <c-w>w
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-nnoremap <C-e> 3<C-e>
-nnoremap <C-y> 3<C-y>
-nnoremap <Left> <NOP>
-nnoremap <Right> <NOP>
-nnoremap <Up> <NOP>
-nnoremap <Down> <NOP>
-" conflicted <leader>h, overwrite GitGutter default
-nmap <Leader>av <Plug>GitGutterPreviewHunk
-nmap <Leader>au <Plug>GitGutterRevertHunk
-nmap <Leader>aa <Plug>GitGutterStageHunk
-"map <leader>p "*p
-"map <leader>P "*P
-"map <leader>y "*y
-"}}}
+" Plugins {{{
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle.vim
+call vundle#begin()
+Plugin 'vundlevim/vundle.vim'
+Plugin 'mhinz/vim-startify'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'flazz/vim-colorschemes'
+Plugin '29decibel/codeschool-vim-theme'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'gioele/vim-autoswap'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'scrooloose/nerdtree'
+Plugin 'mattn/emmet-vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'eslint/eslint'
+Plugin 'shutnik/jshint2.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'SirVer/ultisnips'
+Plugin 'ervandew/supertab'
+Plugin 'gregsexton/MatchTag'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'mxw/vim-jsx'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'othree/html5.vim'
+Plugin 'tpope/vim-repeat'
+Plugin 'svermeulen/vim-easyclip'
+call vundle#end()
+filetype plugin indent on
+" }}}
 
 " Colors, Scheme, Coding and Fonts {{{
 syntax enable
