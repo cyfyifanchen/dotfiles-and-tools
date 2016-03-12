@@ -30,6 +30,7 @@ nnoremap <Left> <NOP>
 nnoremap <Right> <NOP>
 nnoremap <Up> <NOP>
 nnoremap <Down> <NOP>
+nnoremap Q <Nop>
 " conflicted <leader>h, overwrite GitGutter default
 nmap <Leader>av <Plug>GitGutterPreviewHunk
 nmap <Leader>au <Plug>GitGutterRevertHunk
@@ -97,11 +98,10 @@ set wildignore+=*.a,*.0
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.mov,*.pdf,*.psd,*.ai
 set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
 set timeoutlen=300
+setlocal spell spelllang=en_us
 "paste
 "set paste
 "set nopaste
-"autocomplete words with spell check
-"set complete+=kspell
 " }}}
 
 " Plugins {{{
@@ -310,6 +310,10 @@ au Syntax * RainbowParenthesesLoadBraces
 "let g:bold_parenttheses = 1
 "}}}
 
+" Markdown {{{
+let g:vim_markdown_folding_disabled = 1 
+let g:vim_markdown_no_default_key_mappings = 1
+"}}}
 
 " vim:foldmethod=marker:foldlevel=0
 
