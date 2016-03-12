@@ -11,6 +11,8 @@ nmap <Leader>g :Gstatus<cr>
 nmap <leader>bd :bd<cr>
 nmap <leader>o o<ESC><cr>
 nmap <leader>O O<ESC><cr>
+nmap <leader>vl :vertical resize +10<cr>
+nmap <leader>vr :vertical resize -10<cr>
 inoremap jj <ESC>
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>et :vsp ~/.tmux.conf<CR>
