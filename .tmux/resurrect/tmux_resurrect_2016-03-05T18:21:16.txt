@@ -1,0 +1,8 @@
+pane	work	1	:vim	1	:*	1	:/Users/ychen	1	zsh	:
+pane	work	1	:vim	1	:*	2	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp/assets/src	0	zsh	:
+pane	work	2	:server	0	:-	1	:/Users/ychen	0	zsh	:
+pane	work	2	:server	0	:-	2	:/Users/ychen	0	zsh	:
+pane	work	2	:server	0	:-	3	:/Users/ychen	1	zsh	:
+window	work	1	1	:*	47ed,260x78,0,0{175x78,0,0,0,84x78,176,0,2}
+window	work	2	0	:-	efa4,260x78,0,0{70x78,0,0,1,99x78,71,0,3,89x78,171,0,4}
+state	work	
