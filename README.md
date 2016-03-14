@@ -6,7 +6,7 @@ Zsh Theme: [bullet train](https://github.com/caiogondim/bullet-train-oh-my-zsh-t
 
 Tmux Theme: [Maglev](https://github.com/caiogondim/maglev)
 
-Font: [Hacker](http://sourcefoundry.org/hack/)
+Font: [Hack](http://sourcefoundry.org/hack/)
 
 Vim Theme: [Tomrrow-Night](https://github.com/chriskempson/tomorrow-theme)
 
