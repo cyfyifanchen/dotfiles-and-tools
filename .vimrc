@@ -35,9 +35,6 @@ nnoremap Q <Nop>
 nmap <Leader>av <Plug>GitGutterPreviewHunk
 nmap <Leader>au <Plug>GitGutterRevertHunk
 nmap <Leader>aa <Plug>GitGutterStageHunk
-"map <leader>p "*p
-"map <leader>P "*P
-"map <leader>y "*y
 "}}}
 
 " General Settings {{{
@@ -52,26 +49,17 @@ set autoindent
 set smartindent
 set wrap
 set clipboard=unnamed
-" don't redraw while executing macros (good performance config)
 set lazyredraw
-" for regular expressions turn magic on
 set magic
-" show matching brackets when text indicator is over them
 set showmatch
-" how many tenths of a second to blink when matching brackets
 set mat=1
-" show command in bottom bar
 set showcmd
-" no annoying sound on errors
 set noerrorbells
 set novisualbell
 set t_vb=
 set tm=500
-" margin
 set foldcolumn=0
-" cmd bar height
 set cmdheight=1
-" dir and history
 set directory=~/.vim/tmp//
 set backupdir=~/.vim/tmp//
 set history=1000
@@ -79,29 +67,20 @@ set undolevels=1000
 set undoreload=10000
 set undofile
 set undodir=~/.vim/tmp/undo/
-" turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
 set nowb
 set noswapfile
-" use spaces instead of tabs
 set expandtab
-" Be smart when using tabs ;)
 set smarttab
-" 1 tab == 4 spaces
 set shiftwidth=2
 set tabstop=2
-" linebreak on 500 characters
 set lbr
 set tw=500
-" file ignore
 set wildignore+=*.a,*.0
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.mov,*.pdf,*.psd,*.ai
 set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
 set timeoutlen=300
 setlocal spell spelllang=en_us
-"paste
-"set paste
-"set nopaste
 " }}}
 
 " Plugins {{{
@@ -223,6 +202,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.(git|hg|node_modules|svn)|\_site)$',
   \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
 \}
+
 " search the nearest ancestor that contains .git, .hg, .svn
 let g:ctrlp_working_path_mode = 2
 " }}}
