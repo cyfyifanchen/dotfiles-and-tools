@@ -1,4 +1,4 @@
-# dotfilee
+# Zsh + Tmux + Vim
 
 Here are my settings of iterm, zsh, vim and tmux:
 
