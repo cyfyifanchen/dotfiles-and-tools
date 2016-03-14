@@ -10,9 +10,9 @@ Font: [Hacker](http://sourcefoundry.org/hack/)
 
 Vim Theme: [Tomrrow-Night](https://github.com/chriskempson/tomorrow-theme)
 
-![image](https://github.com/yifanchen/dotfiles/blob/master/vim1.png "my zsh + tmux + vim")
-
-
 # Vim 配置
 
 以上是我vim, tmux和zsh 的基本设置，个人非常喜欢vim， 希望有更多朋友来用。
+
+![image](https://github.com/yifanchen/dotfiles/blob/master/vim1.png "my zsh + tmux + vim")
+
