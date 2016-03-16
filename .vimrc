@@ -241,6 +241,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " Abbreviations {{{
 iabbrev teh the
+iabbrev aray array
 iabbrev seperate separate
 iabbrev fuction function
 iabbrev fucntion function
@@ -248,6 +249,7 @@ iabbrev fnction function
 iabbrev functon function
 iabbrev funtion function
 iabbrev funciont function
+iabbrev fnuction function
 iabbrev consloe console
 iabbrev tempalte template
 iabbrev fitler filter
