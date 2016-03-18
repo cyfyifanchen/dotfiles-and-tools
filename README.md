@@ -12,7 +12,7 @@ Vim Theme: [Tomrrow-Night](https://github.com/chriskempson/tomorrow-theme)
 
 # Vim 配置
 
-以上是我vim, tmux和zsh 的基本设置，个人非常喜欢vim， 希望有更多朋友来用。
+上面是我vim, tmux和zsh的配置，下图是样子。
 
 ![image](https://github.com/yifanchen/dotfiles/blob/master/vim.jpg "my zsh + tmux + vim")
 
