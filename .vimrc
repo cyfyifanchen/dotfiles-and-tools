@@ -7,7 +7,8 @@ nmap <leader>q :q!<cr>
 nmap <leader>l :bnext<cr>
 nmap <leader>h :bprevious<cr>
 nmap <leader>p :CtrlP ~/docs/<cr>
-nmap <Leader>g :Gstatus<cr>
+nmap <leader>g :Gstatus<cr>
+nmap <leader>gc :Gcommit<cr>
 nmap <leader>bd :bd<cr>
 nmap <leader>o o<ESC><cr>
 nmap <leader>O O<ESC><cr>
