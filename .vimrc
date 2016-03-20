@@ -13,7 +13,9 @@ nmap <leader>bd :bd<cr>
 nmap <leader>o o<ESC><cr>
 nmap <leader>O O<ESC><cr>
 nmap <leader>vl :vertical resize +10<cr>
-nmap <leader>vr :vertical resize -10<cr>
+nmap <leader>vh :vertical resize -10<cr>
+nmap <leader>vj :res +10<cr>
+nmap <leader>vk :res -10<cr>
 inoremap jj <ESC>
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>et :vsp ~/.tmux.conf<CR>
@@ -81,7 +83,7 @@ set wildignore+=*.a,*.0
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.mov,*.pdf,*.psd,*.ai
 set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
 set timeoutlen=300
-setlocal spell spelllang=en_us
+"setlocal spell spelllang=en_us
 " }}}
 
 " Plugins {{{
