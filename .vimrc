@@ -17,7 +17,7 @@ nmap <leader>vh :vertical resize -10<cr>
 nmap <leader>vj :res +10<cr>
 nmap <leader>vk :res -10<cr>
 nmap <leader>sp :setlocal spell spelllang=en_us<cr> 
-nmap <leader>sp :setlocal spell! spelllang=en_us<cr> 
+nmap <leader>sp :setlocal spell!<cr> 
 inoremap jj <ESC>
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>et :vsp ~/.tmux.conf<CR>
