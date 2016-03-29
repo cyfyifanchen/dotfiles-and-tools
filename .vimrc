@@ -9,7 +9,7 @@ nmap <leader>h :bprevious<cr>
 nmap <leader>p :CtrlP ~/docs/<cr>
 nmap <leader>g :Gstatus<cr>
 nmap <leader>gc :Gcommit<cr>
-nmap <leader>bd :bd<cr>
+nmap <leader>d :bd<cr>
 nmap <leader>o o<ESC><cr>
 nmap <leader>O O<ESC><cr>
 nmap <leader>vl :vertical resize +10<cr>
@@ -300,6 +300,7 @@ au Syntax * RainbowParenthesesLoadBraces
 " Markdown {{{
 let g:vim_markdown_folding_disabled = 1 
 let g:vim_markdown_no_default_key_mappings = 1
+let g:instant_markdown_autostart = 0
 "}}}
 
 " vim:foldmethod=marker:foldlevel=0
