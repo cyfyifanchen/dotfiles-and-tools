@@ -1,6 +1,8 @@
 " Custome Leader and Keys {{{
 let mapleader = " "
 let g:mapleader = " "
+nmap j gj
+nmap k gk
 nmap <leader>nt :NERDTree<cr>
 nmap <leader>w :w!<cr>
 nmap <leader>q :q!<cr>
@@ -85,7 +87,8 @@ set wildignore+=*.a,*.0
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.mov,*.pdf,*.psd,*.ai
 set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
 set timeoutlen=300
-"setlocal spell spelllang=en_us
+" automatic text wrap
+" set fo=tcrwa textwidth=80
 " }}}
 
 " Plugins {{{
