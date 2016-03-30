@@ -38,6 +38,7 @@ nnoremap <Right> <NOP>
 nnoremap <Up> <NOP>
 nnoremap <Down> <NOP>
 nnoremap Q <Nop>
+nnoremap qq <Nop>
 " conflicted <leader>h, overwrite GitGutter default
 nmap <Leader>av <Plug>GitGutterPreviewHunk
 nmap <Leader>au <Plug>GitGutterRevertHunk
