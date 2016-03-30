@@ -132,6 +132,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'othree/html5.vim'
 Plugin 'tpope/vim-repeat'
 Plugin 'svermeulen/vim-easyclip'
+Plugin 'vim-scripts/Rename'
 call vundle#end()
 filetype plugin indent on
 " }}}
