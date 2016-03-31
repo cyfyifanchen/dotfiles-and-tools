@@ -26,7 +26,8 @@ nnoremap <leader>et :vsp ~/.tmux.conf<CR>
 nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>pi :PluginInstall<CR>
-nnoremap <leader><leader> <c-w>w
+"nnoremap <leader><leader> <c-w>w
+nnoremap <leader><leader> <c-^>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
