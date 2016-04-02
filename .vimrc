@@ -39,7 +39,7 @@ nnoremap <Right> <NOP>
 nnoremap <Up> <NOP>
 nnoremap <Down> <NOP>
 nnoremap Q <Nop>
-nnoremap qq <Nop>
+nnoremap q <Nop>
 " conflicted <leader>h, overwrite GitGutter default
 nmap <Leader>av <Plug>GitGutterPreviewHunk
 nmap <Leader>au <Plug>GitGutterRevertHunk
@@ -252,6 +252,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " Abbreviations {{{
 iabbrev teh the
+iabbrev waht what
 iabbrev aray array
 iabbrev seperate separate
 iabbrev fuction function
@@ -264,6 +265,7 @@ iabbrev fnuction function
 iabbrev consloe console
 iabbrev tempalte template
 iabbrev fitler filter
+iabbrev fonrt font
 " }}}
 
 " React and JSX {{{
