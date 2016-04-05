@@ -26,6 +26,7 @@ nnoremap <leader>et :vsp ~/.tmux.conf<CR>
 nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>pi :PluginInstall<CR>
+nnoremap <leader>u :GundoToggle<CR>
 "nnoremap <leader><leader> <c-w>w
 nnoremap <leader><leader> <c-^>
 nnoremap <C-J> <C-W><C-J>
@@ -133,6 +134,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'othree/html5.vim'
 Plugin 'tpope/vim-repeat'
 Plugin 'svermeulen/vim-easyclip'
+Plugin 'sjl/gundo.vim'
 Plugin 'vim-scripts/Rename'
 call vundle#end()
 filetype plugin indent on
@@ -311,5 +313,10 @@ let g:vim_markdown_no_default_key_mappings = 1
 let g:instant_markdown_autostart = 0
 "}}}
 
+" Gundo {{{
+let g:gundo_width = 60
+let g:gundo_preview_height = 40
+let g:gundo_right = 1
+" }}}
 " vim:foldmethod=marker:foldlevel=0
 
