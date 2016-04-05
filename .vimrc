@@ -318,5 +318,7 @@ let g:gundo_width = 60
 let g:gundo_preview_height = 40
 let g:gundo_right = 1
 " }}}
+
+
 " vim:foldmethod=marker:foldlevel=0
 
