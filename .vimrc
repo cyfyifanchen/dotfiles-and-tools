@@ -22,7 +22,7 @@ nmap <leader>sp :setlocal spell spelllang=en_us<cr>
 nmap <leader>sp :setlocal spell!<cr>
 " remove extra whitespace
 nmap <leader>ew :%s/\s\+$<cr>
-" wipout buffer
+" kill buffer, same as :bd
 "nmap <silent><leader>b :bw<cr>
 inoremap jj <ESC>
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
