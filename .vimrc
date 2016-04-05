@@ -18,8 +18,12 @@ nmap <leader>vl :vertical resize +10<cr>
 nmap <leader>vh :vertical resize -10<cr>
 nmap <leader>vj :res +10<cr>
 nmap <leader>vk :res -10<cr>
-nmap <leader>sp :setlocal spell spelllang=en_us<cr> 
-nmap <leader>sp :setlocal spell!<cr> 
+nmap <leader>sp :setlocal spell spelllang=en_us<cr>
+nmap <leader>sp :setlocal spell!<cr>
+" remove extra whitespace
+nmap <leader>ew :%s/\s\+$<cr>
+" wipout buffer
+"nmap <silent><leader>b :bw<cr>
 inoremap jj <ESC>
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>et :vsp ~/.tmux.conf<CR>
@@ -228,15 +232,16 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_html_tidy_exec = 'tidy5'
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_quiet_messages = { "type": "style" }
-let jshint2_read = 1
-let jshint2_save = 1
+let g:syntastic_javascript_checkers = ['jscs']
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_html_tidy_exec = 'tidy5'
+"let g:syntastic_aggregate_errors = 1
+"let g:syntastic_quiet_messages = { "type": "style" }
+"let jshint2_read = 1
+"let jshint2_save = 1
 " }}}
 
 " Snippets {{{
@@ -273,7 +278,7 @@ iabbrev fonrt font
 " React and JSX {{{
 let g:jsx_ext_required = 0
 " }}}
- 
+
 " Autocmd {{{
 " disbale format comments options
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
