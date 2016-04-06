@@ -232,16 +232,22 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
 let g:syntastic_javascript_checkers = ['jscs']
 let g:syntastic_html_tidy_exec = 'tidy5'
 let jshint2_read = 1
+let jshint2_save = 1
+let g:syntastic_check_on_open = 1
+
 "let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
-"let g:syntastic_aggregate_errors = 1
+
+"dispaly all errors for mutiple checkers
+let g:syntastic_aggregate_errors = 1
+
+"disable all style messages
 "let g:syntastic_quiet_messages = { "type": "style" }
-"let jshint2_save = 1
 " }}}
 
 " Snippets {{{
@@ -319,8 +325,8 @@ let g:instant_markdown_autostart = 0
 "}}}
 
 " Gundo {{{
-let g:gundo_width = 60
-let g:gundo_preview_height = 40
+let g:gundo_width = 80
+let g:gundo_preview_height = 60
 let g:gundo_right = 1
 " }}}
 
