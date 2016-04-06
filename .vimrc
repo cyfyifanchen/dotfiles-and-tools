@@ -20,8 +20,6 @@ nmap <leader>vj :res +10<cr>
 nmap <leader>vk :res -10<cr>
 nmap <leader>sp :setlocal spell spelllang=en_us<cr>
 nmap <leader>sp :setlocal spell!<cr>
-" remove extra whitespace
-nmap <leader>ew :%s/\s\+$<cr>
 " kill buffer, same as :bd
 "nmap <silent><leader>b :bw<cr>
 inoremap jj <ESC>
@@ -31,6 +29,8 @@ nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>pi :PluginInstall<CR>
 nnoremap <leader>u :GundoToggle<CR>
+" remove extra whitespace
+nnoremap <leader>ew :%s/\s\+$<cr>
 "nnoremap <leader><leader> <c-w>w
 nnoremap <leader><leader> <c-^>
 nnoremap <C-J> <C-W><C-J>
@@ -59,7 +59,7 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
-set autoindent 
+set autoindent
 set smartindent
 set wrap
 set clipboard=unnamed
@@ -313,13 +313,13 @@ let g:rbpt_colorpairs = [
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces 
+au Syntax * RainbowParenthesesLoadBraces
 "let g:rbpt_max = 15
 "let g:bold_parenttheses = 1
 "}}}
 
 " Markdown {{{
-let g:vim_markdown_folding_disabled = 1 
+let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_no_default_key_mappings = 1
 let g:instant_markdown_autostart = 0
 "}}}
