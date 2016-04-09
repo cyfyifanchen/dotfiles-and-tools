@@ -326,7 +326,7 @@ let g:instant_markdown_autostart = 0
 
 " Gundo {{{
 let g:gundo_width = 80
-let g:gundo_preview_height = 60
+let g:gundo_preview_height = 30
 let g:gundo_right = 1
 " }}}
 
