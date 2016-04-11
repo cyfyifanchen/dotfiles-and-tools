@@ -29,6 +29,7 @@ nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>pi :PluginInstall<CR>
 nnoremap <leader>u :GundoToggle<CR>
+"remove extra trailing sapce
 "nnoremap <leader>ew :%s/\s\+$<cr>
 "nnoremap <leader><leader> <c-w>w
 nnoremap <leader><leader> <c-^>
