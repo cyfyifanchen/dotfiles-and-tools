@@ -280,6 +280,7 @@ iabbrev consloe console
 iabbrev tempalte template
 iabbrev fitler filter
 iabbrev fonrt font
+iabbrev sytle style
 " }}}
 
 " React and JSX {{{
