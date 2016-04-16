@@ -31,7 +31,7 @@ nnoremap <leader>pi :PluginInstall<CR>
 nnoremap <leader>u :GundoToggle<CR>
 "remove extra trailing sapce
 "nnoremap <leader>ew :%s/\s\+$<cr>
-"nnoremap <leader><leader> <c-w>w
+nnoremap <leader><leader> <c-w>w
 nnoremap <leader><leader> <c-^>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -55,6 +55,7 @@ nmap <Leader>aa <Plug>GitGutterStageHunk
 "}}}
 
 " General Settings {{{
+"set cursorline
 set ruler
 set number
 set hid
@@ -72,8 +73,8 @@ set showmatch
 set mat=1
 set showcmd
 set noerrorbells
-set novisualbell
-set t_vb=
+set visualbell
+"set t_vb=
 set tm=500
 set foldcolumn=0
 set cmdheight=1
@@ -102,7 +103,7 @@ set timeoutlen=300
 " }}}
 
 " Plugins {{{
-set nocompatible
+"set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle.vim
 call vundle#begin()
@@ -118,7 +119,8 @@ Plugin 'gioele/vim-autoswap'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
+Plugin 'benekastah/neomake'
 Plugin 'eslint/eslint'
 Plugin 'shutnik/jshint2.vim'
 Plugin 'tpope/vim-surround'
@@ -158,10 +160,10 @@ set background=dark
 if has("gui_running")
     set guioptions-=T
     set guioptions-=e
-    set t_Co=256
+    "set t_Co=256
     set guitablabel=%M\ %t
 endif
-set encoding=utf8
+"set encoding=utf8
 set ffs=unix,dos,mac
 " }}}
 
@@ -232,18 +234,20 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 " }}}
 
 " Syntastic {{{
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_javascript_checkers = ['jscs']
-let g:syntastic_html_tidy_exec = 'tidy5'
-let jshint2_read = 1
-let jshint2_save = 1
-let g:syntastic_check_on_open = 1
+"let g:syntastic_javascript_checkers = ['jscs']
+"let g:syntastic_html_tidy_exec = 'tidy5'
+"let jshint2_read = 1
+"let jshint2_save = 1
+"let g:syntastic_check_on_open = 1
 
 "dispaly all errors for mutiple checkers
-let g:syntastic_aggregate_errors = 1
+"let g:syntastic_aggregate_errors = 1
+
+
 
 "let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 1
@@ -252,6 +256,19 @@ let g:syntastic_aggregate_errors = 1
 "disable all style messages
 "let g:syntastic_quiet_messages = { "type": "style" }
 " }}}
+
+" Neomake {{{
+"autocmd! BufWritePost,BufEnter * Neomake
+
+"let g:neomake_open_list = 2
+
+"let g:neomake_javascript_jshint_maker = {
+    "\ 'args': ['--verbose'],
+    "\ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
+    "\ }
+"let g:neomake_javascript_enabled_makers = ['jshint']
+
+"}}}
 
 " Snippets {{{
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -333,6 +350,10 @@ let g:gundo_width = 80
 let g:gundo_preview_height = 30
 let g:gundo_right = 1
 " }}}
+
+" You Complete Me {{{
+autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
+"}}}
 
 
 " vim:foldmethod=marker:foldlevel=0
