@@ -72,7 +72,6 @@ set lazyredraw
 set magic
 set showmatch
 set mat=1
-j kadjkfjad
 set showcmd
 set noerrorbells
 set visualbell
