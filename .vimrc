@@ -6,6 +6,7 @@ imap jj <ESC>
 
 nmap j gj
 nmap k gk
+nmap 0 ^
 nmap <leader>nt :NERDTree<cr>
 nmap <leader>w :w!<cr>
 nmap <leader>q :q!<cr>
@@ -31,25 +32,26 @@ nmap <leader>pi :PluginInstall<CR>
 nmap <leader>u :GundoToggle<CR>
 nmap <leader><leader> <c-w>w
 nmap <leader><leader> <c-^>
-nmap <C-J> <C-W><C-J>
-nmap <C-K> <C-W><C-K>
-nmap <C-L> <C-W><C-L>
-nmap <C-H> <C-W><C-H>
-nmap <C-e> 3<C-e>
-nmap <C-q> 3<C-y>
-nmap <Left> <NOP>
-nmap <Right> <NOP>
-nmap <Up> <NOP>
-nmap <Down> <NOP>
-nmap Q <Nop>
-nmap U <Nop>
-nmap J <Nop>
-nmap K <Nop>
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-e> 3<C-e>
+nnoremap <C-q> 3<C-y>
+nnoremap <Left> <NOP>
+nnoremap <Right> <NOP>
+nnoremap <Up> <NOP>
+nnoremap <Down> <NOP>
+nnoremap Q <Nop>
+nnoremap U <Nop>
+nnoremap J <Nop>
+nnoremap K <Nop>
 
 " conflicted <leader>h, overwrite GitGutter default
-nmap <Leader>av <Plug>GitGutterPreviewHunk
-nmap <Leader>au <Plug>GitGutterRevertHunk
-nmap <Leader>aa <Plug>GitGutterStageHunk
+nnoremap <Leader>av <Plug>GitGutterPreviewHunk
+nnoremap <Leader>au <Plug>GitGutterRevertHunk
+nnoremap <Leader>aa <Plug>GitGutterStageHunk
 "}}}
 
 " General Settings {{{
@@ -58,10 +60,21 @@ set ruler
 set number
 set hid
 set showcmd
-set noerrorbells
-set visualbell
 set cmdheight=1
+set showmatch
+set wrap
+set autoread
+
+" line break
+set linebreak
+set textwidth=500
+
+" blink speed
 set mat=1
+
+" proformence
+set lazyredraw
+set ttyfast
 
 " searching
 set ignorecase
@@ -72,30 +85,29 @@ set incsearch
 " indent
 set autoindent
 set smartindent
- 
-set wrap
-set lazyredraw
+
+" regex
 set magic
-set showmatch
 
 " clipboard
 set clipboard=unnamed
 
-" set t_vb=
+" errorbells
+set noerrorbells
+set visualbell
+set t_vb=
 set tm=500
-set tw=500
-set timeoutlen=300
 
 " folding
 set foldcolumn=0
-"set foldmethod=indent   
-"set foldnestmax=10      
-"set nofoldenable        
-"set foldlevel=1         
+"set foldmethod=indent
+"set foldnestmax=10
+"set nofoldenable
+"set foldlevel=1
 
-" history, undos, swaps
-set directory=~/.vim/tmp//
-set backupdir=~/.vim/tmp//
+" backups, undos, swaps
+set directory=~/.vim/tmp/
+set backupdir=~/.vim/tmp/
 set history=1000
 set undolevels=1000
 set undoreload=10000
@@ -110,12 +122,15 @@ set expandtab
 set smarttab
 set shiftwidth=2
 set tabstop=2
-set lbr
 
 " ignores
 set wildignore+=*.a,*.0
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.mov,*.pdf,*.psd,*.ai
 set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
+set wildignore=*.o,*~,*.pyc
+
+" remember info about open buffers on close
+set viminfo^=%
 " }}}
 
 " Plugins {{{
@@ -376,6 +391,27 @@ autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
 
 " {{{
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"}}}
+
+" Helpers {{{
+
+" remove trailing white sapce on save
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+autocmd BufWrite *.py :call DeleteTrailingWS()
+autocmd BufWrite *.coffee :call DeleteTrailingWS()
+
+" return to last edit position when opening files
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+" Remember info about open buffers on close
+set viminfo^=%
+
 "}}}
 
 " vim:foldmethod=marker:foldlevel=0
