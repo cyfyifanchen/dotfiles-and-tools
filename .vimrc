@@ -72,36 +72,39 @@ set lazyredraw
 set magic
 set showmatch
 set mat=1
+j kadjkfjad
 set showcmd
 set noerrorbells
 set visualbell
+set cmdheight=1
 "set t_vb=
 set tm=500
+set tw=500
 
-"folding settings
+" folding
 set foldcolumn=0
 "set foldmethod=indent   "fold based on indent
 "set foldnestmax=10      "deepest fold is 10 levels
 "set nofoldenable        "dont fold by default
 "set foldlevel=1         "this is just what i use
 
-set cmdheight=1
+" history, undos, swaps
 set directory=~/.vim/tmp//
 set backupdir=~/.vim/tmp//
 set history=1000
 set undolevels=1000
 set undoreload=10000
-set undofile
+set noundofile
 set undodir=~/.vim/tmp/undo/
 set nobackup
 set nowb
 set noswapfile
+
 set expandtab
 set smarttab
 set shiftwidth=2
 set tabstop=2
 set lbr
-set tw=500
 set wildignore+=*.a,*.0
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.mov,*.pdf,*.psd,*.ai
 set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
