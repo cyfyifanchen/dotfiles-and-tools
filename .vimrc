@@ -38,12 +38,12 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-e> 3<C-e>
-nnoremap <C-y> 3<C-y>
+nnoremap <C-q> 3<C-y>
 nnoremap <Left> <NOP>
 nnoremap <Right> <NOP>
 nnoremap <Up> <NOP>
 nnoremap <Down> <NOP>
-nnoremap q <Nop>
+"nnoremap q <Nop>
 nnoremap Q <Nop>
 nnoremap U <Nop>
 nnoremap J <Nop>
@@ -58,6 +58,7 @@ nmap <Leader>aa <Plug>GitGutterStageHunk
 "set cursorline
 set ruler
 set number
+"set relativenumber
 set hid
 set ignorecase
 set smartcase
@@ -76,7 +77,14 @@ set noerrorbells
 set visualbell
 "set t_vb=
 set tm=500
+
+"folding settings
 set foldcolumn=0
+"set foldmethod=indent   "fold based on indent
+"set foldnestmax=10      "deepest fold is 10 levels
+"set nofoldenable        "dont fold by default
+"set foldlevel=1         "this is just what i use
+
 set cmdheight=1
 set directory=~/.vim/tmp//
 set backupdir=~/.vim/tmp//
@@ -300,6 +308,8 @@ iabbrev tempalte template
 iabbrev fitler filter
 iabbrev fonrt font
 iabbrev sytle style
+iabbrev dvi dvi
+iabbrev calss class
 " }}}
 
 " React and JSX {{{
