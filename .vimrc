@@ -1,6 +1,9 @@
-" Custome Leader and Keys {{{
+" Keys {{{
 let mapleader = " "
 let g:mapleader = " "
+
+imap jj <ESC>
+
 nmap j gj
 nmap k gk
 nmap <leader>nt :NERDTree<cr>
@@ -20,34 +23,29 @@ nmap <leader>vj :res +10<cr>
 nmap <leader>vk :res -10<cr>
 nmap <leader>sp :setlocal spell spelllang=en_us<cr>
 nmap <leader>sp :setlocal spell!<cr>
-" kill buffer, same as :bd
-"nmap <silent><leader>b :bw<cr>
-inoremap jj <ESC>
-nnoremap <leader>ev :vsp $MYVIMRC<CR>
-nnoremap <leader>et :vsp ~/.tmux.conf<CR>
-nnoremap <leader>ez :vsp ~/.zshrc<CR>
-nnoremap <leader>sv :source $MYVIMRC<CR>
-nnoremap <leader>pi :PluginInstall<CR>
-nnoremap <leader>u :GundoToggle<CR>
-"remove extra trailing sapce
-"nnoremap <leader>ew :%s/\s\+$<cr>
-nnoremap <leader><leader> <c-w>w
-nnoremap <leader><leader> <c-^>
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-nnoremap <C-e> 3<C-e>
-nnoremap <C-q> 3<C-y>
-nnoremap <Left> <NOP>
-nnoremap <Right> <NOP>
-nnoremap <Up> <NOP>
-nnoremap <Down> <NOP>
-"nnoremap q <Nop>
-nnoremap Q <Nop>
-nnoremap U <Nop>
-nnoremap J <Nop>
-nnoremap K <Nop>
+nmap <leader>ev :vsp $MYVIMRC<CR>
+nmap <leader>et :vsp ~/.tmux.conf<CR>
+nmap <leader>ez :vsp ~/.zshrc<CR>
+nmap <leader>sv :source $MYVIMRC<CR>
+nmap <leader>pi :PluginInstall<CR>
+nmap <leader>u :GundoToggle<CR>
+nmap <leader><leader> <c-w>w
+nmap <leader><leader> <c-^>
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-L> <C-W><C-L>
+nmap <C-H> <C-W><C-H>
+nmap <C-e> 3<C-e>
+nmap <C-q> 3<C-y>
+nmap <Left> <NOP>
+nmap <Right> <NOP>
+nmap <Up> <NOP>
+nmap <Down> <NOP>
+nmap Q <Nop>
+nmap U <Nop>
+nmap J <Nop>
+nmap K <Nop>
+
 " conflicted <leader>h, overwrite GitGutter default
 nmap <Leader>av <Plug>GitGutterPreviewHunk
 nmap <Leader>au <Plug>GitGutterRevertHunk
@@ -55,37 +53,45 @@ nmap <Leader>aa <Plug>GitGutterStageHunk
 "}}}
 
 " General Settings {{{
-"set cursorline
+" UI
 set ruler
 set number
-"set relativenumber
 set hid
-set ignorecase
-set smartcase
-set hlsearch
-set incsearch
-set autoindent
-set smartindent
-set wrap
-set clipboard=unnamed
-set lazyredraw
-set magic
-set showmatch
-set mat=1
 set showcmd
 set noerrorbells
 set visualbell
 set cmdheight=1
-"set t_vb=
+set mat=1
+
+" searching
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+
+" indent
+set autoindent
+set smartindent
+ 
+set wrap
+set lazyredraw
+set magic
+set showmatch
+
+" clipboard
+set clipboard=unnamed
+
+" set t_vb=
 set tm=500
 set tw=500
+set timeoutlen=300
 
 " folding
 set foldcolumn=0
-"set foldmethod=indent   "fold based on indent
-"set foldnestmax=10      "deepest fold is 10 levels
-"set nofoldenable        "dont fold by default
-"set foldlevel=1         "this is just what i use
+"set foldmethod=indent   
+"set foldnestmax=10      
+"set nofoldenable        
+"set foldlevel=1         
 
 " history, undos, swaps
 set directory=~/.vim/tmp//
@@ -99,17 +105,17 @@ set nobackup
 set nowb
 set noswapfile
 
+" tabs
 set expandtab
 set smarttab
 set shiftwidth=2
 set tabstop=2
 set lbr
+
+" ignores
 set wildignore+=*.a,*.0
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.mov,*.pdf,*.psd,*.ai
 set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
-set timeoutlen=300
-" automatic text wrap
-" set fo=tcrwa textwidth=80
 " }}}
 
 " Plugins {{{
@@ -123,7 +129,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
-Plugin '29decibel/codeschool-vim-theme'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'gioele/vim-autoswap'
 Plugin 'jiangmiao/auto-pairs'
@@ -141,7 +146,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'SirVer/ultisnips'
 Plugin 'ervandew/supertab'
 Plugin 'gregsexton/MatchTag'
-Plugin 'junegunn/vim-easy-align'
+"Plugin 'junegunn/vim-easy-align'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
@@ -155,6 +160,8 @@ Plugin 'tpope/vim-repeat'
 Plugin 'svermeulen/vim-easyclip'
 Plugin 'sjl/gundo.vim'
 Plugin 'vim-scripts/Rename'
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'
 call vundle#end()
 filetype plugin indent on
 " }}}
@@ -367,6 +374,9 @@ let g:gundo_right = 1
 autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
 "}}}
 
+" {{{
+"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"}}}
 
 " vim:foldmethod=marker:foldlevel=0
 
