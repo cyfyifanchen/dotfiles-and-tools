@@ -2,11 +2,10 @@
 let mapleader = " "
 let g:mapleader = " "
 
-imap jj <ESC>
+inoremap jj <ESC>
+inoremap jk <ESC>
+inoremap kj <ESC>
 
-nmap j gj
-nmap k gk
-nmap 0 ^
 nmap <leader>nt :NERDTree<cr>
 nmap <leader>w :w!<cr>
 nmap <leader>q :q!<cr>
@@ -33,6 +32,9 @@ nmap <leader>u :GundoToggle<CR>
 nmap <leader><leader> <c-w>w
 nmap <leader><leader> <c-^>
 
+nnoremap j gj
+nnoremap k gk
+nnoremap 0 ^
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -64,6 +66,7 @@ set cmdheight=1
 set showmatch
 set wrap
 set autoread
+set wildmenu
 
 " line break
 set linebreak
