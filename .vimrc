@@ -152,7 +152,7 @@ Plugin 'gioele/vim-autoswap'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
-"Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 Plugin 'benekastah/neomake'
 Plugin 'eslint/eslint'
 Plugin 'shutnik/jshint2.vim'
@@ -269,18 +269,18 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 " }}}
 
 " Syntastic {{{
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-"let g:syntastic_javascript_checkers = ['jscs']
-"let g:syntastic_html_tidy_exec = 'tidy5'
-"let jshint2_read = 1
-"let jshint2_save = 1
-"let g:syntastic_check_on_open = 1
+let g:syntastic_javascript_checkers = ['jscs']
+let g:syntastic_html_tidy_exec = 'tidy5'
+let jshint2_read = 1
+let jshint2_save = 1
+let g:syntastic_check_on_open = 1
 
-"dispaly all errors for mutiple checkers
-"let g:syntastic_aggregate_errors = 1
+" dispaly all errors for mutiple checkers
+let g:syntastic_aggregate_errors = 1
 
 
 
@@ -293,16 +293,15 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 " }}}
 
 " Neomake {{{
-"autocmd! BufWritePost,BufEnter * Neomake
+autocmd! BufWritePost,BufEnter * Neomake
 
-"let g:neomake_open_list = 2
+let g:neomake_open_list = 2
 
-"let g:neomake_javascript_jshint_maker = {
-    "\ 'args': ['--verbose'],
-    "\ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
-    "\ }
-"let g:neomake_javascript_enabled_makers = ['jshint']
-
+let g:neomake_javascript_jshint_maker = {
+    \ 'args': ['--verbose'],
+    \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
+    \ }
+let g:neomake_javascript_enabled_makers = ['jshint']
 "}}}
 
 " Snippets {{{
