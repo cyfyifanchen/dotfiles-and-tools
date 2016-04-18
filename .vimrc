@@ -56,7 +56,7 @@ nnoremap <Leader>au <Plug>GitGutterRevertHunk
 nnoremap <Leader>aa <Plug>GitGutterStageHunk
 "}}}
 
-" General Settings {{{
+" General  {{{
 " UI
 set ruler
 set number
@@ -102,11 +102,11 @@ set t_vb=
 set tm=500
 
 " folding
-set foldcolumn=0
-"set foldmethod=indent
-"set foldnestmax=10
-"set nofoldenable
-"set foldlevel=1
+"set foldcolumn=0
+set foldmethod=indent
+set foldnestmax=5
+set nofoldenable
+set foldlevel=1
 
 " backups, undos, swaps
 set directory=~/.vim/tmp/
@@ -152,7 +152,7 @@ Plugin 'gioele/vim-autoswap'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'benekastah/neomake'
 Plugin 'eslint/eslint'
 Plugin 'shutnik/jshint2.vim'
@@ -269,18 +269,18 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 " }}}
 
 " Syntastic {{{
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_javascript_checkers = ['jscs']
-let g:syntastic_html_tidy_exec = 'tidy5'
-let jshint2_read = 1
-let jshint2_save = 1
-let g:syntastic_check_on_open = 1
+"let g:syntastic_javascript_checkers = ['jscs']
+"let g:syntastic_html_tidy_exec = 'tidy5'
+"let jshint2_read = 1
+"let jshint2_save = 1
+"let g:syntastic_check_on_open = 1
 
-" dispaly all errors for mutiple checkers
-let g:syntastic_aggregate_errors = 1
+ "dispaly all errors for mutiple checkers
+"let g:syntastic_aggregate_errors = 1
 
 
 
