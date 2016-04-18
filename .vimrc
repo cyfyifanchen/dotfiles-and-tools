@@ -389,8 +389,20 @@ let g:gundo_right = 1
 autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
 "}}}
 
-" {{{
+" Neovim true color {{{
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"}}}
+
+" fzf {{{
+
+"}}}
+
+" Neocomplete Neosnippet  {{{
+
+"}}}
+
+" Vim-Plug {{{
+
 "}}}
 
 " Helpers {{{
