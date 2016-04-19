@@ -192,9 +192,9 @@ filetype plugin indent on
 
 " Colors, Scheme, Coding and Fonts {{{
 syntax enable
-colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night-Eighties
 try
-    colorscheme Tomorrow-Night
+    colorscheme Tomorrow-Night-Eighties
 catch
 endtry
 set background=dark
@@ -411,6 +411,10 @@ autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
 
 " Vim-Plug {{{
 
+"}}}
+
+" IndentLine {{{
+let g:indentLine_char = '┆'
 "}}}
 
 " Helpers {{{
