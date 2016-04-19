@@ -57,7 +57,7 @@ nnoremap <Leader>aa <Plug>GitGutterStageHunk
 "}}}
 
 " General  {{{
-" UI
+" ui
 set ruler
 set number
 set hid
