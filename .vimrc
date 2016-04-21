@@ -416,7 +416,7 @@ let g:fzf_action = {
 " default fzf layout
 " - down / up / left / right
 " - window (nvim only)
-let g:fzf_layout = { 'down': '~40%' }
+let g:fzf_layout = { 'down': '~20%' }
 
 " customize fzf colors to match your color scheme
 let g:fzf_colors =
