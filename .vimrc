@@ -23,12 +23,12 @@ nmap <leader>vj :res +10<cr>
 nmap <leader>vk :res -10<cr>
 nmap <leader>sp :setlocal spell spelllang=en_us<cr>
 nmap <leader>sp :setlocal spell!<cr>
-nmap <leader>ev :vsp $MYVIMRC<CR>
-nmap <leader>et :vsp ~/.tmux.conf<CR>
-nmap <leader>ez :vsp ~/.zshrc<CR>
-nmap <leader>sv :source $MYVIMRC<CR>
-nmap <leader>pi :PluginInstall<CR>
-nmap <leader>u :GundoToggle<CR>
+nmap <leader>ev :vsp $MYVIMRC<cr>
+nmap <leader>et :vsp ~/.tmux.conf<cr>
+nmap <leader>ez :vsp ~/.zshrc<cr>
+nmap <leader>sv :source $MYVIMRC<cr>
+nmap <leader>pi :PluginInstall<cr>
+nmap <leader>u :GundoToggle<cr>
 nmap <leader><leader> <c-w>w
 nmap <leader><leader> <c-^>
 
@@ -148,6 +148,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'mhinz/vim-startify'
+Plugin 'antlypls/vim-colors-codeschool'
 
 "languages
 Plugin 'othree/javascript-libraries-syntax.vim'
