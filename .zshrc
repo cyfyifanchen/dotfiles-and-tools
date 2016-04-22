@@ -91,6 +91,9 @@ alias og="open -a Google\ Chrome"
 alias tat="tmux a -t"
 alias vi="nvim"
 alias gw="grunt watch"
+alias fzz="fzf | pbcopy"
+
+#fzf
 
 export NVM_DIR="/Users/ychen/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
