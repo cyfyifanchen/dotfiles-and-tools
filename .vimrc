@@ -174,7 +174,7 @@ Plugin 'vundlevim/vundle.vim'
 Plugin 'gregsexton/MatchTag'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-"Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
@@ -182,7 +182,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'ervandew/supertab'
 Plugin 'gioele/vim-autoswap'
 Plugin 'jiangmiao/auto-pairs'
-"Plugin 'junegunn/vim-easy-align'
+Plugin 'junegunn/vim-easy-align'
 Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-repeat'
 Plugin 'svermeulen/vim-easyclip'
@@ -305,13 +305,24 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 " Neomake {{{
 autocmd! BufWritePost,BufEnter * Neomake
 
-let g:neomake_open_list = 2
-
 let g:neomake_javascript_jshint_maker = {
     \ 'args': ['--verbose'],
     \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
-    \ }
-let g:neomake_javascript_enabled_makers = ['jscs']
+\ }
+
+let g:neomake_typescript_tsc_maker = {
+    \ 'args': ['-m', 'commonjs', '--noEmit' ],
+    \ 'append_file': 0,
+    \ 'errorformat':
+        \ '%E%f %#(%l\,%c): error %m,' .
+        \ '%E%f %#(%l\,%c): %m,' .
+        \ '%Eerror %m,' .
+        \ '%C%\s%\+%m'
+\ }
+
+" autocmd FileType javascript let g:neomake_javascript_enabled_makers = findfile('.jshintrc', '.;') != '' ? ['jshint'] : ['eslint']
+let g:neomake_javascript_enabled_makers = ['eslint']
+
 "}}}
 
 " Snippets {{{
@@ -439,6 +450,15 @@ let g:fzf_buffers_jump = 1
 " [[B]Commits] to customize the options used by 'git log':
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
 
+function! s:fzf_statusline()
+  " Override statusline as you like
+  highlight fzf1 ctermfg=161 ctermbg=251
+  highlight fzf2 ctermfg=23 ctermbg=251
+  highlight fzf3 ctermfg=237 ctermbg=251
+  setlocal statusline=%#fzf1#\ >\ %#fzf2#fz%#fzf3#f
+endfunction
+
+autocmd! User FzfStatusLine call <SID>fzf_statusline()
 "}}}
 
 " Neocomplete Neosnippet  {{{
