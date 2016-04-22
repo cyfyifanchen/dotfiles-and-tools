@@ -147,7 +147,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'junegunn/rainbow_parentheses.vim'
 Plugin 'mhinz/vim-startify'
 Plugin 'antlypls/vim-colors-codeschool'
 
@@ -173,6 +173,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'vundlevim/vundle.vim'
 Plugin 'gregsexton/MatchTag'
 Plugin 'tpope/vim-fugitive'
+Plugin 'junegunn/gv.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
@@ -369,29 +370,36 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " }}}
 
 " Rainbow Parenthese {{{
-let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgray',    'DarkOrchid3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['black',       'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'firebrick3'],
-    \ ]
 
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+let g:rainbow#max_level = 16
+let g:rainbow#pairs = [['(', ')'], ['[', ']']]
+
+" List of colors that you do not want. ANSI code or #RRGGBB
+let g:rainbow#blacklist = [233, 234]
+
+"let g:rbpt_colorpairs = [
+    "\ ['brown',       'RoyalBlue3'],
+    "\ ['Darkblue',    'SeaGreen3'],
+    "\ ['darkgray',    'DarkOrchid3'],
+    "\ ['darkgreen',   'firebrick3'],
+    "\ ['darkcyan',    'RoyalBlue3'],
+    "\ ['darkred',     'SeaGreen3'],
+    "\ ['darkmagenta', 'DarkOrchid3'],
+    "\ ['brown',       'firebrick3'],
+    "\ ['gray',        'RoyalBlue3'],
+    "\ ['black',       'SeaGreen3'],
+    "\ ['darkmagenta', 'DarkOrchid3'],
+    "\ ['Darkblue',    'firebrick3'],
+    "\ ['darkgreen',   'RoyalBlue3'],
+    "\ ['darkcyan',    'SeaGreen3'],
+    "\ ['darkred',     'DarkOrchid3'],
+    "\ ['red',         'firebrick3'],
+    "\ ]
+
+"au VimEnter * RainbowParenthesesToggle
+"au Syntax * RainbowParenthesesLoadRound
+"au Syntax * RainbowParenthesesLoadSquare
+"au Syntax * RainbowParenthesesLoadBraces
 "let g:rbpt_max = 15
 "let g:bold_parenttheses = 1
 "}}}
