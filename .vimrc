@@ -170,6 +170,7 @@ Plugin 'benekastah/neomake'
 Plugin 'tpope/vim-surround'
 
 "tools
+Plugin 'sickill/vim-pasta'
 Plugin 'vundlevim/vundle.vim'
 Plugin 'gregsexton/MatchTag'
 Plugin 'tpope/vim-fugitive'
