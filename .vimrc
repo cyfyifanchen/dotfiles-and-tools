@@ -96,6 +96,7 @@ set magic
 
 " clipboard
 set clipboard=unnamed
+set nopaste
 
 " errorbells
 set noerrorbells
