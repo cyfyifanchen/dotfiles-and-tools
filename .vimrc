@@ -85,6 +85,7 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
+set nohlsearch
 
 " indent
 set autoindent
@@ -159,7 +160,7 @@ Plugin 'eslint/eslint'
 Plugin 'shutnik/jshint2.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'hail2u/vim-css3-syntax'
-Plugin 'groenewege/vim-less'
+"Plugin 'groenewege/vim-less'
 Plugin 'mattn/emmet-vim'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'othree/html5.vim'
@@ -170,6 +171,7 @@ Plugin 'benekastah/neomake'
 Plugin 'tpope/vim-surround'
 
 "tools
+Plugin 'fatih/vim-go'
 Plugin 'sickill/vim-pasta'
 Plugin 'vundlevim/vundle.vim'
 Plugin 'gregsexton/MatchTag'
@@ -305,7 +307,6 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 " }}}
 
 " Neomake {{{
-autocmd! BufWritePost,BufEnter * Neomake
 
 let g:neomake_javascript_jshint_maker = {
     \ 'args': ['--verbose'],
@@ -323,7 +324,9 @@ let g:neomake_typescript_tsc_maker = {
 \ }
 
 " autocmd FileType javascript let g:neomake_javascript_enabled_makers = findfile('.jshintrc', '.;') != '' ? ['jshint'] : ['eslint']
-let g:neomake_javascript_enabled_makers = ['eslint']
+let g:neomake_javascript_enabled_makers = ['jscs']
+
+autocmd! BufWritePost,BufEnter * Neomake
 
 "}}}
 

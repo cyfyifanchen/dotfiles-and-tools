@@ -94,7 +94,9 @@ alias gw="grunt watch"
 alias fzz="fzf | pbcopy"
 
 #fzf
-FZF_CTRL_T_COMMAND="seq 100"
+#FZF_CTRL_T_COMMAND="seq 100"
 
 export NVM_DIR="/Users/ychen/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
