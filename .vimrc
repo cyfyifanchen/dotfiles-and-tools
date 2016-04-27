@@ -94,7 +94,7 @@ set smartindent
 " regex
 set magic
 
-" clipboard
+" clipboard, yank, paste
 set clipboard=unnamed
 set nopaste
 
