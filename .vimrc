@@ -156,7 +156,6 @@ Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
-Plug 'shutnik/jshint2.vim', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': 'jsx' }
 Plug 'hail2u/vim-css3-syntax', { 'for': [ 'css', 'less', 'scss' ] }
 Plug 'groenewege/vim-less', { 'for': 'less' }
