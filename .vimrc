@@ -28,7 +28,7 @@ nmap <leader>ev :vsp $MYVIMRC<cr>
 nmap <leader>et :vsp ~/.tmux.conf<cr>
 nmap <leader>ez :vsp ~/.zshrc<cr>
 nmap <leader>sv :source $MYVIMRC<cr>
-nmap <leader>pi :PluginInstall<cr>
+nmap <leader>pi :PlugInstall<cr>
 nmap <leader>u :GundoToggle<cr>
 nmap <leader><leader> <c-w>w
 nmap <leader><leader> <c-^>
@@ -140,63 +140,59 @@ set wildignore=*.o,*~,*.pyc
 " }}}
 
 " Plugins {{{
-"set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 "ui
-Plugin 'Yggdroot/indentLine'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'junegunn/rainbow_parentheses.vim'
-Plugin 'mhinz/vim-startify'
-Plugin 'antlypls/vim-colors-codeschool'
+Plug 'Yggdroot/indentLine'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'flazz/vim-colorschemes'
+Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'mhinz/vim-startify'
+Plug 'antlypls/vim-colors-codeschool'
 
 "languages
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'eslint/eslint'
-Plugin 'shutnik/jshint2.vim'
-Plugin 'mxw/vim-jsx'
-Plugin 'hail2u/vim-css3-syntax'
-"Plugin 'groenewege/vim-less'
-Plugin 'mattn/emmet-vim'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'othree/html5.vim'
-Plugin 'suan/vim-instant-markdown'
-Plugin 'plasticboy/vim-markdown'
-"Plugin 'scrooloose/syntastic'
-Plugin 'benekastah/neomake'
-Plugin 'tpope/vim-surround'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'eslint/eslint'
+Plug 'shutnik/jshint2.vim'
+Plug 'mxw/vim-jsx'
+Plug 'hail2u/vim-css3-syntax'
+"Plug 'groenewege/vim-less'
+Plug 'mattn/emmet-vim'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'othree/html5.vim'
+Plug 'suan/vim-instant-markdown'
+Plug 'plasticboy/vim-markdown'
+"Plug 'scrooloose/syntastic'
+Plug 'benekastah/neomake'
+Plug 'tpope/vim-surround'
 
-"tools
-Plugin 'fatih/vim-go'
-Plugin 'sickill/vim-pasta'
-Plugin 'vundlevim/vundle.vim'
-Plugin 'gregsexton/MatchTag'
-Plugin 'tpope/vim-fugitive'
-Plugin 'junegunn/gv.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'SirVer/ultisnips'
-Plugin 'ervandew/supertab'
-Plugin 'gioele/vim-autoswap'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'junegunn/vim-easy-align'
-Plugin 'godlygeek/tabular'
-Plugin 'tpope/vim-repeat'
-Plugin 'svermeulen/vim-easyclip'
-Plugin 'sjl/gundo.vim'
-Plugin 'vim-scripts/Rename'
-Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plugin 'junegunn/fzf.vim'
-call vundle#end()
-filetype plugin indent on
+"tool
+Plug 'fatih/vim-go'
+Plug 'sickill/vim-pasta'
+Plug 'vundlevim/vundle.vim'
+Plug 'gregsexton/MatchTag'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Valloric/YouCompleteMe'
+Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdcommenter'
+Plug 'SirVer/ultisnips'
+Plug 'ervandew/supertab'
+Plug 'gioele/vim-autoswap'
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/vim-easy-align'
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-repeat'
+Plug 'svermeulen/vim-easyclip'
+Plug 'sjl/gundo.vim'
+Plug 'vim-scripts/Rename'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+call plug#end()
 " }}}
 
 " Colors, Scheme, Coding and Fonts {{{
