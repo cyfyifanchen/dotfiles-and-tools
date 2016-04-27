@@ -85,7 +85,6 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
-set nohlsearch
 
 " indent
 set autoindent
@@ -148,31 +147,30 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'flazz/vim-colorschemes'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'mhinz/vim-startify'
-Plug 'antlypls/vim-colors-codeschool'
 
 "languages
-Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'jelera/vim-javascript-syntax'
-Plug 'eslint/eslint'
-Plug 'shutnik/jshint2.vim'
-Plug 'mxw/vim-jsx'
-Plug 'hail2u/vim-css3-syntax'
-"Plug 'groenewege/vim-less'
-Plug 'mattn/emmet-vim'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'othree/html5.vim'
+Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
+Plug 'othree/yajs.vim', { 'for': 'javascript' }
+Plug 'shutnik/jshint2.vim', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx', { 'for': 'jsx' }
+Plug 'hail2u/vim-css3-syntax', { 'for': [ 'css', 'less', 'scss' ] }
+Plug 'groenewege/vim-less', { 'for': 'less' }
+Plug 'gregsexton/MatchTag', { 'for': [ 'html', 'handlebars' ] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'handlebars'] }
+Plug 'mustache/vim-mustache-handlebars', { 'for': 'handlebars' }
+Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'suan/vim-instant-markdown'
-Plug 'plasticboy/vim-markdown'
-"Plug 'scrooloose/syntastic'
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'scrooloose/syntastic', { 'for': 'javascript' }
 Plug 'benekastah/neomake'
 Plug 'tpope/vim-surround'
 
 "tool
-Plug 'fatih/vim-go'
 Plug 'sickill/vim-pasta'
 Plug 'vundlevim/vundle.vim'
-Plug 'gregsexton/MatchTag'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'scrooloose/nerdtree'
