@@ -166,7 +166,7 @@ Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'suan/vim-instant-markdown'
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'fatih/vim-go', { 'for': 'go' }
-Plug 'scrooloose/syntastic'
+"Plug 'scrooloose/syntastic'
 Plug 'benekastah/neomake'
 Plug 'tpope/vim-surround'
 
@@ -267,40 +267,33 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 " }}}
 
 " Syntastic {{{
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_javascript_checkers = ['jscs']
-let g:syntastic_html_tidy_exec = 'tidy5'
-let jshint2_read = 1
-let jshint2_save = 1
-let g:syntastic_check_on_open = 1
+"let g:syntastic_javascript_checkers = ['jscs']
+"let g:syntastic_html_tidy_exec = 'tidy5'
+"let jshint2_read = 1
+"let jshint2_save = 1
+"let g:syntastic_check_on_open = 1
 
 " dispaly all errors for mutiple checkers
-let g:syntastic_aggregate_errors = 1
+"let g:syntastic_aggregate_errors = 1
 
 " }}}
 
 " Neomake {{{
 
-let g:neomake_javascript_jshint_maker = {
-    \ 'args': ['--verbose'],
-    \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
-\ }
+let g:neomake_open_list = 2
 
-let g:neomake_typescript_tsc_maker = {
-    \ 'args': ['-m', 'commonjs', '--noEmit' ],
-    \ 'append_file': 0,
-    \ 'errorformat':
-        \ '%E%f %#(%l\,%c): error %m,' .
-        \ '%E%f %#(%l\,%c): %m,' .
-        \ '%Eerror %m,' .
-        \ '%C%\s%\+%m'
-\ }
+"let g:neomake_javascript_jscs_maker = {
+    "\ 'exe': 'jscs',
+    "\ 'args': ['--no-color', '--preset', 'airbnb', '--reporter', 'inline', '--esnext'],
+    "\ 'errorformat': '%f: line %l\, col %c\, %m',
+    "\ }
 
 " autocmd FileType javascript let g:neomake_javascript_enabled_makers = findfile('.jshintrc', '.;') != '' ? ['jshint'] : ['eslint']
-let g:neomake_javascript_enabled_makers = ['jscs']
+let g:neomake_javascript_enabled_makers = ['eslint']
 
 autocmd! BufWritePost,BufEnter * Neomake
 
