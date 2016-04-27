@@ -136,11 +136,13 @@ set wildignore=*.o,*~,*.pyc
 
 " remember info about open buffers on close
 "set viminfo^=%
+
 " }}}
 
 " Plugins {{{
 call plug#begin('~/.vim/plugged')
-"ui
+
+"UI
 Plug 'Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -170,11 +172,9 @@ Plug 'tpope/vim-surround'
 
 "tool
 Plug 'sickill/vim-pasta'
-Plug 'vundlevim/vundle.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
@@ -260,17 +260,6 @@ hi StartifyHeader  ctermfg=114
 autocmd User Startified setlocal buftype=
 let g:ctrlp_reuse_window = 'startify'
 
-"let g:startify_custom_header = s:filter_header(['a', 'bb', 'ccc'])
-" }}}
-
-" CtrlP {{{
-"let g:ctrlp_custom_ignore = {
-  "\ 'dir':  '\v[\/](\.(git|hg|node_modules|svn)|\_site)$',
-  "\ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
-"\}
-
-" search the nearest ancestor that contains .git, .hg, .svn
-"let g:ctrlp_working_path_mode = 2
 " }}}
 
 " Emmet {{{
@@ -278,27 +267,19 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 " }}}
 
 " Syntastic {{{
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-"let g:syntastic_javascript_checkers = ['jscs']
-"let g:syntastic_html_tidy_exec = 'tidy5'
-"let jshint2_read = 1
-"let jshint2_save = 1
-"let g:syntastic_check_on_open = 1
+let g:syntastic_javascript_checkers = ['jscs']
+let g:syntastic_html_tidy_exec = 'tidy5'
+let jshint2_read = 1
+let jshint2_save = 1
+let g:syntastic_check_on_open = 1
 
- "dispaly all errors for mutiple checkers
-"let g:syntastic_aggregate_errors = 1
+" dispaly all errors for mutiple checkers
+let g:syntastic_aggregate_errors = 1
 
-
-
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_wq = 0
-
-"disable all style messages
-"let g:syntastic_quiet_messages = { "type": "style" }
 " }}}
 
 " Neomake {{{
@@ -444,10 +425,6 @@ autocmd! User FzfStatusLine call <SID>fzf_statusline()
 "}}}
 
 " Neocomplete Neosnippet  {{{
-
-"}}}
-
-" Vim-Plug {{{
 
 "}}}
 
