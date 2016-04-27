@@ -4,7 +4,8 @@ let g:mapleader = " "
 
 inoremap jj <ESC>
 inoremap jk <ESC>
-inoremap kj <ESC>
+xnoremap jk <Esc>
+cnoremap jk <C-c>
 
 nmap <leader>nt :NERDTree<cr>
 nmap <leader>w :w!<cr>
@@ -166,7 +167,7 @@ Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'suan/vim-instant-markdown'
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'fatih/vim-go', { 'for': 'go' }
-Plug 'scrooloose/syntastic', { 'for': 'javascript' }
+Plug 'scrooloose/syntastic'
 Plug 'benekastah/neomake'
 Plug 'tpope/vim-surround'
 
