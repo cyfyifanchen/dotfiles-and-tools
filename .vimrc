@@ -160,8 +160,8 @@ Plug 'mxw/vim-jsx',                           { 'for': 'jsx' }
 Plug 'hail2u/vim-css3-syntax',                { 'for': [ 'css', 'less', 'scss' ] }
 Plug 'groenewege/vim-less',                   { 'for': 'less' }
 Plug 'gregsexton/MatchTag',                   { 'for': [ 'html', 'handlebars' ] }
-Plug 'mattn/emmet-vim',                       { 'for': ['html', 'handlebars'] }
-Plug 'mustache/vim-mustache-handlebars',      { 'for': 'handlebars' }
+Plug 'mattn/emmet-vim',                       { 'for': [ 'html', 'handlebars'] }
+Plug 'mustache/vim-mustache-handlebars'
 Plug 'othree/html5.vim',                      { 'for': 'html' }
 Plug 'suan/vim-instant-markdown',             { 'for': 'markdown' }
 Plug 'plasticboy/vim-markdown',               { 'for': 'markdown' }
