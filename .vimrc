@@ -166,7 +166,7 @@ Plug 'othree/html5.vim',                      { 'for': 'html' }
 Plug 'suan/vim-instant-markdown',             { 'for': 'markdown' }
 Plug 'plasticboy/vim-markdown',               { 'for': 'markdown' }
 Plug 'fatih/vim-go',                          { 'for': 'go' }
-"Plug 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 Plug 'benekastah/neomake'
 Plug 'tpope/vim-surround'
 
@@ -188,7 +188,7 @@ Plug 'tpope/vim-repeat'
 Plug 'svermeulen/vim-easyclip'
 Plug 'sjl/gundo.vim'
 Plug 'vim-scripts/Rename'
-Plug 'junegunn/fzf',                         { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf',                          { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 call plug#end()
 " }}}
@@ -409,16 +409,11 @@ endfunction
 autocmd! User FzfStatusLine call <SID>fzf_statusline()
 "}}}
 
-" Neocomplete Neosnippet  {{{
-
-"}}}
-
 " IndentLine {{{
 let g:indentLine_char = '┆'
 "}}}
 
 " Rainbw Parentheses {{{
- 
 let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']']]
 
