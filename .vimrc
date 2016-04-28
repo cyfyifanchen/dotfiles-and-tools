@@ -174,7 +174,7 @@ Plug 'tpope/vim-surround'
 Plug 'sickill/vim-pasta'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree',                   { 'on':  'NERDTreeToggle' }
 Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
