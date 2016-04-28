@@ -321,7 +321,7 @@ iabbrev tempalte template
 iabbrev fitler filter
 iabbrev fonrt font
 iabbrev sytle style
-iabbrev dvi dvi
+iabbrev dvi div
 iabbrev calss class
 " }}}
 
