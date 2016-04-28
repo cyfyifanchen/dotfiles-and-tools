@@ -152,25 +152,25 @@ Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'mhinz/vim-startify'
 
 "languages
-Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
-Plug 'othree/yajs.vim', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx', { 'for': 'jsx' }
-Plug 'hail2u/vim-css3-syntax', { 'for': [ 'css', 'less', 'scss' ] }
-Plug 'groenewege/vim-less', { 'for': 'less' }
-Plug 'gregsexton/MatchTag', { 'for': [ 'html', 'handlebars' ] }
-Plug 'mattn/emmet-vim', { 'for': ['html', 'handlebars'] }
-Plug 'mustache/vim-mustache-handlebars', { 'for': 'handlebars' }
-Plug 'othree/html5.vim', { 'for': 'html' }
-Plug 'suan/vim-instant-markdown'
-Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'othree/javascript-libraries-syntax.vim',{ 'for': 'javascript' }
+Plug 'pangloss/vim-javascript',               { 'for': 'javascript' }
+Plug 'jelera/vim-javascript-syntax',          { 'for': 'javascript' }
+Plug 'othree/yajs.vim',                       { 'for': 'javascript' }
+Plug 'mxw/vim-jsx',                           { 'for': 'jsx' }
+Plug 'hail2u/vim-css3-syntax',                { 'for': [ 'css', 'less', 'scss' ] }
+Plug 'groenewege/vim-less',                   { 'for': 'less' }
+Plug 'gregsexton/MatchTag',                   { 'for': [ 'html', 'handlebars' ] }
+Plug 'mattn/emmet-vim',                       { 'for': ['html', 'handlebars'] }
+Plug 'mustache/vim-mustache-handlebars',      { 'for': 'handlebars' }
+Plug 'othree/html5.vim',                      { 'for': 'html' }
+Plug 'suan/vim-instant-markdown',             { 'for': 'markdown' }
+Plug 'plasticboy/vim-markdown',               { 'for': 'markdown' }
+Plug 'fatih/vim-go',                          { 'for': 'go' }
 "Plug 'scrooloose/syntastic'
 Plug 'benekastah/neomake'
 Plug 'tpope/vim-surround'
 
-"tool
+"tools
 Plug 'sickill/vim-pasta'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
@@ -188,7 +188,7 @@ Plug 'tpope/vim-repeat'
 Plug 'svermeulen/vim-easyclip'
 Plug 'sjl/gundo.vim'
 Plug 'vim-scripts/Rename'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf',                         { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 call plug#end()
 " }}}
@@ -285,14 +285,6 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 " Neomake {{{
 
 let g:neomake_open_list = 2
-
-"let g:neomake_javascript_jscs_maker = {
-    "\ 'exe': 'jscs',
-    "\ 'args': ['--no-color', '--preset', 'airbnb', '--reporter', 'inline', '--esnext'],
-    "\ 'errorformat': '%f: line %l\, col %c\, %m',
-    "\ }
-
-" autocmd FileType javascript let g:neomake_javascript_enabled_makers = findfile('.jshintrc', '.;') != '' ? ['jshint'] : ['eslint']
 let g:neomake_javascript_enabled_makers = ['eslint']
 
 autocmd! BufWritePost,BufEnter * Neomake
@@ -347,7 +339,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']']]
 
-" List of colors that you do not want. ANSI code or #RRGGBB
+" list of colors that I do not want. ANSI code or #RRGGBB
 let g:rainbow#blacklist = [233, 234]
 
 "}}}
