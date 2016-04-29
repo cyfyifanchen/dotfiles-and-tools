@@ -4,8 +4,7 @@ let g:mapleader = " "
 
 inoremap jj <ESC>
 inoremap jk <ESC>
-xnoremap jk <Esc>
-cnoremap jk <C-c>
+inoremap kj <ESC>
 
 nmap <leader>nt :NERDTree<cr>
 nmap <leader>w :w!<cr>
@@ -29,9 +28,8 @@ nmap <leader>ev :vsp $MYVIMRC<cr>
 nmap <leader>et :vsp ~/.tmux.conf<cr>
 nmap <leader>ez :vsp ~/.zshrc<cr>
 nmap <leader>sv :source $MYVIMRC<cr>
-nmap <leader>pi :PlugInstall<cr>
+nmap <leader>pi :PluginInstall<cr>
 nmap <leader>u :GundoToggle<cr>
-nmap <leader><leader> <c-w>w
 nmap <leader><leader> <c-^>
 
 nnoremap j gj
@@ -194,7 +192,6 @@ Plug 'vim-scripts/Rename'
 Plug 'junegunn/fzf',                           { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 call plug#end()
-
 " }}}
 
 " Colors, Scheme, Coding and Fonts {{{
@@ -288,10 +285,10 @@ let g:user_emmet_expandabbr_key = '<c-y>'
 
 " Neomake {{{
 
-let g:neomake_open_list = 2
-let g:neomake_javascript_enabled_makers = ['eslint']
+"let g:neomake_open_list = 2
+"let g:neomake_javascript_enabled_makers = ['eslint']
 
-autocmd! BufWritePost,BufEnter * Neomake
+"autocmd! BufWritePost,BufEnter * Neomake
 
 "}}}
 
