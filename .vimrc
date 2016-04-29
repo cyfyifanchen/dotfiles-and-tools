@@ -52,7 +52,10 @@ nnoremap U <Nop>
 nnoremap J <Nop>
 nnoremap K <Nop>
 
-" conflicted <leader>h, overwrite GitGutter default
+" gitgutter
+nnoremap ]h <Plug>GitGutterNextHunk
+nnoremap [h <Plug>GitGutterPrevHunk
+nnoremap <Leader>aar <Plug>GitGutterUndoHunk
 nnoremap <Leader>av <Plug>GitGutterPreviewHunk
 nnoremap <Leader>au <Plug>GitGutterRevertHunk
 nnoremap <Leader>aa <Plug>GitGutterStageHunk
@@ -191,6 +194,7 @@ Plug 'vim-scripts/Rename'
 Plug 'junegunn/fzf',                           { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 call plug#end()
+
 " }}}
 
 " Colors, Scheme, Coding and Fonts {{{
@@ -442,4 +446,3 @@ autocmd BufReadPost *
 "}}}
 
 " vim:foldmethod=marker:foldlevel=0
-
