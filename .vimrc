@@ -152,20 +152,20 @@ Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'mhinz/vim-startify'
 
 "languages
-Plug 'othree/javascript-libraries-syntax.vim',{ 'for': 'javascript' }
-Plug 'pangloss/vim-javascript',               { 'for': 'javascript' }
-Plug 'jelera/vim-javascript-syntax',          { 'for': 'javascript' }
-Plug 'othree/yajs.vim',                       { 'for': 'javascript' }
-Plug 'mxw/vim-jsx',                           { 'for': 'jsx' }
-Plug 'hail2u/vim-css3-syntax',                { 'for': [ 'css', 'less', 'scss' ] }
-Plug 'groenewege/vim-less',                   { 'for': 'less' }
-Plug 'gregsexton/MatchTag',                   { 'for': [ 'html', 'handlebars' ] }
-Plug 'mattn/emmet-vim',                       { 'for': [ 'html', 'handlebars'] }
+Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
+Plug 'pangloss/vim-javascript',                { 'for': 'javascript' }
+Plug 'jelera/vim-javascript-syntax',           { 'for': 'javascript' }
+Plug 'othree/yajs.vim',                        { 'for': 'javascript' }
+Plug 'mxw/vim-jsx',                            { 'for': 'jsx' }
+Plug 'hail2u/vim-css3-syntax',                 { 'for': [ 'css', 'less', 'scss' ] }
+Plug 'groenewege/vim-less',                    { 'for': 'less' }
+Plug 'gregsexton/MatchTag',                    { 'for': [ 'html', 'handlebars' ] }
+Plug 'mattn/emmet-vim',                        { 'for': [ 'html', 'handlebars'] }
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'othree/html5.vim',                      { 'for': 'html' }
-Plug 'suan/vim-instant-markdown',             { 'for': 'markdown' }
-Plug 'plasticboy/vim-markdown',               { 'for': 'markdown' }
-Plug 'fatih/vim-go',                          { 'for': 'go' }
+Plug 'othree/html5.vim',                       { 'for': 'html' }
+Plug 'suan/vim-instant-markdown',              { 'for': 'markdown' }
+Plug 'plasticboy/vim-markdown',                { 'for': 'markdown' }
+Plug 'fatih/vim-go',                           { 'for': 'go' }
 Plug 'scrooloose/syntastic'
 Plug 'benekastah/neomake'
 Plug 'tpope/vim-surround'
@@ -174,7 +174,7 @@ Plug 'tpope/vim-surround'
 Plug 'sickill/vim-pasta'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
-Plug 'scrooloose/nerdtree',                   { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree',                    { 'on':  'NERDTreeToggle' }
 Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
@@ -188,7 +188,7 @@ Plug 'tpope/vim-repeat'
 Plug 'svermeulen/vim-easyclip'
 Plug 'sjl/gundo.vim'
 Plug 'vim-scripts/Rename'
-Plug 'junegunn/fzf',                          { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf',                           { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 call plug#end()
 " }}}
