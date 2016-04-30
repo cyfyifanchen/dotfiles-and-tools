@@ -167,7 +167,6 @@ Plug 'othree/html5.vim',                       { 'for': 'html' }
 Plug 'suan/vim-instant-markdown',              { 'for': 'markdown' }
 Plug 'plasticboy/vim-markdown',                { 'for': 'markdown' }
 Plug 'fatih/vim-go',                           { 'for': 'go' }
-Plug 'scrooloose/syntastic'
 Plug 'benekastah/neomake'
 Plug 'tpope/vim-surround'
 
@@ -265,22 +264,6 @@ let g:ctrlp_reuse_window = 'startify'
 
 " Emmet {{{
 let g:user_emmet_expandabbr_key = '<c-y>'
-" }}}
-
-" Syntastic {{{
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-
-"let g:syntastic_javascript_checkers = ['jscs']
-"let g:syntastic_html_tidy_exec = 'tidy5'
-"let jshint2_read = 1
-"let jshint2_save = 1
-"let g:syntastic_check_on_open = 1
-
-" dispaly all errors for mutiple checkers
-"let g:syntastic_aggregate_errors = 1
-
 " }}}
 
 " Neomake {{{
