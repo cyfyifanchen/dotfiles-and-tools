@@ -169,7 +169,7 @@ Plug 'fatih/vim-go',                           { 'for': 'go' }
 Plug 'mustache/vim-mustache-handlebars',       { 'for': 'handlebars' }
 Plug 'tpope/vim-surround'
 if has('nvim')
-  Plug 'benekastah/neomake',                   { 'on': 'SyntasticCheck' }
+  Plug 'benekastah/neomake'
 else
   Plug 'scrooloose/syntastic',                 { 'on': 'SyntasticCheck' }
 endif
@@ -407,6 +407,10 @@ let g:rainbow#pairs = [['(', ')'], ['[', ']']]
 " List of colors that you do not want. ANSI code or #RRGGBB
 let g:rainbow#blacklist = [233, 234]
 
+"}}}
+
+" Gitgutter {{{
+let g:gitgutter_map_keys = 0
 "}}}
 
 " Helpers {{{
