@@ -162,13 +162,17 @@ Plug 'hail2u/vim-css3-syntax',                 { 'for': [ 'css', 'less', 'scss' 
 Plug 'groenewege/vim-less',                    { 'for': 'less' }
 Plug 'gregsexton/MatchTag',                    { 'for': [ 'html', 'handlebars' ] }
 Plug 'mattn/emmet-vim',                        { 'for': [ 'html', 'handlebars'] }
-Plug 'mustache/vim-mustache-handlebars'
 Plug 'othree/html5.vim',                       { 'for': 'html' }
 Plug 'suan/vim-instant-markdown',              { 'for': 'markdown' }
 Plug 'plasticboy/vim-markdown',                { 'for': 'markdown' }
 Plug 'fatih/vim-go',                           { 'for': 'go' }
-Plug 'benekastah/neomake'
+Plug 'mustache/vim-mustache-handlebars',       { 'for': 'handlebars' }
 Plug 'tpope/vim-surround'
+if has('nvim')
+  Plug 'benekastah/neomake',                   { 'on': 'SyntasticCheck' }
+else
+  Plug 'scrooloose/syntastic',                 { 'on': 'SyntasticCheck' }
+endif
 
 "tools
 Plug 'sickill/vim-pasta'
@@ -266,12 +270,32 @@ let g:ctrlp_reuse_window = 'startify'
 let g:user_emmet_expandabbr_key = '<c-y>'
 " }}}
 
+" Syntastic {{{
+
+if !has('nvim')
+  set statusline+=%#warningmsg#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
+
+  let g:syntastic_javascript_checkers = ['jscs']
+  let g:syntastic_html_tidy_exec = 'tidy5'
+  let jshint2_read = 1
+  let jshint2_save = 1
+  let g:syntastic_check_on_open = 1
+
+  " dispaly all errors for mutiple checkers
+  let g:syntastic_aggregate_errors = 1
+endif
+
+" }}}
+
 " Neomake {{{
 
-let g:neomake_open_list = 2
-let g:neomake_javascript_enabled_makers = ['eslint']
-
-autocmd! BufWritePost,BufEnter * Neomake
+if has('nvim')
+  let g:neomake_open_list = 2
+  let g:neomake_javascript_enabled_makers = ['eslint']
+  autocmd! BufWritePost,BufEnter * Neomake
+endif
 
 "}}}
 
@@ -286,27 +310,6 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-" }}}
-
-" Abbreviations {{{
-iabbrev teh the
-iabbrev waht what
-iabbrev aray array
-iabbrev seperate separate
-iabbrev fuction function
-iabbrev fucntion function
-iabbrev fnction function
-iabbrev functon function
-iabbrev funtion function
-iabbrev funciont function
-iabbrev fnuction function
-iabbrev consloe console
-iabbrev tempalte template
-iabbrev fitler filter
-iabbrev fonrt font
-iabbrev sytle style
-iabbrev dvi div
-iabbrev calss class
 " }}}
 
 " React and JSX {{{
@@ -424,5 +427,26 @@ autocmd BufReadPost *
      \ endif
 
 "}}}
+
+" Abbreviations {{{
+iabbrev teh the
+iabbrev waht what
+iabbrev aray array
+iabbrev seperate separate
+iabbrev fuction function
+iabbrev fucntion function
+iabbrev fnction function
+iabbrev functon function
+iabbrev funtion function
+iabbrev funciont function
+iabbrev fnuction function
+iabbrev consloe console
+iabbrev tempalte template
+iabbrev fitler filter
+iabbrev fonrt font
+iabbrev sytle style
+iabbrev dvi div
+iabbrev calss class
+" }}}
 
 " vim:foldmethod=marker:foldlevel=0
