@@ -5,8 +5,8 @@ let g:mapleader = " "
 inoremap jj <ESC>
 inoremap jk <ESC>
 inoremap kj <ESC>
+cnoremap jk <ESC>
 
-nmap <leader>nt :NERDTree<cr>
 nmap <leader>w :w!<cr>
 nmap <leader>q :q!<cr>
 nmap <leader>l :bnext<cr>
