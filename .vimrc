@@ -71,6 +71,7 @@ set showmatch
 set wrap
 set autoread
 set wildmenu
+set scrolloff=3
 
 " line break
 set linebreak
