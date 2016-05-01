@@ -30,6 +30,7 @@ nmap <leader>ez :vsp ~/.zshrc<cr>
 nmap <leader>sv :source $MYVIMRC<cr>
 nmap <leader>pi :PluginInstall<cr>
 nmap <leader>u :GundoToggle<cr>
+nmap <leader>nt :NERDTreeToggle<cr>
 nmap <leader><leader> <c-^>
 
 nnoremap j gj
@@ -179,6 +180,7 @@ Plug 'sickill/vim-pasta'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'scrooloose/nerdtree',                    { 'on':  'NERDTreeToggle' }
+Plug 'sjl/gundo.vim',                          { 'on': 'GundoToggle' }
 Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
@@ -190,7 +192,6 @@ Plug 'junegunn/vim-easy-align'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-repeat'
 Plug 'svermeulen/vim-easyclip'
-Plug 'sjl/gundo.vim'
 Plug 'vim-scripts/Rename'
 Plug 'junegunn/fzf',                           { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
