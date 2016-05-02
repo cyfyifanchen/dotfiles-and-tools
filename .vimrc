@@ -446,6 +446,7 @@ iabbrev functon function
 iabbrev funtion function
 iabbrev funciont function
 iabbrev fnuction function
+iabbrev consoel console
 iabbrev consloe console
 iabbrev tempalte template
 iabbrev fitler filter
