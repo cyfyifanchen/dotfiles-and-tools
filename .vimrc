@@ -4,7 +4,6 @@ let g:mapleader = " "
 
 inoremap jj <ESC>
 inoremap jk <ESC>
-inoremap kj <ESC>
 cnoremap jk <ESC>
 
 nmap <leader>w :w!<cr>
