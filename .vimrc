@@ -196,7 +196,7 @@ Plug 'svermeulen/vim-easyclip'
 Plug 'vim-scripts/Rename'
 Plug 'junegunn/fzf',                           { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'ntpeters/vim-better-whitespace'
+Plug 'ntpeters/vim-better-whitespace',         { 'on': 'StripWhitespace' }
 call plug#end()
 " }}}
 
