@@ -15,8 +15,8 @@ nmap <leader>g :Gstatus<cr>
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>f :FZF<cr>
 nmap <leader>d :bd<cr>
-nmap <leader>o o<ESC><cr>
-nmap <leader>O O<ESC><cr>
+nmap <leader>o o<ESC>
+nmap <leader>O O<ESC>
 nmap <leader>vl :vertical resize +10<cr>
 nmap <leader>vh :vertical resize -10<cr>
 nmap <leader>vj :res +10<cr>
