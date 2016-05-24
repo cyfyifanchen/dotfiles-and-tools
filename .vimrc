@@ -184,6 +184,10 @@ Plug 'junegunn/gv.vim'
 Plug 'scrooloose/nerdtree',                    { 'on':  'NERDTreeToggle' }
 Plug 'sjl/gundo.vim',                          { 'on': 'GundoToggle' }
 Plug 'Valloric/YouCompleteMe'
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+Plug 'Shougo/deoplete.nvim',                   { 'do': function('DoRemote') }
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
 Plug 'SirVer/ultisnips'
@@ -349,6 +353,10 @@ let g:gundo_right = 1
 
 " You Complete Me {{{
 autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
+"}}}
+
+" Deoplete {{{
+let g:deoplete#enable_at_startup = 1
 "}}}
 
 " Neovim true color {{{
