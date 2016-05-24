@@ -183,7 +183,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'scrooloose/nerdtree',                    { 'on':  'NERDTreeToggle' }
 Plug 'sjl/gundo.vim',                          { 'on': 'GundoToggle' }
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe',                 { 'do': './install.py' }
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
@@ -352,7 +352,7 @@ let g:gundo_right = 1
 " }}}
 
 " You Complete Me {{{
-autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
+"autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
 "}}}
 
 " Deoplete {{{
