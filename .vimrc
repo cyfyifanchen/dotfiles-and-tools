@@ -163,12 +163,12 @@ Plug 'othree/yajs.vim',                        { 'for': 'javascript' }
 Plug 'mxw/vim-jsx',                            { 'for': 'jsx' }
 Plug 'hail2u/vim-css3-syntax',                 { 'for': [ 'css', 'less', 'scss' ] }
 Plug 'groenewege/vim-less',                    { 'for': 'less' }
-Plug 'gregsexton/MatchTag',
 Plug 'mattn/emmet-vim',                        { 'for': [ 'html', 'handlebars'] }
 Plug 'othree/html5.vim',                       { 'for': 'html' }
 Plug 'suan/vim-instant-markdown',              { 'for': 'markdown' }
 Plug 'plasticboy/vim-markdown',                { 'for': 'markdown' }
 Plug 'fatih/vim-go',                           { 'for': 'go' }
+Plug 'gregsexton/MatchTag',
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'tpope/vim-surround'
 if has('nvim')
