@@ -179,6 +179,8 @@ else
 endif
 
 "tools
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-notes'
 Plug 'sickill/vim-pasta'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
@@ -425,6 +427,11 @@ let g:rainbow#blacklist = [233, 234]
 " Gitgutter {{{
 let g:gitgutter_map_keys = 0
 "}}}
+
+" Notes {{{
+:let g:notes_directories = ['~/Google Drive/books/notes']
+:let g:notes_suffix = '.txt'
+" }}}
 
 " Helpers {{{
 
