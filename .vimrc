@@ -472,6 +472,7 @@ iabbrev fonrt font
 iabbrev sytle style
 iabbrev dvi div
 iabbrev calss class
+iabbrev classNmae className
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
