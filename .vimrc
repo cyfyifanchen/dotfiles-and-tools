@@ -477,6 +477,7 @@ iabbrev funtion function
 iabbrev funciont function
 iabbrev fnuction function
 iabbrev fucntion function
+iabbrev functino function
 iabbrev consoel console
 iabbrev consloe console
 iabbrev tempalte template
