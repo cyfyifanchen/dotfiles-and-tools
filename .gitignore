@@ -1,0 +1,6 @@
+node_modules
+.oh-my-zsh
+.tmux/plugins/tmux-battery
+.tmux/plugins/tmux-pain-control
+.tmux/plugins/tmux-sidebar
+
