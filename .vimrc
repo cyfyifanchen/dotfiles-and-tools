@@ -33,6 +33,7 @@ nmap <leader>nt :NERDTreeToggle<cr>
 nmap <leader>ew :StripWhitespace<cr>
 nmap <leader>t :IndentLinesToggle<cr>
 nmap <leader><leader> <c-^>
+nmap ,cd :cd %:p:h<cr>
 
 nnoremap j gj
 nnoremap k gk
@@ -74,6 +75,8 @@ set wrap
 set autoread
 set wildmenu
 set scrolloff=3
+" automatic dir
+" set autochdir
 
 " line break
 set linebreak
@@ -443,7 +446,7 @@ let g:gitgutter_map_keys = 0
 
 " Notes {{{
 :let g:notes_directories = ['~/Google Drive/books/notes']
-:let g:notes_suffix = '.txt'
+":let g:notes_suffix = '.txt'
 " }}}
 
 " Helpers {{{
