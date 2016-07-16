@@ -10,6 +10,8 @@ Font: [Hack](http://sourcefoundry.org/hack/)
 
 Vim Theme: [Tomrrow-Night](https://github.com/chriskempson/tomorrow-theme)
 
+<a href="https://github.com/jaredculp/iterm2-borderless-padding">Borderless iTerm</a>
+
 # Vim 配置
 
 上面是我vim, tmux和zsh的配置，下图是样子。
