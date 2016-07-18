@@ -92,6 +92,8 @@ alias tat="tmux a -t"
 alias vi="nvim"
 alias gw="grunt watch"
 alias fzz="fzf | pbcopy"
+alias wdc="pwd|pbcopy"
+alias wdp="pbpaste"
 
 #fzf
 #FZF_CTRL_T_COMMAND="seq 100"
