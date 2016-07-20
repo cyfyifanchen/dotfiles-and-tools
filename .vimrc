@@ -187,6 +187,7 @@ endif
 "tools
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
+Plug 'jceb/vim-orgmode'
 Plug 'sickill/vim-pasta'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
