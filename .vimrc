@@ -266,6 +266,11 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 " }}}
 
+" NEEDTree {{{
+autocmd FileType nerdtree noremap <buffer> <leader>l <nop>
+autocmd FileType nerdtree noremap <buffer> <leader>h <nop>
+" }}}
+
 " Startify {{{
 let g:startify_bookmarks = [
             \ { 'v': '~/.vimrc' },
