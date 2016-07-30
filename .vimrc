@@ -455,6 +455,10 @@ let g:gitgutter_map_keys = 0
 ":let g:notes_suffix = '.txt'
 " }}}
 
+" Ag {{{
+
+"}}}
+
 " Helpers {{{
 
 " remove trailing white sapce on save
