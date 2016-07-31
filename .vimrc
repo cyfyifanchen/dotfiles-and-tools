@@ -32,6 +32,7 @@ nmap <leader>u :GundoToggle<cr>
 nmap <leader>nt :NERDTreeToggle<cr>
 nmap <leader>ew :StripWhitespace<cr>
 nmap <leader>t :IndentLinesToggle<cr>
+nmap <leader>a :Ag<cr>
 nmap <leader><leader> <c-^>
 nmap ,cd :cd %:p:h<cr>
 
