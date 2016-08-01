@@ -271,6 +271,7 @@ let g:airline_symbols.linenr = ''
 " NEEDTree {{{
 autocmd FileType nerdtree noremap <buffer> <leader>l <nop>
 autocmd FileType nerdtree noremap <buffer> <leader>h <nop>
+autocmd FileType nerdtree noremap <buffer> <leader>f <nop>
 " }}}
 
 " Startify {{{
