@@ -14,7 +14,7 @@ Vim Theme: [Tomrrow-Night](https://github.com/chriskempson/tomorrow-theme)
 
 #Neovim
 
-I have completely switch to Neovim, and have been using it full time. The following are the steps to make the transition eaiser.
+I have completely switched to Neovim, and have been using it full time. The following are the steps to make the transition easier.
 
 `ctrl` + `h` fix:
 
