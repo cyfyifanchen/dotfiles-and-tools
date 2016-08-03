@@ -1,20 +1,25 @@
 # Zsh + Tmux + Vim
 
-Here are my settings of iterm, zsh, vim and tmux:
+Themes, look and font:
 
 Zsh Theme: [bullet train](https://github.com/caiogondim/bullet-train-oh-my-zsh-theme)
 
 Tmux Theme: [Maglev](https://github.com/caiogondim/maglev)
 
-Font: [Hack](http://sourcefoundry.org/hack/)
+font: [Hack](http://sourcefoundry.org/hack/)
 
 Vim Theme: [Tomrrow-Night](https://github.com/chriskempson/tomorrow-theme)
 
 <a href="https://github.com/jaredculp/iterm2-borderless-padding">Borderless iTerm</a>
 
-# Vim 配置
+#Neovim
 
-上面是我vim, tmux和zsh的配置，下图是样子。
+I have completely switch to Neovim, and have been using it full time. The following are the steps to make the transition eaiser.
+
+`ctrl` + `h` fix:
+
+`infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
+tic $TERM.ti<Paste>`
 
 ![image](https://github.com/yifanchen/dotfiles/blob/master/vim.jpg "my zsh + tmux + vim")
 

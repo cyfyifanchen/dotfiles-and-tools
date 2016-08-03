@@ -34,6 +34,7 @@ nmap <leader>ew :StripWhitespace<cr>
 nmap <leader>t :IndentLinesToggle<cr>
 nmap <leader>a :Ag<cr>
 nmap <leader><leader> <c-^>
+nmap <leader>p :set nopaste<cr>
 nmap ,cd :cd %:p:h<cr>
 
 nnoremap j gj
@@ -106,6 +107,7 @@ set magic
 " clipboard, yank, paste
 set clipboard=unnamed
 set nopaste
+set pastetoggle=<F2>
 
 " errorbells
 set noerrorbells
