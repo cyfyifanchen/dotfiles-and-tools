@@ -1,3 +1,7 @@
+# Mac Settings
+
+I've decided to use this Repo as a backup in case I change machine so I have something to look.
+
 # Zsh + Tmux + Vim
 
 Themes, look and font:
