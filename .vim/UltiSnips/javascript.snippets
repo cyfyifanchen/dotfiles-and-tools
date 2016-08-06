@@ -4,10 +4,24 @@ endsnippet
 
 snippet fn "basic function" b
 function $1($2) {
-	$3	
+	$3
 }
 endsnippet
 
-snippet gi "getElementById" b 
+snippet gi "getElementById" b
 document.getElementById('$0')
+endsnippet
+
+snippet im "import from" b
+import $1 from '$2'
+endsnippet
+
+snippet exd "export default class" b
+export default class $1 extends React.Component {
+	render() {
+		return(
+
+		)
+	}
+}
 endsnippet
