@@ -29,7 +29,7 @@ nmap <leader>ez :vsp ~/.zshrc<cr>
 nmap <leader>sv :source $MYVIMRC<cr>
 nmap <leader>pi :PlugInstall<cr>
 nmap <leader>u :GundoToggle<cr>
-nmap <leader>nt :NERDTreeToggle<cr>
+nmap <leader>n :NERDTreeToggle<cr>
 nmap <leader>ew :StripWhitespace<cr>
 nmap <leader>t :IndentLinesToggle<cr>
 nmap <leader>a :Ag<cr>
@@ -271,7 +271,7 @@ let g:airline_symbols.linenr = ''
 " }}}
 
 " NEEDTree {{{
-autocmd FileType nerdtree noremap <buffer> <leader>q <nop>
+"autocmd FileType nerdtree noremap <buffer> <leader>q <nop>
 autocmd FileType nerdtree noremap <buffer> <leader>l <nop>
 autocmd FileType nerdtree noremap <buffer> <leader>h <nop>
 autocmd FileType nerdtree noremap <buffer> <leader>f <nop>
