@@ -275,6 +275,9 @@ let g:airline_symbols.linenr = ''
 autocmd FileType nerdtree noremap <buffer> <leader>l <nop>
 autocmd FileType nerdtree noremap <buffer> <leader>h <nop>
 autocmd FileType nerdtree noremap <buffer> <leader>f <nop>
+" disable nerdtree and ctlrp split
+autocmd User Startified setlocal buftype=
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " }}}
 
 " Startify {{{
@@ -289,8 +292,6 @@ let g:startify_custom_header =
 
 hi StartifyHeader  ctermfg=114
 
-" disable nerdtree and ctlrp split
-autocmd User Startified setlocal buftype=
 let g:ctrlp_reuse_window = 'startify'
 
 " }}}
