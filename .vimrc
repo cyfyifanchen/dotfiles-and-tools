@@ -468,7 +468,8 @@ let g:gitgutter_map_keys = 0
 " }}}
 
 " Ag {{{
-
+" start searching from project root
+let g:ag_working_path_mode="r"
 "}}}
 
 " Helpers {{{
