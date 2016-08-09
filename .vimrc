@@ -298,7 +298,7 @@ let g:ctrlp_reuse_window = 'startify'
 
 " Emmet {{{
 let g:user_emmet_expandabbr_key = '<c-y>'
-imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+"imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 let g:user_emmet_settings = {
 \  'javascript' : {
 \      'extends' : 'jsx',
