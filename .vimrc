@@ -53,8 +53,9 @@ nnoremap <Up> <NOP>
 nnoremap <Down> <NOP>
 nnoremap Q <Nop>
 nnoremap U <Nop>
-nnoremap J <Nop>
-nnoremap K <Nop>
+nnoremap <leader>d :bp<cr>:bd #<cr>
+"nnoremap J <Nop>
+"nnoremap K <Nop>
 
 " gitgutter
 nnoremap ]h <Plug>GitGutterNextHunk
@@ -420,7 +421,7 @@ let g:fzf_action = {
 " default fzf layout
 " - down / up / left / right
 " - window (nvim only)
-let g:fzf_layout = { 'down': '~20%' }
+let g:fzf_layout = { 'down': '~40%' }
 
 " customize fzf colors to match your color scheme
 let g:fzf_colors =
