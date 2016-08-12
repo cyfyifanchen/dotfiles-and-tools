@@ -148,7 +148,7 @@ set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
 set wildignore=*.o,*~,*.pyc
 
 " remember info about open buffers on close
-set viminfo^=%
+"set viminfo^=%
 
 " }}}
 
