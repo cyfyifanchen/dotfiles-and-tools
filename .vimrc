@@ -78,7 +78,8 @@ set wrap
 set autoread
 set wildmenu
 set scrolloff=3
-" automatic dir
+
+"set cursorline
 " set autochdir
 
 " line break
@@ -146,6 +147,10 @@ set wildignore+=*.a,*.0
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.mov,*.pdf,*.psd,*.ai
 set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
 set wildignore=*.o,*~,*.pyc
+
+" cursorline in active buffer
+au BufEnter * setlocal cursorline
+au BufLeave * setlocal nocursorline
 
 " remember info about open buffers on close
 "set viminfo^=%
