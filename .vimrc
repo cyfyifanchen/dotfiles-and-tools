@@ -169,6 +169,7 @@ Plug 'flazz/vim-colorschemes'
 "Plug 'luochen1990/rainbow'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'mhinz/vim-startify'
+Plug 'timakro/vim-searchant'
 
 "languages
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
