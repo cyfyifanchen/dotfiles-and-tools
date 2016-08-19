@@ -149,8 +149,8 @@ set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
 set wildignore=*.o,*~,*.pyc
 
 " cursorline in active buffer
-au BufEnter * setlocal cursorline
-au BufLeave * setlocal nocursorline
+"au BufEnter * setlocal cursorline
+"au BufLeave * setlocal nocursorline
 
 " remember info about open buffers on close
 "set viminfo^=%
