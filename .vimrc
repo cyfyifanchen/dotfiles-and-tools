@@ -33,6 +33,8 @@ nmap <leader>n :NERDTreeToggle<cr>
 nmap <leader>ew :StripWhitespace<cr>
 nmap <leader>t :IndentLinesToggle<cr>
 nmap <leader>a :Ag<cr>
+"nmap <leader>gco :Gread<cr>
+"nmap <leader>grh :Gwrite<cr>
 nmap <leader><leader> <c-^>
 nmap <leader>p :set nopaste<cr>
 nmap ,cd :cd %:p:h<cr>
