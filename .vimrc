@@ -80,7 +80,7 @@ set wrap
 set autoread
 set wildmenu
 set scrolloff=3
-
+set noesckeys
 "set cursorline
 " set autochdir
 
