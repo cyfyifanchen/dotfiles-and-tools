@@ -287,6 +287,10 @@ autocmd FileType nerdtree noremap <buffer> <leader>f <nop>
 " disable nerdtree and ctlrp split
 autocmd User Startified setlocal buftype=
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" remove the default border
+highlight VertSplit ctermbg=NONE
+highlight VertSplit ctermfg=NONE
 " }}}
 
 " Startify {{{
