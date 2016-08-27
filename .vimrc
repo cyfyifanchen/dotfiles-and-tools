@@ -85,9 +85,7 @@ set noesckeys
 "set cursorline
 " set autochdir
 
-" remove the default border
-highlight VertSplit ctermbg=NONE
-highlight VertSplit ctermfg=NONE
+autocmd ColorScheme * hi VertSplit cterm=NONE ctermbg=NONE ctermfg=Gray
 
 " line break
 set linebreak
