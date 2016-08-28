@@ -42,6 +42,7 @@ nmap ,cd :cd %:p:h<cr>
 nnoremap j gj
 nnoremap k gk
 nnoremap 0 ^
+nnoremap K i<cr><esc>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
