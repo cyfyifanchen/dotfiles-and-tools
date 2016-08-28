@@ -47,9 +47,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-nnoremap <C-e> 4<C-e>
-nnoremap <C-q> 4<C-y>
-nnoremap <C-y> 4<C-y>
+nnoremap <C-e> 5<C-e>
+nnoremap <C-q> 5<C-y>
+nnoremap <C-y> 5<C-y>
 nnoremap <Left> <NOP>
 nnoremap <Right> <NOP>
 nnoremap <Up> <NOP>
