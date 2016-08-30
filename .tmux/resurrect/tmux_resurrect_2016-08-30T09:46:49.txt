@@ -1,0 +1,19 @@
+pane	cyf	1	:zsh	1	:*	1	:/Users/ychen/Docs/dotfiles	1	zsh	:
+pane	cyf	1	:zsh	1	:*	2	:/Users/ychen/Docs/ES6	0	zsh	:
+pane	docs	1	:zsh	1	:*	1	:/Users/ychen/Docs/tt	1	nvim	:nvim
+pane	docs	1	:zsh	1	:*	2	:/Users/ychen/Docs/tt/test	0	zsh	:
+pane	docs	2	:jekyll server	0	:-	1	:/Users/ychen/Docs/yifanchen.github.io	1	zsh	:
+pane	react	1	:nvim	1	:*	1	:/Users/ychen/Docs/cars2	1	nvim	:nvim
+pane	react	1	:nvim	1	:*	2	:/Users/ychen/Docs/cars2	0	zsh	:
+pane	work	1	:zsh	1	:*	1	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp	0	nvim	:nvim
+pane	work	1	:zsh	1	:*	2	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp/assets/src	1	zsh	:
+pane	work	2	:server	0	:-	1	:/Users/ychen	0	zsh	:
+pane	work	2	:server	0	:-	2	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp	1	java	:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -classpath /usr/local/Cellar/maven/3.3.3/libexec/boot/plexus-classworlds-2.5.2.jar -Dclassworlds.conf=/usr/local/Cellar/maven/3.3.3/libexec/bin/m2.conf -Dmaven.home=/usr/local/Cellar/maven/3.3.3/libexec -Dmaven.multiModuleProjectDirectory=/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp org.codehaus.plexus.classworlds.launcher.Launcher jetty:run
+pane	work	2	:server	0	:-	3	:/Users/ychen/Docs/cars/carsBackend/CarsSearch/CarsSearch-webapp	0	zsh	:
+window	cyf	1	1	:*	a99e,267x80,0,0{163x80,0,0,1,103x80,164,0,2}
+window	docs	1	1	:*	e2e6,267x72,0,0{173x72,0,0,3,93x72,174,0,4}
+window	docs	2	0	:-	bda2,267x72,0,0,5
+window	react	1	1	:*	c44c,267x80,0,0{171x80,0,0,6,95x80,172,0,7}
+window	work	1	1	:*	c451,267x80,0,0{171x80,0,0,8,95x80,172,0,9}
+window	work	2	0	:-	0acb,267x80,0,0{78x80,0,0,10,103x80,79,0,11,84x80,183,0,12}
+state	work	cyf
