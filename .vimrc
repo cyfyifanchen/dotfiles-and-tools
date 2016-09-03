@@ -190,7 +190,7 @@ Plug 'othree/html5.vim',                       { 'for': 'html' }
 Plug 'suan/vim-instant-markdown',              { 'for': 'markdown' }
 Plug 'plasticboy/vim-markdown',                { 'for': 'markdown' }
 Plug 'fatih/vim-go',                           { 'for': 'go' }
-Plug 'klen/python-mode',                       { 'for': 'python' }
+"plug 'klen/python-mode',                       { 'for': 'python' }
 Plug 'gregsexton/MatchTag',
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'tpope/vim-surround'
