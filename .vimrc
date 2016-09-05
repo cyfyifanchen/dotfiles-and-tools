@@ -176,6 +176,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'mhinz/vim-startify'
 "Plug 'timakro/vim-searchant'
+Plug 'rakr/vim-two-firewatch'
 
 "languages
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
@@ -240,12 +241,14 @@ try
 catch
 endtry
 set background=dark
+
 if has("gui_running")
-    set guioptions-=T
-    set guioptions-=e
-    "set t_Co=256
-    set guitablabel=%M\ %t
+  set guioptions-=T
+  set guioptions-=e
+  "set t_Co=256
+  set guitablabel=%M\ %t
 endif
+
 "set encoding=utf8
 set ffs=unix,dos,mac
 " }}}
