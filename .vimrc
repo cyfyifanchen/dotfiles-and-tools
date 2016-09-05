@@ -57,6 +57,7 @@ nnoremap <Down> <NOP>
 nnoremap Q <Nop>
 nnoremap U <Nop>
 nnoremap <leader>d :bp<cr>:bd #<cr>
+nnoremap <cr> :noh<cr><cr>
 "nnoremap J <Nop>
 "nnoremap K <Nop>
 
