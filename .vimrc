@@ -125,10 +125,10 @@ set t_vb=
 set tm=500
 
 " folding
-"set foldcolumn=0
+set nofoldenable
+set foldcolumn=0
 set foldmethod=indent
 set foldnestmax=5
-set nofoldenable
 set foldlevel=1
 
 " backups, undos, swaps
