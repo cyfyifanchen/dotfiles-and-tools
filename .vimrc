@@ -481,7 +481,7 @@ let g:gitgutter_map_keys = 0
 
 " Notes {{{
 :let g:notes_directories = ['~/Google Drive/learn/notes']
-":let g:notes_suffix = '.txt'
+:let g:notes_suffix = '.txt'
 " }}}
 
 " Ag {{{
