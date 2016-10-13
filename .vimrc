@@ -179,6 +179,7 @@ Plug 'mhinz/vim-startify'
 "Plug 'timakro/vim-searchant'
 Plug 'rakr/vim-two-firewatch'
 Plug 'rakr/vim-one'
+Plug 'dylanaraps/ryuuko'
 
 "languages
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
@@ -236,24 +237,23 @@ call plug#end()
 " }}}
 
 " Colors, Scheme, Coding and Fonts {{{
-syntax enable
-set background=dark
+"syntax enable
+"set background=dark
+colorscheme tomorrow-night-eighties
+"try
+    "colorscheme tomorrow-night
+"catch
+"endtry
 
-colorscheme Tomorrow-Night-Eighties
-try
-    colorscheme Tomorrow-Night-Eighties
-catch
-endtry
-
-if has("gui_running")
-  set guioptions-=T
-  set guioptions-=e
+"if has("gui_running")
+  "set guioptions-=T
+  "set guioptions-=e
   "set t_Co=256
-  set guitablabel=%M\ %t
-endif
+  "set guitablabel=%M\ %t
+"endif
 
 "set encoding=utf8
-set ffs=unix,dos,mac
+"set ffs=unix,dos,mac
 " }}}
 
 " Airline {{{
