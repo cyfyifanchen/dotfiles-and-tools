@@ -178,6 +178,7 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'mhinz/vim-startify'
 "Plug 'timakro/vim-searchant'
 Plug 'rakr/vim-two-firewatch'
+Plug 'rakr/vim-one'
 
 "languages
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
@@ -236,12 +237,13 @@ call plug#end()
 
 " Colors, Scheme, Coding and Fonts {{{
 syntax enable
+set background=dark
+
 colorscheme Tomorrow-Night-Eighties
 try
     colorscheme Tomorrow-Night-Eighties
 catch
 endtry
-set background=dark
 
 if has("gui_running")
   set guioptions-=T
