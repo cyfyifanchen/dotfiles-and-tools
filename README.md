@@ -27,3 +27,6 @@ tic $TERM.ti<Paste>`
 
 ![image](https://github.com/yifanchen/dotfiles/blob/master/vim.jpg "my zsh + tmux + vim")
 
+A little note to myself:
+
+Check things before I upgrade, now that I am on Sierra, Karabiner isn't working anymore. It's the pain the butt, want go back back to El Captian now.
