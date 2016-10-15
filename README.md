@@ -29,4 +29,4 @@ tic $TERM.ti<Paste>`
 
 ## A little note to myself:
 
-Check things before I upgrade, now that I am on Sierra, Karabiner isn't working anymore. It's the pain the butt, want go back back to El Captian now.
+Check things before upgrading, now that I am on Sierra, Karabiner isn't working. Making things harder.
