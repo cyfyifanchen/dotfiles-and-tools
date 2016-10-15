@@ -187,8 +187,8 @@ Plug 'pangloss/vim-javascript',                { 'for': 'javascript' }
 Plug 'jelera/vim-javascript-syntax',           { 'for': 'javascript' }
 Plug 'othree/yajs.vim',                        { 'for': 'javascript' }
 Plug 'mxw/vim-jsx',                            { 'for': 'jsx' }
-Plug 'hail2u/vim-css3-syntax',                 { 'for': [ 'css', 'less', 'scss' ] }
-Plug 'groenewege/vim-less',                    { 'for': 'less' }
+"Plug 'hail2u/vim-css3-syntax',                 { 'for': [ 'css', 'less', 'scss' ] }
+"Plug 'groenewege/vim-less',                    { 'for': 'less' }
 Plug 'mattn/emmet-vim',                        { 'for': [ 'html', 'handlebars'] }
 Plug 'othree/html5.vim',                       { 'for': 'html' }
 Plug 'suan/vim-instant-markdown',              { 'for': 'markdown' }
