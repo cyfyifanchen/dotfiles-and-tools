@@ -239,7 +239,12 @@ call plug#end()
 " Colors, Scheme, Coding and Fonts {{{
 "syntax enable
 "set background=dark
-colorscheme tomorrow-night-eighties
+
+" for iTerm3
+"colorscheme tomorrow-night-eighties
+
+" for hyerterm, dynamic bg color
+colorscheme ryuuko
 "try
     "colorscheme tomorrow-night
 "catch
@@ -261,6 +266,8 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline_theme = 'base16'
+
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
