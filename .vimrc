@@ -87,7 +87,7 @@ set noesckeys
 "set cursorline
 " set autochdir
 
-autocmd ColorScheme * hi VertSplit cterm=NONE ctermbg=NONE ctermfg=blue
+autocmd ColorScheme * hi VertSplit cterm=NONE ctermbg=NONE ctermfg=green
 
 " line break
 set linebreak
@@ -155,6 +155,9 @@ set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.mov,*.pdf,*.psd,*.ai
 set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
 set wildignore=*.o,*~,*.pyc
 
+" color setting
+set t_8b=^[[48;2;%lu;%lu;%lum
+set t_8f=^[[38;2;%lu;%lu;%lum
 " cursorline in active buffer
 "au BufEnter * setlocal cursorline
 "au BufLeave * setlocal nocursorline
