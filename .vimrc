@@ -238,13 +238,13 @@ call plug#end()
 
 " Colors, Scheme, Coding and Fonts {{{
 "syntax enable
-"set background=dark
+set background=dark
 
 " for iTerm3
-"colorscheme tomorrow-night-eighties
+colorscheme one
 
 " for hyerterm, dynamic bg color
-colorscheme ryuuko
+"colorscheme one
 "try
     "colorscheme tomorrow-night
 "catch
@@ -266,7 +266,7 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_theme = 'base16'
+let g:airline_theme = 'one'
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -432,7 +432,7 @@ let g:deoplete#enable_at_startup = 1
 "}}}
 
 " Neovim true color {{{
-"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "}}}
 
 " fzf vim {{{
@@ -454,7 +454,7 @@ let g:fzf_colors =
   \ 'bg':      ['bg', 'Normal'],
   \ 'hl':      ['fg', 'Comment'],
   \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'Exception'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
   \ 'hl+':     ['fg', 'Statement'],
   \ 'info':    ['fg', 'PreProc'],
   \ 'prompt':  ['fg', 'Conditional'],
