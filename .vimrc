@@ -455,9 +455,9 @@ let g:fzf_layout = { 'down': '~40%' }
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl':      ['fg', ''],
+  \ 'fg+':     ['fg', ''],
+  \ 'bg+':     ['bg', ''],
   \ 'hl+':     ['fg', 'Statement'],
   \ 'info':    ['fg', 'PreProc'],
   \ 'prompt':  ['fg', 'Conditional'],
@@ -484,7 +484,8 @@ autocmd! User FzfStatusLine call <SID>fzf_statusline()
 "}}}
 
 " IndentLine {{{
-let g:indentLine_char = '┆'
+"let g:indentLine_char = '┆'
+let g:indentLine_enabled = 0
 "}}}
 
 " Gitgutter {{{
