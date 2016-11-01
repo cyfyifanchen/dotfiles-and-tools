@@ -33,6 +33,6 @@ tic $TERM.ti
 
 10/31/2016
 
-Vim Color Scheme changed to [Vim-One](whttps://github.com/rakr/vim-one)
+Vim Color Scheme changed to [Vim-One](https://github.com/rakr/vim-one)
 
 ![image](https://github.com/yifanchen/dotfiles/blob/master/vim-one.jpg)
