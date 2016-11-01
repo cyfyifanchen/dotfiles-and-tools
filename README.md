@@ -18,19 +18,21 @@ Vim Theme: [Tomrrow-Night](https://github.com/chriskempson/tomorrow-theme)
 
 #Neovim
 
-I have completely switched to Neovim, and have been using it full time. The following are the steps to make the transition easier.
+I have completely switched to Neovim. I have been using it full time. The following are the steps to make the transition easier.
 
 `ctrl` + `h` is a specific Neovim issue, here is the fix:
 
 https://github.com/christoomey/vim-tmux-navigator/issues/71
 
 ```
-infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.titic $TERM.ti
+infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
+tic $TERM.ti
 
 ```
-
 ![image](https://github.com/yifanchen/dotfiles/blob/master/vim.jpg "my zsh + tmux + vim")
 
-## A little note to myself:
+10/31/2016
 
-Check things before upgrading, now that I am on Sierra, Karabiner isn't working. Making things harder.
+Vim Color Scheme changed to [Vim-One](whttps://github.com/rakr/vim-one)
+
+![image](https://github.com/yifanchen/dotfiles/blob/master/vim.jpg "my zsh + tmux + vim")
