@@ -10,7 +10,7 @@ Zsh Theme: [bullet train](https://github.com/caiogondim/bullet-train-oh-my-zsh-t
 
 Tmux Theme: [Maglev](https://github.com/caiogondim/maglev)
 
-font: [Hack](http://sourcefoundry.org/hack/)
+Font: [Hack](http://sourcefoundry.org/hack/)
 
 Vim Theme: [Tomrrow-Night](https://github.com/chriskempson/tomorrow-theme)
 
@@ -20,10 +20,14 @@ Vim Theme: [Tomrrow-Night](https://github.com/chriskempson/tomorrow-theme)
 
 I have completely switched to Neovim, and have been using it full time. The following are the steps to make the transition easier.
 
-`ctrl` + `h` fix:
+`ctrl` + `h` is a specific Neovim issue, here is the fix:
 
-`infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
-tic $TERM.ti<Paste>`
+https://github.com/christoomey/vim-tmux-navigator/issues/71
+
+```
+infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.titic $TERM.ti
+
+```
 
 ![image](https://github.com/yifanchen/dotfiles/blob/master/vim.jpg "my zsh + tmux + vim")
 
