@@ -35,4 +35,4 @@ tic $TERM.ti
 
 Vim Color Scheme changed to [Vim-One](whttps://github.com/rakr/vim-one)
 
-![image](https://github.com/yifanchen/dotfiles/blob/master/vim.jpg "my zsh + tmux + vim")
+![image](https://github.com/yifanchen/dotfiles/blob/master/vim-one.jpg)
