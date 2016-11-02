@@ -156,8 +156,9 @@ set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
 set wildignore=*.o,*~,*.pyc
 
 " color setting
-set t_8b=^[[48;2;%lu;%lu;%lum
-set t_8f=^[[38;2;%lu;%lu;%lum
+"set t_8b=^[[48;2;%lu;%lu;%lum
+"set t_8f=^[[38;2;%lu;%lu;%lum
+
 " cursorline in active buffer
 "au BufEnter * setlocal cursorline
 "au BufLeave * setlocal nocursorline
