@@ -247,10 +247,14 @@ set background=dark
 " for iTerm3
 colorscheme one
 
+" true color support now requires this
+set termguicolors
+
 " for hyerterm, dynamic bg color
 "colorscheme one
+
 "try
-    "colorscheme tomorrow-night
+    "colorscheme one
 "catch
 "endtry
 
