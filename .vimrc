@@ -357,11 +357,11 @@ endif
 
 " Neomake {{{
 
-"if has('nvim')
-  "let g:neomake_open_list = 2
-  "let g:neomake_javascript_enabled_makers = ['eslint']
-  "autocmd! BufWritePost,BufEnter * Neomake
-"endif
+if has('nvim')
+  let g:neomake_open_list = 2
+  let g:neomake_javascript_enabled_makers = ['eslint']
+  autocmd! BufWritePost,BufEnter * Neomake
+endif
 
 "}}}
 
@@ -485,7 +485,7 @@ autocmd! User FzfStatusLine call <SID>fzf_statusline()
 "}}}
 
 " IndentLine {{{
-"let g:indentLine_char = '┆'
+let g:indentLine_char = '┆'
 let g:indentLine_enabled = 0
 "}}}
 
