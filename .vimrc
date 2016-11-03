@@ -84,9 +84,7 @@ set wildmenu
 set scrolloff=3
 set noesckeys
 
-"set cursorline
-" set autochdir
-
+" style of divider
 autocmd ColorScheme * hi VertSplit cterm=NONE ctermbg=NONE ctermfg=green
 
 " line break
@@ -124,6 +122,10 @@ set visualbell
 set t_vb=
 set tm=500
 
+" doc and code styles
+" set encoding=utf8
+" set ffs=unix,dos,mac
+
 " folding
 set nofoldenable
 set foldcolumn=0
@@ -155,16 +157,15 @@ set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.mov,*.pdf,*.psd,*.ai
 set wildignore+=*.ppt,*.pptx,*.doc,*.docx,*.xls,*.xlsx
 set wildignore=*.o,*~,*.pyc
 
-" color setting
-"set t_8b=^[[48;2;%lu;%lu;%lum
-"set t_8f=^[[38;2;%lu;%lu;%lum
+" set cursorline
+" set autochdir
+
+" remember info about open buffers on close
+"set viminfo^=%
 
 " cursorline in active buffer
 "au BufEnter * setlocal cursorline
 "au BufLeave * setlocal nocursorline
-
-" remember info about open buffers on close
-"set viminfo^=%
 
 " }}}
 
@@ -240,33 +241,18 @@ Plug 'ntpeters/vim-better-whitespace',         { 'on': 'StripWhitespace' }
 call plug#end()
 " }}}
 
-" Colors, Scheme, Coding and Fonts {{{
-"syntax enable
-set background=dark
+" Colors and Schemes {{{
 
-" for iTerm3
-colorscheme one
-
-" true color support now requires this
+" Nvim 0.1.5 true color support
 set termguicolors
 
-" for hyerterm, dynamic bg color
-"colorscheme one
+set background=dark
+colorscheme one
 
-"try
-    "colorscheme one
-"catch
-"endtry
+" Vim inside Tmux might need these color settings
+"set t_8b=^[[48;2;%lu;%lu;%lum
+"set t_8f=^[[38;2;%lu;%lu;%lum
 
-"if has("gui_running")
-  "set guioptions-=T
-  "set guioptions-=e
-  "set t_Co=256
-  "set guitablabel=%M\ %t
-"endif
-
-"set encoding=utf8
-"set ffs=unix,dos,mac
 " }}}
 
 " Airline {{{
@@ -361,11 +347,11 @@ endif
 
 " Neomake {{{
 
-if has('nvim')
+"if has('nvim')
   let g:neomake_open_list = 2
   let g:neomake_javascript_enabled_makers = ['eslint']
   autocmd! BufWritePost,BufEnter * Neomake
-endif
+"endif
 
 "}}}
 
@@ -437,10 +423,6 @@ let g:gundo_right = 1
 
 " Deoplete {{{
 let g:deoplete#enable_at_startup = 1
-"}}}
-
-" Neovim true color {{{
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "}}}
 
 " fzf vim {{{
