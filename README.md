@@ -4,12 +4,12 @@ Using this Repo as a backup in case I change machine so I have something to look
 
 # Zsh + Tmux + Vim
 
-| Client | Themes                                                                     | Fonts                                   | Colors      | Links |
-|--------|----------------------------------------------------------------------------|-----------------------------------------|-------------|-------|
-| Neovim | [Vim-One](https://github.com/rakr/vim-one)                                 | ([Hack](http://sourcefoundry.org/hack/) | #           |       |
-| Tmux   | [Maglev](https://github.com/caiogondim/maglev)                             | Hack                                    | #           |       |
-| Zsh    | [Bullet Train](https://github.com/caiogondim/bullet-train-oh-my-zsh-theme) | #                                       | #           |       |
-| iTerm  | [Spacegray Eighties](https://github.com/mbadolato/iTerm2-Color-Schemes)    | #                                       | BG: #282c34 |       |
+| Client | Themes                                                                     | Fonts                                   | Colors      |
+|--------|----------------------------------------------------------------------------|-----------------------------------------|-------------|
+| Neovim | [Vim-One](https://github.com/rakr/vim-one)                                 | [Hack](http://sourcefoundry.org/hack/)  | #           |
+| Tmux   | [Maglev](https://github.com/caiogondim/maglev)                             | Hack                                    | #           |
+| Zsh    | [Bullet Train](https://github.com/caiogondim/bullet-train-oh-my-zsh-theme) | #                                       | #           |
+| iTerm  | [Spacegray Eighties](https://github.com/mbadolato/iTerm2-Color-Schemes)    | #                                       | BG: #282c34 |
 
 #Neovim
 
