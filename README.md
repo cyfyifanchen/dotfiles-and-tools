@@ -4,7 +4,12 @@ Using this Repo as a backup in case I change machine so I have something to look
 
 # Zsh + Tmux + Vim
 
-Themes, look and font:
+| Client | Themes              | Fonts | Colors      | Links |
+|--------|---------------------|-------|-------------|-------|
+| Neovim | One                 | Hack  | #           |       |
+| Tmux   | Maglev              | Hack  | #           |       |
+| Zsh    | Bullet Train        | #     | #           |       |
+| iTerm  | Space Gray Eighties | #     | BG: #282c34 |       |
 
 Zsh Theme: [bullet train](https://github.com/caiogondim/bullet-train-oh-my-zsh-theme)
 
