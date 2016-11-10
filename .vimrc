@@ -33,6 +33,7 @@ nmap <leader>n :NERDTreeToggle<cr>
 nmap <leader>ew :StripWhitespace<cr>
 nmap <leader>t :IndentLinesToggle<cr>
 nmap <leader>a :Ag<cr>
+nmap <leader>i <leader>ci
 "nmap <leader>gco :Gread<cr>
 "nmap <leader>grh :Gwrite<cr>
 nmap <leader><leader> <c-^>
@@ -472,7 +473,9 @@ autocmd! User FzfStatusLine call <SID>fzf_statusline()
 
 " IndentLine {{{
 let g:indentLine_char = '┆'
+let g:indentLine_enabled = 1
 let g:indentLine_enabled = 0
+"let g:indentLine_color_term = red
 "}}}
 
 " Gitgutter {{{

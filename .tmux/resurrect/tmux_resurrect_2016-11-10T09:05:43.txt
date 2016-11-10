@@ -1,0 +1,22 @@
+pane	cyf	1	:editor	1	:*	1	:/Users/ychen/Docs/reduxstagram	1	zsh	:
+pane	cyf	1	:editor	1	:*	2	:/Users/ychen/Docs/reduxstagram	0	zsh	:
+pane	docs	1	:zsh	1	:*	1	:/Users/ychen/Docs/yifanchen.github.io	0	zsh	:
+pane	docs	1	:zsh	1	:*	2	:/Users/ychen/Docs/yifanchen.github.io	1	zsh	:
+pane	docs	2	:jekyll server	0	:-	1	:/Users/ychen/Docs/yifanchen.github.io	1	zsh	:
+pane	react	1	:nvim	1	:*	1	:/Users/ychen/Docs/cars2	1	nvim	:nvim
+pane	react	1	:nvim	1	:*	2	:/Users/ychen/Docs/cars2	0	zsh	:
+pane	work	1	:zsh	1	:*	1	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp	0	nvim	:nvim
+pane	work	1	:zsh	1	:*	2	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp/assets/src	1	zsh	:
+pane	work	2	:server	0	:-	1	:/Users/ychen	0	zsh	:
+pane	work	2	:server	0	:-	2	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp	1	java	:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -classpath /usr/local/Cellar/maven/3.3.3/libexec/boot/plexus-classworlds-2.5.2.jar -Dclassworlds.conf=/usr/local/Cellar/maven/3.3.3/libexec/bin/m2.conf -Dmaven.home=/usr/local/Cellar/maven/3.3.3/libexec -Dmaven.multiModuleProjectDirectory=/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp org.codehaus.plexus.classworlds.launcher.Launcher jetty:run
+pane	work	2	:server	0	:-	3	:/Users/ychen/Docs/cars/carsBackend/CarsSearch/CarsSearch-webapp	0	zsh	:
+pane	work	3	:test	0	:	1	:/Users/ychen/Downloads	1	zsh	:
+pane	work	3	:test	0	:	2	:/Users/ychen/Downloads	0	zsh	:
+window	cyf	1	1	:*	8771,267x81,0,0{168x81,0,0,1,98x81,169,0,2}
+window	docs	1	1	:*	4cc6,267x81,0,0{171x81,0,0,3,95x81,172,0,4}
+window	docs	2	0	:-	bba2,267x81,0,0,5
+window	react	1	1	:*	cccd,267x81,0,0{171x81,0,0,6,95x81,172,0,7}
+window	work	1	1	:*	8bc3,267x72,0,0{168x72,0,0,8,98x72,169,0,9}
+window	work	2	0	:-	92ac,267x72,0,0{78x72,0,0,10,103x72,79,0,11,84x72,183,0,12}
+window	work	3	0	:	ee20,267x72,0,0{170x72,0,0,13,96x72,171,0,14}
+state	work	
