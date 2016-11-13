@@ -254,7 +254,7 @@ colorscheme one
 "set t_8b=^[[48;2;%lu;%lu;%lum
 "set t_8f=^[[38;2;%lu;%lu;%lum
 
-" }}}
+"}}}
 
 " Airline {{{
 set laststatus=2
@@ -473,13 +473,15 @@ autocmd! User FzfStatusLine call <SID>fzf_statusline()
 
 " IndentLine {{{
 let g:indentLine_char = '┆'
-let g:indentLine_enabled = 1
 let g:indentLine_enabled = 0
-"let g:indentLine_color_term = red
-"}}}
 
-" Gitgutter {{{
-let g:gitgutter_map_keys = 0
+" suppose to work here
+"let g:indentLine_color_term = 'red'
+
+" overwrites the default color
+let g:indentLine_color_gui = '#3f4041'
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '·'
 "}}}
 
 " Notes {{{
