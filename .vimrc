@@ -480,7 +480,7 @@ let g:indentLine_enabled = 0
 
 " overwrites the default color
 let g:indentLine_color_gui = '#3f4041'
-let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceEnabled = 0
 let g:indentLine_leadingSpaceChar = '·'
 "}}}
 
