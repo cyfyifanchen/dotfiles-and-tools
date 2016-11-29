@@ -4,4 +4,8 @@ node_modules
 .tmux/plugins/tmux-battery
 .tmux/plugins/tmux-pain-control
 .tmux/plugins/tmux-sidebar
+.vim/init.vim
+.DS_Store
+.zshrc
+.tmux/resurrect
 
