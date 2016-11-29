@@ -1,3 +1,0 @@
-pane	work	1	:Vim	1	:*	1	:/Users/ychen	1	Vim	:/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim
-window	work	1	1	:*	b61d,264x80,0,0,0
-state	work	

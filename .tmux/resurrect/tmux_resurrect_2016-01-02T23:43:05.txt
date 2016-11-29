@@ -1,7 +1,0 @@
-pane	work	1	:vim	1	:*	1	:/Users/ychen	1	zsh	:
-pane	work	2	:zsh	0	:-	1	:/Users/ychen/Docs/cars/carsBackend/CarsPortal/CarsPortal-webapp/assets/src/js/home	1	zsh	:
-pane	work	2	:zsh	0	:-	2	:/Users/ychen	0	zsh	:
-pane	work	2	:zsh	0	:-	3	:/Users/ychen	0	zsh	:
-window	work	1	1	:*	b61f,264x80,0,0,2
-window	work	2	0	:-	a028,264x80,0,0{132x80,0,0,4,65x80,133,0,5,65x80,199,0,6}
-state	work	

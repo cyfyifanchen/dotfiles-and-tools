@@ -1,3 +1,0 @@
-pane	0	1	:zsh	1	:*	1	:/Users/ychen	1	zsh	:
-window	0	1	1	:*	d21d,260x78,0,0,0
-state	0	
