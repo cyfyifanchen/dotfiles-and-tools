@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/ychen/.oh-my-zsh
+export ZSH=/Users/yifanchen/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -98,7 +98,7 @@ alias wdp="pbpaste"
 #fzf
 #FZF_CTRL_T_COMMAND="seq 100"
 
-export NVM_DIR="/Users/ychen/.nvm"
+export NVM_DIR="/Users/yifanchen/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

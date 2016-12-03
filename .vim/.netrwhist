@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/ychen/Docs/dotfiles/.vim/UltiSnips'
 let g:netrw_dirhist_2='/Users/ychen/Docs/ES6/patterns'
 let g:netrw_dirhist_3='/Users/ychen/Docs/react-presentation'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/Users/ychen/Docs'
 let g:netrw_dirhist_5='/Users/ychen/Docs/menu'
 let g:netrw_dirhist_6='/Users/ychen/Docs'
 let g:netrw_dirhist_7='/Users/ychen/Docs/grunt-es2015-starterkit'
+let g:netrw_dirhist_8='/Users/yifanchen/Docs/dotfiles/.git'
