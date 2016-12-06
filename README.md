@@ -9,9 +9,13 @@ Using this Repo as a backup in case I change machine so I have something to look
 | Neovim | [Vim-One](https://github.com/rakr/vim-one)                                 | [Hack](http://sourcefoundry.org/hack/)  | #           |
 | Tmux   | [Maglev](https://github.com/caiogondim/maglev)                             | Hack                                    | #           |
 | Zsh    | [Bullet Train](https://github.com/caiogondim/bullet-train-oh-my-zsh-theme) | #                                       | #           |
-| iTerm  | [Spacegray Eighties](https://github.com/mbadolato/iTerm2-Color-Schemes)    | #                                       | BG: #282c34 |
+| Borderless iTerm  | [Spacegray Eighties](https://github.com/mbadolato/iTerm2-Color-Schemes)    | #                                       | BG: #282c34 |
 
-#Neovim
+# Borderless iTerm
+
+    ./install.sh 30 30
+
+# Neovim
 
 I have completely switched to Neovim full time. I have been using it full time. The following are the steps to make the transition easier.
 
