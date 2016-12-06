@@ -313,6 +313,7 @@ let g:startify_custom_header =
 
 hi StartifyHeader  ctermfg=114
 
+let g:startify_change_to_dir = 0
 let g:ctrlp_reuse_window = 'startify'
 
 " }}}
