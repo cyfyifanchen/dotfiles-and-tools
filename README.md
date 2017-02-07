@@ -14,6 +14,9 @@ Using this Repo as a backup in case I change machine so I have something to look
 # Borderless iTerm
 
     ./install.sh 30 30
+    ./install.sh 25 25
+
+Padding feature gets implemented into iTerm2 nightly build 3.1.
 
 # Neovim
 
