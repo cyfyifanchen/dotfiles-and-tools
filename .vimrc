@@ -492,7 +492,7 @@ let g:indentLine_leadingSpaceChar = '·'
 
 " Ag {{{
 " start searching from project root
-let g:ag_working_path_mode="r"
+"let g:ag_working_path_mode="r"
 "}}}
 
 " Helpers {{{
