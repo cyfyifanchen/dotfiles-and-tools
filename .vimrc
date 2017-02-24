@@ -291,6 +291,11 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 " }}}
 
+" Commenters {{{
+let g:NERDCustomDelimiters = { 'handlebars': { 'left': '<!--','right': '-->' } }
+let g:NERDCustomDelimiters = { 'hbs': { 'left': '<!--','right': '-->' } }
+" }}}
+
 " NEEDTree {{{
 "autocmd FileType nerdtree noremap <buffer> <leader>q <nop>
 autocmd FileType nerdtree noremap <buffer> <leader>l <nop>
