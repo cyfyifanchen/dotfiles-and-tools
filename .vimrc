@@ -84,6 +84,7 @@ set autoread
 set wildmenu
 set scrolloff=3
 set noesckeys
+"set modifiable
 
 " style of divider
 autocmd ColorScheme * hi VertSplit cterm=NONE ctermbg=NONE ctermfg=green
@@ -214,7 +215,8 @@ endif
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 Plug 'jceb/vim-orgmode'
-Plug 'rking/ag.vim'
+"Plug 'mileszs/ack.vim'
+"Plug 'rking/ag.vim'
 Plug 'sickill/vim-pasta'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
