@@ -150,8 +150,8 @@ set noswapfile
 " tabs
 set expandtab
 set smarttab
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 
 " ignores
 set wildignore+=*.a,*.0
@@ -193,7 +193,7 @@ Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
 Plug 'pangloss/vim-javascript',                { 'for': 'javascript' }
 Plug 'jelera/vim-javascript-syntax',           { 'for': 'javascript' }
 Plug 'othree/yajs.vim',                        { 'for': 'javascript' }
-Plug 'mxw/vim-jsx',                            { 'for': 'jsx' }
+Plug 'mxw/vim-jsx',                            { 'for': 'javascript' }
 "Plug 'hail2u/vim-css3-syntax',                 { 'for': [ 'css', 'less', 'scss' ] }
 "Plug 'groenewege/vim-less',                    { 'for': 'less' }
 Plug 'mattn/emmet-vim',                        { 'for': [ 'html', 'handlebars'] }
@@ -379,6 +379,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " React and JSX {{{
 let g:jsx_ext_required = 0
+let g:javascript_plugin_flow = 1
 " }}}
 
 " Autocmd {{{
