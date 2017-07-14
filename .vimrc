@@ -57,6 +57,7 @@ nnoremap <Up> <NOP>
 nnoremap <Down> <NOP>
 nnoremap Q <Nop>
 nnoremap U <Nop>
+nnoremap J <Nop>
 nnoremap <leader>d :bp<cr>:bd #<cr>
 nnoremap <cr> :noh<cr><cr>
 "nnoremap J <Nop>
@@ -83,7 +84,8 @@ set wrap
 set autoread
 set wildmenu
 set scrolloff=3
-set noesckeys
+set mouse=a
+"set noesckeys
 "set modifiable
 
 " style of divider
@@ -178,6 +180,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'nightsense/vim-crunchbang'
 Plug 'flazz/vim-colorschemes'
 "Plug 'junegunn/rainbow_parentheses.vim'
 "Plug 'luochen1990/rainbow'
@@ -296,6 +299,8 @@ let g:airline_symbols.linenr = ''
 " Commenters {{{
 let g:NERDCustomDelimiters = { 'handlebars': { 'left': '<!--','right': '-->' } }
 let g:NERDCustomDelimiters = { 'hbs': { 'left': '<!--','right': '-->' } }
+
+let g:NERDCustomDelimiters = { 'js': { 'left': '{/*','right': '*/}' } }
 " }}}
 
 " NEEDTree {{{
