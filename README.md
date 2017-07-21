@@ -20,7 +20,7 @@ Padding feature gets implemented into iTerm2 nightly build 3.1.
 
 # Neovim
 
-I have completely switched to Neovim full time. I have been using it full time. The following are the steps to make the transition easier.
+Neovim is faster than Vim, that's why I use Neovim.
 
 `ctrl` + `h` is a specific Neovim issue, here is the fix:
 
