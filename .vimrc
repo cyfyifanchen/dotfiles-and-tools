@@ -26,6 +26,7 @@ nmap <leader>sp :setlocal spell!<cr>
 nmap <leader>ev :vsp $MYVIMRC<cr>
 nmap <leader>et :vsp ~/.tmux.conf<cr>
 nmap <leader>ez :vsp ~/.zshrc<cr>
+nmap <leader>ea :Ag <c-r><c-w><cr>
 nmap <leader>sv :source $MYVIMRC<cr>
 nmap <leader>pi :PlugInstall<cr>
 nmap <leader>u :GundoToggle<cr>
