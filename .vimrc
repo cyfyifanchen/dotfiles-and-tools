@@ -217,7 +217,7 @@ endif
 
 "tools
 Plug 'xolox/vim-misc'
-Plug 'xolox/vim-notes'
+" Plug 'xolox/vim-notes'
 Plug 'jceb/vim-orgmode'
 "Plug 'mileszs/ack.vim'
 "Plug 'rking/ag.vim'
