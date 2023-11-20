@@ -42,7 +42,7 @@ tic $TERM.ti
 
 ```
 
-Enable macOS system key repeats
+## Enable macOS system key repeats
 
 ```bash
 $ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false              # For VS Code
@@ -54,4 +54,4 @@ $ defaults delete -g ApplePressAndHoldEnabled                                   
 
 ## Blog post about Neovim color
 
-I've written a ![post](https://www.cyfyifanchen.com/blog/neovim-true-color) on how to change the Neovim color, feel free to ready even more.
+I've written a [blog post](https://www.cyfyifanchen.com/blog/neovim-true-color) on how to change the Neovim color and making it look amazing a long time ago, apparently the analytics shows that this page get hit at least 10 times per a day, so feeling pretty happy about it. Take a look if you want.:)
