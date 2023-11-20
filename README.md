@@ -1,12 +1,16 @@
+# Introduction
+
+Having the right set of tools makes work not work!
+
 # Dotfiles
 
-![image](https://github.com/yifanchen/dotfiles/blob/master/vim.jpg 'my zsh + tmux + vim')
+![image](./images/vim.jpg)
 
 10/31/2016
 
 Vim Color Scheme changed to [Vim-One](https://github.com/rakr/vim-one)
 
-![image](https://github.com/yifanchen/dotfiles/blob/master/vim-one.jpg)
+![image](./images/vim-one.jpg)
 
 ## Zsh + Tmux + Vim
 
@@ -51,3 +55,15 @@ $ defaults delete -g ApplePressAndHoldEnabled                                   
 ## Blog post about Neovim color
 
 I've written a [blog post](https://www.cyfyifanchen.com/blog/neovim-true-color) on how to change the Neovim color and making it look amazing a long time ago, apparently the analytics shows that this page get hit at least 10 times per a day, so feeling pretty happy about it. Take a look if you want.:)
+
+# Tools
+
+- System Keymapper: karabiner-element
+- Editor: Vim
+- Copy and Paste: Pastebot
+- Gif Recorder: Kap
+- IDE: VSCode with VSvim
+- Terminal: Tabby
+- Screenshot: Snipaste
+- Browser: Arc
+- Git: Github Desktop Client
