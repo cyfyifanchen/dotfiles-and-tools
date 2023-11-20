@@ -58,12 +58,40 @@ I've written a [blog post](https://www.cyfyifanchen.com/blog/neovim-true-color) 
 
 # Tools
 
-- System Keymapper: karabiner-element
-- Editor: Vim
-- Copy and Paste: Pastebot
-- Gif Recorder: Kap
-- IDE: VSCode with VSvim
-- Terminal: Tabby
-- Screenshot: Snipaste
-- Browser: Arc
-- Git: Github Desktop Client
+A set of tools I use daily.
+
+### System Keymapper: karabiner-element
+
+It always is the first thing I download on a new machine, making HJKL system wide available, it's pure magic.
+
+### Editor: Vim
+
+Vimmer who I am.
+
+### Copy and Paste: Pastebot
+
+The universal clipboard is just awesome, screenshots and gif can also be put into the clipboard.
+
+### Gif Recorder: Kap
+
+Free and high quality, thinking about contribute to it.
+
+### IDE: VSCode with VSvim
+
+Gosh, it is being updated quite often, no longer need to use `.vimrc` anymore, and it introduced me Sneak, thanks for that.
+
+### Terminal: Tabby
+
+This is by far the most comfortable and modern Terminal Simulator I've ever used.
+
+### Screenshot: Snipaste
+
+Free and edit all in one.
+
+### Browser: Arc
+
+It cures my tab syndrome.
+
+### Git: Github Desktop Client
+
+When the code is ready to commit, switching out from editor, using a different client often fresh my mind a lot. That's why I keep using it.
