@@ -1,4 +1,4 @@
-# Mac
+# Dotfiles
 
 ![image](https://github.com/yifanchen/dotfiles/blob/master/vim.jpg 'my zsh + tmux + vim')
 
@@ -7,10 +7,6 @@
 Vim Color Scheme changed to [Vim-One](https://github.com/rakr/vim-one)
 
 ![image](https://github.com/yifanchen/dotfiles/blob/master/vim-one.jpg)
-
-Enabling Keyrepeat on MacOS Mojave
-
-Using this Repo as a backup in case I change machine so I have something to look.
 
 ## Zsh + Tmux + Vim
 
