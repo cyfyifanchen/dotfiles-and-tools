@@ -96,6 +96,12 @@ https://github.com/Eugeny/tabby
 
 This is by far the most comfortable and modern Terminal Simulator I've ever used.
 
+### Shell: Oh-my-zsh
+
+https://ohmyz.sh/
+
+Who doesn't like Z-shell?
+
 ### Screenshot: Snipaste
 
 https://www.snipaste.com
