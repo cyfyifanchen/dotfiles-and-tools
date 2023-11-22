@@ -62,6 +62,8 @@ A set of tools I use daily.
 
 ### System Keymapper: karabiner-element
 
+![](./images/karabiner-element.png)
+
 https://karabiner-elements.pqrs.org/
 
 It was, it is, and it will always be the first thing I download on a new machine, making HJKL system-wide available, it's pure magic.
@@ -89,6 +91,16 @@ Free and high quality, thinking about contribute to it.
 ### IDE: VSCode with VSvim
 
 This combination needs NO introduction.
+
+#### Theme
+
+|          Nord Light           |            Panda             |
+| :---------------------------: | :--------------------------: |
+| ![](./images/panda-theme.png) | ![](./images/nord-light.png) |
+
+[ Panda-syntax ](http://panda.siamak.me/) is my favorite dark theme, [ nord light ](https://github.com/nordtheme/nord) is my favorite light theme.
+
+I use Panda at day time, and nord-light at night time.
 
 ### Terminal: Tabby
 
