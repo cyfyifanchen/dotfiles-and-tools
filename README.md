@@ -62,36 +62,64 @@ A set of tools I use daily.
 
 ### System Keymapper: karabiner-element
 
-It always is the first thing I download on a new machine, making HJKL system wide available, it's pure magic.
+https://karabiner-elements.pqrs.org/
 
-### Editor: Vim
+It was, it is, and it will always be the first thing I download on a new machine, making HJKL system-wide available, it's pure magic.
 
-Vimmer who I am.
+Not only does [ tekezo ](https://github.com/tekezo) make an awesome software for free, but [ tekezo ](https://github.com/tekezo) also keeps it up-to-date with every macOS release, this kinda dedication is phenomenal.
+
+### Editor: Neovim
+
+https://neovim.io/
+
+Vimmer, That's who I am, that's who I will always be.
 
 ### Copy and Paste: Pastebot
 
-The universal clipboard is just awesome, screenshots and gif can also be put into the clipboard.
+https://tapbots.com/pastebot/
+
+The universal clipboard is simply a must-have, screenshots and gif can also be put into the clipboard, long history saved, one license across multiple machines, altho it isn't free, but is worth every penny.
 
 ### Gif Recorder: Kap
+
+https://github.com/wulkano/Kap
 
 Free and high quality, thinking about contribute to it.
 
 ### IDE: VSCode with VSvim
 
-Gosh, it is being updated quite often, no longer need to use `.vimrc` anymore, and it introduced me Sneak, thanks for that.
+This combination needs NO introduction.
 
 ### Terminal: Tabby
+
+https://github.com/Eugeny/tabby
 
 This is by far the most comfortable and modern Terminal Simulator I've ever used.
 
 ### Screenshot: Snipaste
 
-Free and edit all in one.
+https://www.snipaste.com
+
+Free and edit all in one, what's the reason not like it?
 
 ### Browser: Arc
+
+https://arc.net
 
 It cures my tab syndrome.
 
 ### Git: Github Desktop Client
 
-When the code is ready to commit, switching out from editor, using a different client often fresh my mind a lot. That's why I keep using it.
+https://desktop.github.com
+
+When the code is ready to commit, switching out from editor, using a different client often fresh my mind a lot. That's why I've been using it.
+
+### Spotlight: Raycast
+
+https://www.raycast.com
+
+Well, I don't understand why native Spotlight Search doesn't feel smart at all, it can't even open Finder by typing, it drove me nuts all the time.
+
+Raycast, is a great replacement, the window management is something macOS lacks, it's great to have. The command is built for developers I think. It reminds me of Chrome Site Search, once it's configed, it'd be super powerful and productive.
+
+But some advanced features need to be unlocked by PRO, that's fine I understand. But integration with Google Translate, c'mon this doesn't have to be a PRO feature.
