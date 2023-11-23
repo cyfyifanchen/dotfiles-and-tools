@@ -58,7 +58,7 @@ I've written a [blog post](https://www.cyfyifanchen.com/blog/neovim-true-color) 
 
 # Tools
 
-A set of tools I use daily.
+A set of tools I use on a daily basis, and I've written a [ blog post ](https://cyfyifanchen.com/blog/my-tools-my-cave) about it, welcome to have a read.
 
 ### System Keymapper: karabiner-element
 
@@ -113,6 +113,8 @@ This is by far the most comfortable and modern Terminal Simulator I've ever used
 https://ohmyz.sh/
 
 Who doesn't like Z-shell?
+
+There is another shell, called [oh-my-post](https://ohmyposh.dev/), it's pretty cool, but I've not been able to make it work yet. I am gonna list it here anyway. When the config is ready to share, I am gonna come back to update this post.
 
 ### Screenshot: Snipaste
 
