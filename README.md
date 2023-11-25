@@ -60,7 +60,7 @@ I've written a [blog post](https://www.cyfyifanchen.com/blog/neovim-true-color) 
 
 A set of tools I use on a daily basis, and I've written a [ blog post ](https://cyfyifanchen.com/blog/my-tools-my-cave) about it, welcome to have a read.
 
-### System Keymapper: karabiner-element
+## System Keymapper: karabiner-element
 
 ![](./images/karabiner-element.png)
 
@@ -104,25 +104,25 @@ or
 
 Now, how do you feel about this awesome Vim motion in every-day computer use? Pretty great, isn't it? Keep in mind that the philosophy is keeping fingers on the golden role of the keyboard by enabling HJKL Vim motion with KE.
 
-### Editor: Neovim
+## Editor: Neovim
 
 https://neovim.io/
 
 Vimmer, That's who I am, that's who I will always be.
 
-### Copy and Paste: Pastebot
+## Copy and Paste: Pastebot
 
 https://tapbots.com/pastebot/
 
 The universal clipboard is simply a must-have, screenshots and gif can also be put into the clipboard, long history saved, one license across multiple machines, altho it isn't free, but is worth every penny.
 
-### Gif Recorder: Kap
+## Gif Recorder: Kap
 
 https://github.com/wulkano/Kap
 
 Free and high quality, thinking about contribute to it.
 
-### IDE: VSCode with VSvim
+## IDE: VSCode with VSvim
 
 This combination needs NO introduction.
 
@@ -136,13 +136,13 @@ This combination needs NO introduction.
 
 I use Panda at day time, and nord-light at night time.
 
-### Terminal: Tabby
+## Terminal: Tabby
 
 https://github.com/Eugeny/tabby
 
 This is by far the most comfortable and modern Terminal Simulator I've ever used.
 
-### Shell: Oh-my-zsh
+## Shell: Oh-my-zsh
 
 https://ohmyz.sh/
 
@@ -150,25 +150,25 @@ Who doesn't like Z-shell?
 
 There is another shell, called [oh-my-post](https://ohmyposh.dev/), it's pretty cool, but I've not been able to make it work yet. I am gonna list it here anyway. When the config is ready to share, I am gonna come back to update this post.
 
-### Screenshot: Snipaste
+## Screenshot: Snipaste
 
 https://www.snipaste.com
 
 Free and edit all in one, what's the reason not like it?
 
-### Browser: Arc
+## Browser: Arc
 
 https://arc.net
 
 It cures my tab syndrome.
 
-### Git: Github Desktop Client
+## Git: Github Desktop Client
 
 https://desktop.github.com
 
 When the code is ready to commit, switching out from editor, using a different client often fresh my mind a lot. That's why I've been using it.
 
-### Spotlight: Raycast
+## Spotlight: Raycast
 
 https://www.raycast.com
 
