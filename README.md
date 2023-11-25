@@ -72,6 +72,8 @@ Not only does [ tekezo ](https://github.com/tekezo) make an awesome software for
 
 #### Less keystroke does more
 
+![](./images/vim-motion2.gif)
+
 The philosophy of shortcut is "less is more" in the sense where can be done intuitively.
 
 Once mapping `hjkl` with `control` as `arrow` key is done, amazing things happen intuitively:
