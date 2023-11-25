@@ -150,7 +150,7 @@ This is by far the most comfortable and modern Terminal Simulator I've ever used
 
 Who doesn't like Z-shell?
 
-There is another shell, called [oh-my-post](https://ohmyposh.dev/), it's pretty cool, but I've not been able to make it work yet. I am gonna list it here anyway. When the config is ready to share, I am gonna come back to update this post.
+There is another shell, called [oh-my-posh](https://ohmyposh.dev/), it's pretty cool, but I've not been able to make it work yet. I am gonna list it here anyway. When the config is ready to share, I am gonna come back to update this post.
 
 ## Screenshot: Snipaste
 
