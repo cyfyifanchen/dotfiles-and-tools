@@ -178,4 +178,6 @@ Well, I don't understand why native Spotlight Search doesn't feel smart at all, 
 
 Raycast, is a great replacement, the window management is something macOS lacks, it's great to have. The command is built for developers I think. It reminds me of Chrome Site Search, once it's configed, it'd be super powerful and productive.
 
-But some advanced features need to be unlocked by PRO, that's fine I understand. But integration with Google Translate, c'mon this doesn't have to be a PRO feature.
+~~But some advanced features need to be unlocked by PRO, that's fine I understand. But integration with Google Translate, c'mon this doesn't have to be a PRO feature.~~
+
+I am looking for some cool integration and commands with Reycast, once I do find them I will share them here.
