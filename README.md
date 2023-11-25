@@ -70,6 +70,40 @@ It was, it is, and it will always be the first thing I download on a new machine
 
 Not only does [ tekezo ](https://github.com/tekezo) make an awesome software for free, but [ tekezo ](https://github.com/tekezo) also keeps it up-to-date with every macOS release, this kinda dedication is phenomenal.
 
+#### Less keystroke does more
+
+The philosophy of shortcut is "less is more" in the sense where can be done intuitively.
+
+Once mapping `hjkl` with `control` as `arrow` key is done, amazing things happen intuitively:
+
+`control` + `h` + `j` + `k` + `l`: `left` `down` `up` `right`.
+
+`control` + `cmd` + `h` or `l`: navigating through beginning and end of a line.
+
+`control` + `cmd` + `shift` + `h` or `l`: select entire line.
+
+`control` + `cmd` + `k` or `j`: top or bottom of the file
+
+`control` + `cmd` + `shift` + `k` or `j`: select entire file from either top or bottom.
+
+`control` + `j` and `control` + `k`: going through intellisense in IDE or up and down when search in Google.
+
+`control` + `l`: very useful to attach parameters to the end of a url.
+
+##### Example of adding a parameter to an url with both hands on home row of keyboard
+
+1. `cmd` + `l`
+2. `control` + `l`
+3. type the parameter.
+
+or
+
+1. `cmd` + `l`
+2. `control` + `e`
+3. type the parameter.
+
+Now, how do you feel about this awesome Vim motion in every-day computer use? Pretty great, isn't it? Keep in mind that the philosophy is keeping fingers on the golden role of the keyboard by enabling HJKL Vim motion with KE.
+
 ### Editor: Neovim
 
 https://neovim.io/
