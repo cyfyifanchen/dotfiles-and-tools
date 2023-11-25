@@ -102,7 +102,7 @@ or
 2. `control` + `e`
 3. type the parameter.
 
-Now, how do you feel about this awesome Vim motion in every-day computer use? Pretty great, isn't it? Keep in mind that the philosophy is keeping fingers on the golden role of the keyboard by enabling HJKL Vim motion with KE.
+Now, how do you feel about this awesome Vim motion in every-day computer use? Pretty great, isn't it? Keep in mind that the philosophy is keeping fingers on the golden row of the keyboard by enabling HJKL Vim motion with KE.
 
 ## Editor: Neovim
 
