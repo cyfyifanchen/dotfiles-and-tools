@@ -106,6 +106,8 @@ or
 
 Now, how do you feel about this awesome Vim motion in every-day computer use? Pretty great, isn't it? Keep in mind that the philosophy is keeping fingers on the golden row of the keyboard by enabling HJKL Vim motion with KE.
 
+P.S There is something interesting I just realize the other day, command + K actually is using URL params to tweak the actions. Let's say if I can muscle memory the URL params and directly using it to do all the wanted actions, that's for sure is faster than command + K. That's so nice, isn't it?
+
 ## Editor: Neovim
 
 [Neovim](https://neovim.io/)
