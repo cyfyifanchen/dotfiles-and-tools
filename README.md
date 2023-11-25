@@ -64,7 +64,7 @@ A set of tools I use on a daily basis, and I've written a [ blog post ](https://
 
 ![](./images/karabiner-element.png)
 
-https://karabiner-elements.pqrs.org/
+[Karabiner Elements](https://karabiner-elements.pqrs.org/)
 
 It was, it is, and it will always be the first thing I download on a new machine, making HJKL system-wide available, it's pure magic.
 
@@ -108,19 +108,19 @@ Now, how do you feel about this awesome Vim motion in every-day computer use? Pr
 
 ## Editor: Neovim
 
-https://neovim.io/
+[Neovim](https://neovim.io/)
 
 Vimmer, That's who I am, that's who I will always be.
 
 ## Copy and Paste: Pastebot
 
-https://tapbots.com/pastebot/
+[Pastebot](https://tapbots.com/pastebot/)
 
 The universal clipboard is simply a must-have, screenshots and gif can also be put into the clipboard, long history saved, one license across multiple machines, altho it isn't free, but is worth every penny.
 
 ## Gif Recorder: Kap
 
-https://github.com/wulkano/Kap
+[Kap](https://github.com/wulkano/Kap)
 
 Free and high quality, thinking about contribute to it.
 
@@ -140,13 +140,13 @@ I use Panda at day time, and nord-light at night time.
 
 ## Terminal: Tabby
 
-https://github.com/Eugeny/tabby
+[Tabby](https://github.com/Eugeny/tabby)
 
 This is by far the most comfortable and modern Terminal Simulator I've ever used.
 
 ## Shell: Oh-my-zsh
 
-https://ohmyz.sh/
+[oh my zsh](https://ohmyz.sh/)
 
 Who doesn't like Z-shell?
 
@@ -154,25 +154,25 @@ There is another shell, called [oh-my-post](https://ohmyposh.dev/), it's pretty 
 
 ## Screenshot: Snipaste
 
-https://www.snipaste.com
+[Snipaste](https://www.snipaste.com)
 
 Free and edit all in one, what's the reason not like it?
 
 ## Browser: Arc
 
-https://arc.net
+[Arc](https://arc.net)
 
 It cures my tab syndrome.
 
 ## Git: Github Desktop Client
 
-https://desktop.github.com
+[Github Desktop](https://desktop.github.com)
 
 When the code is ready to commit, switching out from editor, using a different client often fresh my mind a lot. That's why I've been using it.
 
 ## Spotlight: Raycast
 
-https://www.raycast.com
+[Raycast](https://www.raycast.com)
 
 Well, I don't understand why native Spotlight Search doesn't feel smart at all, it can't even open Finder by typing, it drove me nuts all the time.
 
