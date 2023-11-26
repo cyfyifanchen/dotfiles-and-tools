@@ -165,7 +165,9 @@ Free and edit all in one, what's the reason not like it?
 
 [Arc](https://arc.net)
 
-It cures my tab syndrome.
+The remedy Arc provides for my tab syndrome alone is reason enough don't even need to mention how fantastic the Boost is. I've also written a [blog post](https://www.cyfyifanchen.com/blog/the-browser-arc) sharing my thoughts of using Arc.
+
+In general, Arc is a browser that tackled a lof of pain points of modern folks behaviors of using browsers. The product team of Arc for sure is doing an amazing job of knowing their audience, and that's the fundamental reason I think will differentiate Arc and Chrome in a long run.
 
 ## Git: Github Desktop Client
 
