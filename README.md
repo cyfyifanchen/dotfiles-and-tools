@@ -76,17 +76,21 @@ Not only does [ tekezo ](https://github.com/tekezo) make an awesome software for
 
 The philosophy of shortcut is "less is more" in the sense where can be done intuitively.
 
-Once mapping `hjkl` with `control` as `arrow` key is done, amazing things happen intuitively:
+Once mapping `hjkl` with `control` as `arrow` key is done, amazing things will happen:
 
 `control` + `h` + `j` + `k` + `l`: `left` `down` `up` `right`.
 
-`control` + `cmd` + `h` or `l`: navigating through beginning and end of a line.
+`control` + `option` + `h` or `l`: jump word by word, like `w` in Vim.
 
-`control` + `cmd` + `shift` + `h` or `l`: select entire line.
+`control` + `option` + `shift` + `h` + `l`: highlight word by word, like `w` in Visual Mode in Vim.
 
-`control` + `cmd` + `k` or `j`: top or bottom of the file
+`control` + `cmd` + `h` or `l`: navigating through the cursor position and end of a line, like `v` + `$` or `v` + `0` in Visual Mode in Vim.
 
-`control` + `cmd` + `shift` + `k` or `j`: select entire file from either top or bottom.
+`control` + `cmd` + `shift` + `h` + `l`: highlight the rest of the line from current cursor position, like `v` + `$` or `v` + `0` in Visual Mode in Vim.
+
+`control` + `cmd` + `k` or `j`: top or bottom of the file, like `gg` or `G` in Vim.
+
+`control` + `cmd` + `shift` + `k` or `j`: select entire file from either top or bottom, like `gg` or `G` in Visual Mode in Vim.
 
 `control` + `j` and `control` + `k`: going through intellisense in IDE or up and down when search in Google.
 
@@ -181,7 +185,9 @@ When the code is ready to commit, switching out from editor, using a different c
 
 Well, I don't understand why native Spotlight Search doesn't feel smart at all, it can't even open Finder by typing, it drove me nuts all the time.
 
-Raycast, is a great replacement, the window management is something macOS lacks, it's great to have. The command is built for developers I think. It reminds me of Chrome Site Search, once it's configed, it'd be super powerful and productive.
+Raycast, is a great replacement, the window management is something macOS lacks, it's great to have. The command is built for developers I think. It reminds me of Chrome Site Search, once it's configured, it'd be super powerful and productive.
+
+The window management, is the command that I use on a daily basis, I like how I can just type `lef` or `right` and it splits the window from the very center line. Given the history that Apple always adopts awesome third-party features into its own, hence in the near future, we are gonna see this integrated into native Spotlight search.
 
 ~~But some advanced features need to be unlocked by PRO, that's fine I understand. But integration with Google Translate, c'mon this doesn't have to be a PRO feature.~~
 
