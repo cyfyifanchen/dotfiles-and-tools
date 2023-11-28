@@ -76,25 +76,18 @@ Not only does [ tekezo ](https://github.com/tekezo) make an awesome software for
 
 The philosophy of shortcut is "less is more" in the sense where can be done intuitively.
 
-Once mapping `hjkl` with `control` as `arrow` key is done, amazing things will happen:
+> [!TIP]
+> Once mapping `hjkl` with `control` as `arrow` key is done, amazing things will happen:
 
-`control` + `h` + `j` + `k` + `l`: `left` `down` `up` `right`.
-
-`control` + `option` + `h` or `l`: jump word by word, like `w` in Vim.
-
-`control` + `option` + `shift` + `h` + `l`: highlight word by word, like `w` in Visual Mode in Vim.
-
-`control` + `cmd` + `h` or `l`: navigating through the cursor position and end of a line, like `v` + `$` or `v` + `0` in Visual Mode in Vim.
-
-`control` + `cmd` + `shift` + `h` + `l`: highlight the rest of the line from current cursor position, like `v` + `$` or `v` + `0` in Visual Mode in Vim.
-
-`control` + `cmd` + `k` or `j`: top or bottom of the file, like `gg` or `G` in Vim.
-
-`control` + `cmd` + `shift` + `k` or `j`: select entire file from either top or bottom, like `gg` or `G` in Visual Mode in Vim.
-
-`control` + `j` and `control` + `k`: going through intellisense in IDE or up and down when search in Google.
-
-`control` + `l`: very useful to attach parameters to the end of a url.
+- `control` + `h` + `j` + `k` + `l`: `left` `down` `up` `right`.
+- `control` + `option` + `h` or `l`: jump word by word, like `w` in Vim.
+- `control` + `option` + `shift` + `h` + `l`: highlight word by word, like `w` in Visual Mode in Vim.
+- `control` + `cmd` + `h` or `l`: navigating through the cursor position and end of a line, like `v` + `$` or `v` + `0` in Visual Mode in Vim.
+- `control` + `cmd` + `shift` + `h` + `l`: highlight the rest of the line from current cursor position, like `v` + `$` or `v` + `0` in Visual Mode in Vim.
+- `control` + `cmd` + `k` or `j`: top or bottom of the file, like `gg` or `G` in Vim.
+- `control` + `cmd` + `shift` + `k` or `j`: select entire file from either top or bottom, like `gg` or `G` in Visual Mode in Vim.
+- `control` + `j` and `control` + `k`: going through intellisense in IDE or up and down when search in Google.
+- `control` + `l`: very useful to attach parameters to the end of a url.
 
 ##### Example of adding a parameter to an url with both hands on home row of keyboard
 
@@ -110,7 +103,7 @@ or
 
 Now, how do you feel about this awesome Vim motion in every-day computer use? Pretty great, isn't it? Keep in mind that the philosophy is keeping fingers on the golden row of the keyboard by enabling HJKL Vim motion with KE.
 
-> [!TIP]
+> [!NOTE]
 > There is something interesting I just realize the other day, command + K actually is using URL params to tweak the actions. Let's say if I can muscle memory the URL params and directly using it to do all the wanted actions, that's for sure is faster than command + K. That's so nice, isn't it?
 
 ## Editor: Neovim
