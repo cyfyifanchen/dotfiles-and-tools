@@ -1,9 +1,7 @@
-# Introduction
-
 > [!IMPORTANT]
 > Having the right set of tools makes work not work!
 
-# Dotfiles
+# Vim
 
 ![image](./images/vim.jpg)
 
