@@ -113,6 +113,8 @@ Vimmer, That's who I am, that's who I will always be.
 
 ## Copy and Paste: Pastebot
 
+![](./images/paste-bot.gif)
+
 [Pastebot](https://tapbots.com/pastebot/)
 
 The universal clipboard is simply a must-have, screenshots and gif can also be put into the clipboard, long history saved, one license across multiple machines, altho it isn't free, but is worth every penny.
