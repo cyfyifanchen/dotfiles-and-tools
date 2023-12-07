@@ -1,9 +1,7 @@
-# Introduction
-
 > [!IMPORTANT]
 > Having the right set of tools makes work not work!
 
-# Dotfiles
+# Vim
 
 ![image](./images/vim.jpg)
 
@@ -114,6 +112,8 @@ Now, how do you feel about this awesome Vim motion in every-day computer use? Pr
 Vimmer, That's who I am, that's who I will always be.
 
 ## Copy and Paste: Pastebot
+
+![](./images/paste-bot.gif)
 
 [Pastebot](https://tapbots.com/pastebot/)
 
