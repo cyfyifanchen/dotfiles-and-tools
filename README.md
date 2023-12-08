@@ -155,6 +155,8 @@ There is another shell, called [oh-my-posh](https://ohmyposh.dev/), it's pretty 
 
 ## Screenshot: Snipaste
 
+![](./images/snipaste.gif)
+
 [Snipaste](https://www.snipaste.com)
 
 Free and edit all in one, what's the reason not like it?
