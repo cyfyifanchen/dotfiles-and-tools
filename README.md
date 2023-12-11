@@ -188,3 +188,9 @@ The window management, is the command that I use on a daily basis, I like how I 
 ~~But some advanced features need to be unlocked by PRO, that's fine I understand. But integration with Google Translate, c'mon this doesn't have to be a PRO feature.~~
 
 I am looking for some cool integration and commands with Reycast, once I do find them I will share them here.
+
+## Obsidian
+
+[Obsidian](https://obsidian.md/download)
+
+I haven't figured out all the goodies of Obsidian yet, but just because of the community plugins and the existence of .vimrc I am feeling good about it. There's one thing I believe can make a certain technology better is the community. And, Obsidian has a strong community to do so.
