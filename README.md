@@ -156,6 +156,14 @@ to share, I am gonna come back to update this post.
 
 [Passion](https://github.com/ChesterYue/ohmyzsh-theme-passion#instal) is the theme I've been using for a while, loved the simplicity of it.
 
+## Fonts
+
+Good looking fonts make my editor and terminal feel unique, gotta like the moment when asked "hey, what's the font and theme are you using?" That's the reaction of me having a good taste on the font choosing.
+
+- [Hack](https://sourcefoundry.org/hack/)
+- [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+- [Geist Mono](https://vercel.com/font/mono)
+
 ## Screenshot: Snipaste
 
 ![](./images/snipaste.gif)
