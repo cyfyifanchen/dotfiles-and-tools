@@ -154,6 +154,8 @@ Who doesn't like Z-shell?
 There is another shell, called [oh-my-posh](https://ohmyposh.dev/), it's pretty cool, but I've not been able to make it work yet. I am gonna list it here anyway. When the config is ready
 to share, I am gonna come back to update this post.
 
+![](./images/passion.gif)
+
 [Passion](https://github.com/ChesterYue/ohmyzsh-theme-passion#instal) is the theme I've been using for a while, loved the simplicity of it.
 
 ## Fonts
