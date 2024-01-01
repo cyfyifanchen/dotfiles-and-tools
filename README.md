@@ -200,8 +200,12 @@ The window management, is the command that I use on a daily basis, I like how I 
 
 I am looking for some cool integration and commands with Reycast, once I do find them I will share them here.
 
-## Obsidian
+## ~~Obsidian~~ Note taking
 
 [Obsidian](https://obsidian.md/download)
 
-I haven't figured out all the goodies of Obsidian yet, but just because of the community plugins and the existence of .vimrc I am feeling good about it. There's one thing I believe can make a certain technology better is the community. And, Obsidian has a strong community to do so.
+~~I haven't figured out all the goodies of Obsidian yet, but just because of the community plugins and the existence of .vimrc I am feeling good about it. There's one thing I believe can make a certain technology better is the community. And, Obsidian has a strong community to do so.~~
+
+I decided to ditch Obsidian for now. It's a great tool, but it's just not for me. I find that writing thoughts in VsCode is comfortable and intuitive enough. When there's something I want to write down fast, it's important to keep it simple and easy.
+
+The Vim plugins aren't mature enough to mirror my `.vimrc` settings might be another reason tho.
