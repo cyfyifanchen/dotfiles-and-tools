@@ -172,7 +172,7 @@ Good looking fonts make my editor and terminal feel unique, gotta like the momen
 
 [Snipaste](https://www.snipaste.com)
 
-Free and edit all in one, what's the reason not like it?
+Free and edit all in one pack, what's the reason not like it? Another thing worth mention is that the hotkey integration with Snipaste is better than the default WeChat and QQ.
 
 ## Browser: Arc
 
