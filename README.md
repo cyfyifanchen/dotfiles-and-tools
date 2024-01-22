@@ -158,6 +158,15 @@ to share, I am gonna come back to update this post.
 
 [Passion](https://github.com/ChesterYue/ohmyzsh-theme-passion#instal) is the theme I've been using for a while, loved the simplicity of it.
 
+Passion has a dep, called gdate for timer to show, if run into the issue, then install:
+
+```
+passion.zsh-theme depends on cmd [gdate] to get current time in milliseconds
+[gdate] is not installed by default in macOS
+to get [gdate] by running:
+brew install coreutils;
+```
+
 ## Fonts
 
 Good looking fonts make my editor and terminal feel unique, gotta like the moment when asked "hey, what's the font and theme are you using?" That's the reaction of me having a good taste on the font choosing.
@@ -211,3 +220,7 @@ I am looking for some cool integration and commands with Reycast, once I do find
 I decided to ditch Obsidian for now. It's a great tool, but it's just not for me. I find that writing thoughts in VsCode is comfortable and intuitive enough. When there's something I want to write down fast, it's important to keep it simple and easy.
 
 The Vim plugins aren't mature enough to mirror my `.vimrc` settings might be another reason tho.
+
+```
+
+```
