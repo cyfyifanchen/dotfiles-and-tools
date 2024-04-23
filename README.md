@@ -5,7 +5,7 @@ So, I was invited to write something new at the RTE(Real-time Enagement) communi
 >
 > 思来想去，不得其解。后来，我悟了，因为 Vim 就像人生，不断折腾才有意义。没错，life is full of struggle，对，Vim is full of shit，但是，shit can be lessons to life。（哎呦，闭环了，不错哦）。
 >
-> Vim 的浪漫就是: 老子的工具，你特么不会用，想学啊，我教你啊。
+> Vim 的浪漫就是: 这是老子的工具组，秀得飞起，华丽爆表。 你想学？ 我教你啊。
 
 # Vim
 
