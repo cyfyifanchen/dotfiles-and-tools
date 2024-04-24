@@ -1,4 +1,4 @@
-So, I was invited to write something new at the RTE(Real-time Enagement) community, after a short period of thinking, I decide to bring this awesome blog there. Then I needed something fancy to start with, that was time to shine my creativity and the following, my friend, is what I wrote:
+So, I was invited to write something new at the RTE(Real-time Engagement) community, after a short period of thinking, I decide to bring this awesome blog there. Then I needed something fancy to start with, that was time to shine my creativity and the following, my friend, is what I wrote:
 
 > [!IMPORTANT]
 > Vim 让人爱又让人狠，我也经常按错键，我也苦恼一个 motion 不够聪明，我也尴尬用鼠标可以轻易实现的事，为什么非要绕大圈用 Vim 去做，我也奇怪为什么花这么多时间搞配置，我更气愤还非要把它弄漂亮，花这么多时间，不如多刷刷算法，多看看女团。
