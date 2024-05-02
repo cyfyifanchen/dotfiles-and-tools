@@ -5,11 +5,11 @@ My Tools my Cave
 </h1>
 
 <p align="center">
-<a href="twitter.com/imelliottchen"><img src="https://img.shields.io/badge/-@ImElliottChen-lightblue.svg?logo=x"></a>
-<a href="twitter.com/imelliottchen"><img src="https://img.shields.io/badge/-cyfyifanchen-purple.svg?logo=github"></a>
-<a href="elliottchenstudio.com">
+<a href="https://twitter.com/ImElliottChen"><img src="https://img.shields.io/badge/-@ImElliottChen-lightblue.svg?logo=x"></a>
+<a href="https://github.com/cyfyifanchen"><img src="https://img.shields.io/badge/-cyfyifanchen-purple.svg?logo=github"></a>
+<a href="https://elliottchenstudio.com">
 <img src="https://img.shields.io/static/v1?label=website&color=red&message=ElliottChenStudio&color=green" alt="" /></a>
-<a href="twitter.com/imelliottchen"><img src="https://img.shields.io/badge/-cyfyifanchen-blue.svg?logo=linkedin"></a>
+<a href="https://linkedin.com/in/cyfyifanchen"><img src="https://img.shields.io/badge/-cyfyifanchen-blue.svg?logo=linkedin"></a>
 
 </p>
 
