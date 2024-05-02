@@ -227,6 +227,21 @@ I decided to ditch Obsidian for now. It's a great tool, but it's just not for me
 
 The Vim plugins aren't mature enough to mirror my `.vimrc` settings might be another reason tho.
 
-```
+## Shell Proxy
+
+Okay, by default the proxy doesn't work in Terminal and shell, here is how to set it up.
+
+HTTP proxy
 
 ```
+export http_proxy=http://proxyserver:port/
+export https_proxy=http://proxyserver:port/
+```
+
+SOCKS proxy
+
+```
+export all_proxy=socks://proxyserver:port/
+```
+
+Ultimately, turning on the Enhance Mode in Clash should do the trick.Don't forget to `ping google.com` to verify the connection.
