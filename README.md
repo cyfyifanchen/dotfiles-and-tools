@@ -1,11 +1,29 @@
-So, I was invited to write something new at the RTE(Real-time Engagement) community, after a short period of thinking, I decide to bring this awesome blog there. Then I needed something fancy to start with, that was time to shine my creativity and the following, my friend, is what I wrote:
+![image](./images/vim-one.jpg)
 
-> [!IMPORTANT]
-> Vim 让人爱又让人狠，我也经常按错键，我也苦恼一个 motion 不够聪明，我也尴尬用鼠标可以轻易实现的事，为什么非要绕大圈用 Vim 去做，我也奇怪为什么花这么多时间搞配置，我更气愤还非要把它弄漂亮，花这么多时间，不如多刷刷算法，多看看女团。
->
-> 思来想去，不得其解。后来，我悟了，因为 Vim 就像人生，不断折腾才有意义。没错，life is full of struggle，对，Vim is full of shit，但是，shit can be lessons to life。（哎呦，闭环了，不错哦）。
->
-> Vim 的浪漫就是: 这是老子的工具组，秀得飞起，华丽爆表。 你想学？ 我教你啊。
+<h1 align="center">
+My Tools my Cave
+</h1>
+
+<p align="center">
+<a href="twitter.com/imelliottchen"><img src="https://img.shields.io/badge/-@ImElliottChen-lightblue.svg?logo=x"></a>
+<a href="twitter.com/imelliottchen"><img src="https://img.shields.io/badge/-cyfyifanchen-purple.svg?logo=github"></a>
+<a href="elliottchenstudio.com">
+<img src="https://img.shields.io/static/v1?label=website&color=red&message=ElliottChenStudio&color=green" alt="" /></a>
+<a href="twitter.com/imelliottchen"><img src="https://img.shields.io/badge/-cyfyifanchen-blue.svg?logo=linkedin"></a>
+
+</p>
+
+<div align="center">
+    <img src="./images/logo-title-stroke-black.svg" width="150px" >
+</div>
+
+<br />
+
+😄 Vim 的浪漫就是: 这是老子的工具组，秀得飞起，华丽爆表。 你想学？ 我教你啊。
+
+Vim 让人爱又让人狠，我也经常按错键，我也苦恼一个 motion 不够聪明，我也尴尬用鼠标可以轻易实现的事，为什么非要绕大圈用 Vim 去做，我也奇怪为什么花这么多时间搞配置，我更气愤还非要把它弄漂亮，花这么多时间，不如多刷刷算法，多看看女团。
+
+思来想去，不得其解。后来，我悟了，因为 Vim 就像人生，不断折腾才有意义。没错，life is full of struggle，对，Vim is full of shit，但是，shit can be lessons to life。（哎呦，闭环了，不错哦）。🫡
 
 # Vim
 
