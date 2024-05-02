@@ -19,11 +19,13 @@ My Tools my Cave
 
 <br />
 
-😄 Vim 的浪漫就是: 这是老子的工具组，秀得飞起，华丽爆表。 你想学？ 我教你啊。
+这是老子的工具配置，秀得飞起，华丽爆表。 你想学？ 我教你啊。 我想，这就是 Vim 的终极浪漫。
 
 Vim 让人爱又让人狠，我也经常按错键，我也苦恼一个 motion 不够聪明，我也尴尬用鼠标可以轻易实现的事，为什么非要绕大圈用 Vim 去做，我也奇怪为什么花这么多时间搞配置，我更气愤还非要把它弄漂亮，花这么多时间，不如多刷刷算法，多看看女团。
 
-思来想去，不得其解。后来，我悟了，因为 Vim 就像人生，不断折腾才有意义。没错，life is full of struggle，对，Vim is full of shit，但是，shit can be lessons to life。（哎呦，闭环了，不错哦）。🫡
+思来想去，不得其解。
+
+后来，我悟了。 Vim 巧如人生， 折腾方是意义。 没错， life is full of shit, and shit is lesson.🫡
 
 # Vim
 
