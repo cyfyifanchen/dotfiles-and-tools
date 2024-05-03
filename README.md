@@ -25,7 +25,7 @@ Vim 让人爱又让人狠，我也经常按错键，我也苦恼一个 motion �
 
 思来想去，不得其解。
 
-后来，我悟了。 Vim 巧如人生， 折腾方是意义。 没错， life is full of shit, and shit is lesson.🫡
+后来，我悟了。 Vim 恰如人生， 折腾便是意义。 没错， life is full of shit, and shit is full of lessons.🫡
 
 # Vim
 
