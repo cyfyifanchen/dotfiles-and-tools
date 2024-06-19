@@ -14,7 +14,7 @@ My Tools my Cave
 </p>
 
 <div align="center">
-    <img src="./images/logo-title-stroke-black.svg" width="150px" >
+    <img src="./images/logo-title-stroke-black.svg" width="150px">
 </div>
 
 <br />
