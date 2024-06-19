@@ -1,0 +1,25 @@
+[
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      "j k": ["vim::SwitchMode", "Normal"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      "j": [
+        "vim::Down",
+        {
+          "displayLines": true
+        }
+      ],
+      "k": [
+        "vim::Up",
+        {
+          "displayLines": true
+        }
+      ]
+    }
+  }
+]
